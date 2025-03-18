@@ -2,44 +2,16 @@
 
 .main {background-color: #fefff0;}
 
-.first-wrap {padding: 200px 0;}
-.first-inner {display: flex; align-items: center; justify-content: center;}
+.first-wrap {padding: 200px 0 220px;}
+.first-inner {display: flex; align-items: center; justify-content: center; max-width: 1920px; padding: 0 140px; margin: 0 auto;}
+.sc-inner-left .deco-img img {width: 100px; height: auto;}
 .first-inner .sc-inner-left .inner-txt p {font-size: 60px; font-weight: 900; line-height: 100px;}
 .first-inner .sc-inner-left .inner-txt .underline {border-bottom: 10px solid rgba(255, 220, 88, 0.6)}
-.sc-first .sc-inner-right {padding-left: 400px;}
+.sc-first .sc-inner-right {padding-left: 300px;}
 .sc-first .sc-inner-right .inner-wrap .top-deco {display: flex; align-items: center;}
-.sc-first .sc-inner-right .inner-wrap .top-deco .deco-img img {width: 50px; height: 50px;}
-.sc-first .sc-inner-right .inner-wrap .top-deco .deco-txt .txt {position: relative; display: flex; align-items: center; padding-left: 50px; font-size: 28px; font-weight: 600; transform: rotate(-25deg);}
-.sc-first .sc-inner-right .inner-wrap .top-deco .deco-txt .txt::before {content: ""; position: absolute; left: 0; width: 50px; height: 50px; background: url("../../img/main/Type=Animation 1, State=1.png") no-repeat center / cover;}
-.sc-first .sc-inner-right .inner-wrap .top-deco .deco-arrow-img img {width: 100px; height: 100px;}
-.sc-first .sc-inner-right .inner-wrap .inner-bg {position: relative; padding: 25px 20px; margin-top: 100px; background-color: #fff; box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.5);}
-.sc-first .sc-inner-right .inner-wrap .inner-bg .deco__1 {position: absolute; top: -25px; left: -25px;}
-.sc-first .sc-inner-right .inner-wrap .inner-bg .deco__2 {position: absolute; top: -25px; right: -25px;}
-.sc-first .sc-inner-right .inner-wrap .inner-bg .deco__3 {position: absolute; bottom: -50px; right: -50px;}
-.sc-first .sc-inner-right .inner-wrap .inner-bg .inner-img {border: 4px solid #222222;}
+.sc-first .sc-inner-right .inner-wrap .inner-bg {position: relative; padding: 25px 20px; background-color: #fff; border: .5px solid #383838; box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.5);}
+.sc-first .sc-inner-right .inner-wrap .inner-bg .inner-img {border: 2px solid #222222;}
 .sc-first .sc-inner-right .inner-wrap .inner-bg .inner-img img {width: 400px; height: 600px;}
-
-.sc-second .second-wrap {background: url("../../img/main/space.PNG") no-repeat center / cover; white-space: nowrap; overflow: hidden;}
-.sc-second .second-wrap .scroll-right {display: flex; align-items: center; height: 50px; animation: marquee-right 20s linear infinite;}
-.sc-second .second-wrap .scroll-left {display: flex; align-items: center; height: 70px; animation: marquee-left 20s linear infinite;}
-.sc-second .second-wrap .scroll-item {color: #fff; padding: 0 50px;}
-
-@keyframes marquee-right {
-    0% {
-        transform: translateX(-50%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-@keyframes marquee-left {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
 
 .about-wrap {padding: 100px 0 200px;}
 .about-inner-wrap {max-width: 1920px; padding: 0 140px; margin: 0 auto;}
@@ -47,7 +19,8 @@
 .about-title .title-name {font-size: 60px;}
 .about-title .title-deco {padding-left: 40px;}
 .about-title .title-deco img {width: 50px; height: 50px;}
-.about-inner {display: flex; justify-content: center; padding: 30px; margin-top: 50px; background-color: #d9d9d9; box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.7);}
+.about-inner {display: flex; justify-content: center; padding: 30px; margin-top: 50px; border-radius: 25px; background-color: #fefff0; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);}
+.about-inner .inner-left {padding: 50px 120px 0 0;}
 .about-inner .inner-left .about-info {display: flex; justify-content: center; height: 23px; color: #fff; background-color: rgba(0, 0, 0, 0.7);}
 .about-inner .inner-left .about-info span {padding-left: 50px; font-size: 18px; font-weight: 900;}
 .about-inner .inner-left .about-info span:first-child {padding-left: 0;}
@@ -63,9 +36,12 @@
 .about-inner .inner-right .inner-right-info .info-txt .skill-list .skill-item img {width: 24px; height: 24px;}
 
 .sc-project {overflow: hidden;}
-.sc-project .project-wrap {max-width: 1920px; padding: 0 140px; margin: 0 auto;}
-.project-inner .project-title {position: relative; display: flex; align-items: center; width: 500px; padding: 50px 100px 0 0; font-size: 60px;}
-.project-inner .project-title::after {content: ""; position: absolute; right: 0; width: 120px; height: 120px; background: url("../../img/main/Frame 18.png") no-repeat center / cover;}
+.sc-project .project-wrap {padding: 100px 0 200px;}
+.project-inner {max-width: 1920px; padding: 0 140px; margin: 0 auto;}
+.project-inner-title {display: flex;}
+.project-inner .project-title {font-size: 60px;}
+.project-inner-title .title-deco {padding-left: 40px;}
+.project-inner-title .title-deco img {width: 60px;}
 .project-swiper {padding: 200px 0; overflow: hidden;}
 .swiper-slide {position: relative; width: auto; height: 700px; overflow: hidden; border: 5px solid #000; border-radius: 25px; transition: background-position 1s ease-in-out;}
 .swiper-inner .slide-item-info {position: absolute; bottom: 0; width: 100%; padding-bottom: 30px; text-align: center; background-color: rgba(0, 0, 0, 0.6);}
@@ -91,20 +67,25 @@
 .swiper-control .swiper-next {position: absolute; right: 0;width: 30px; height: 30px; background: url("../../img/icon/arrow-icon.png") no-repeat center / cover; transform: rotate(50deg);}
 
 
-.sc-last-wrap {padding: 200px 0;}
+.sc-last-wrap {padding: 100px 0 400px;}
 .last-inner {max-width: 1920px; padding: 0 140px; margin: 0 auto;}
+.last-inner-title {display: flex; align-items: center;}
 .last-inner-title .last-title-name {font-size: 60px;}
+.last-inner-title .title-deco {padding-left: 40px;}
+.last-inner-title .title-deco img {width: 60px;}
 .inner-cards {width: 100%; height: 50vh; position: relative; margin-top: 100px;}
-.card {position: absolute; width: 630px; padding: 50px 50px 20px; background: url("../../img/main/space-bg.png") no-repeat center / cover; border: 4px solid #000; box-shadow: -7px 7px 0px rgba(0, 0, 0, 0.5);;}
-.card-txt {line-height: 24px; color: #fff;}
-.card-title {padding-top: 40px; font-size: 20px; font-weight: 900; color: #fff;}
-.card1 {top: 20%; left: 13%; transform: rotate(5deg);}
-.card2 {top: 40%; right: 13%; transform: rotate(-5deg);}
-.card3 {top: 60%; left: 13%; transform: rotate(5deg);}
-.card4 {top: 90%; right: 13%; transform: rotate(5deg);}
+.card {position: absolute; width: 630px; padding: 50px 50px 20px; background-color: #fff; border: 2px solid #000; box-shadow: -7px 7px 0px rgba(0, 0, 0, 0.5);;}
+.card-txt {line-height: 24px; color: #000000;}
+.card-title {display: flex; align-items: center; padding-top: 40px; font-size: 20px; font-weight: 900; color: #000000;}
+.card-title::before {content: ""; display: flex; width: 15px; height: 15px; margin-right: 10px; background: url("../../img/icon/check-icon.png") no-repeat center / cover;}
+.card2, .card4 {text-align: right;}
+.card1 {top: 50px; left: 12%; transform: rotate(5deg);}
+.card2 {top: 210px; right: 13%; transform: rotate(-5deg);}
+.card3 {top: 400px; left: 13%; transform: rotate(5deg);}
+.card4 {top: 650px; right: 13%; transform: rotate(5deg);}
 
 
 .message-wrap {padding: 200px;}
 .message-inner {max-width: 1920px; padding: 0 140px; margin: 0 auto;}
-.message-inner .inner-txt {padding: 30px; border: 4px solid #222; border-radius: 100px; background-color: #fff;}
+.message-inner .inner-txt {padding: 30px; border: 2px solid #222; border-radius: 100px; background-color: #fff;}
 .message-inner .inner-txt .txt {display: flex; align-items: center; justify-content: center; text-align: center; line-height: 30px;}

@@ -3,13 +3,13 @@
 .header {background-color: #fefff0; border-bottom: 3px solid #222222;}
 .header .header-wrap {display: block; padding: 0 140px;}
 .header-inner {display: flex; justify-content: space-between; padding: 10px 0;}
-.header-inner .inner {display: flex; align-items: center; height: 80px; border: 4px solid #222222; background-color: #fff; box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);}
+.header-inner .inner {display: flex; align-items: center; height: 80px; border: 2px solid #222222; background-color: #fff; box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);}
 
 .header-inner .header-inner-right .time-ko {padding: 10px; text-align:  center;}
 .header-inner .header-inner-right .time-ko .time {font-size: 24px;}
 
 .header-logo {position: relative; display: flex; height: 100%; padding: 0 50px;}
-.header-logo::after {content: ""; position: absolute; right: 0; height: 100%; border-right: 4px solid #222222;}
+.header-logo::after {content: ""; position: absolute; right: 0; height: 100%; border-right: 2px solid #222222;}
 .header-logo a {position: relative; display: flex; align-items: center; height: 100%; padding: 0 30px; font-size: 28px; font-weight: 900;}
 .header-logo a::before {content: ""; position: absolute; left: 0; width: 15px; height: 15px; background: url("../../img/common/Vector.png") no-repeat center / cover;}
 .navbar {height: 100%;}
