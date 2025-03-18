@@ -24,15 +24,15 @@
 .about-inner .inner-left .about-info {display: flex; justify-content: center; height: 23px; color: #fff; background-color: rgba(0, 0, 0, 0.7);}
 .about-inner .inner-left .about-info span {padding-left: 50px; font-size: 18px; font-weight: 900;}
 .about-inner .inner-left .about-info span:first-child {padding-left: 0;}
-.about-inner .inner-left .inner-left-img {padding: 20px 20px 0; background-color: #fff;}
+.about-inner .inner-left .inner-left-img {padding: 20px 20px 0; background-color: #fff; border: .5px solid #000;}
 .about-inner .inner-left .inner-left-img img {width: 400px; height:550px;}
 .about-inner .inner-right {padding-left: 100px;}
 .about-inner .inner-right .inner-right-title {padding-bottom: 30px;}
 .about-inner .inner-right .inner-right-title .inner-title {width: 200px; font-size: 36px; line-height: 20px; border-bottom: 10px solid rgba(255, 220, 88, 0.6);}
 .about-inner .inner-right .inner-right-info .info-txt {padding-bottom: 40px;}
 .about-inner .inner-right .inner-right-info .info-txt:last-child {padding-bottom: 0;}
-.about-inner .inner-right .inner-right-info .info-txt .title-txt {padding-bottom: 20px; font-size: 24px;}
-.about-inner .inner-right .inner-right-info .info-txt .info-sub-txt {line-height: 28px;}
+.about-inner .inner-right .inner-right-info .info-txt .title-txt {padding-bottom: 20px; font-size: 24px; font-weight: 900;}
+.about-inner .inner-right .inner-right-info .info-txt .info-sub-txt {line-height: 28px; font-weight: 600;}
 .about-inner .inner-right .inner-right-info .info-txt .skill-list .skill-item img {width: 24px; height: 24px;}
 
 .sc-project {overflow: hidden;}
@@ -75,7 +75,7 @@
 .last-inner-title .title-deco img {width: 60px;}
 .inner-cards {width: 100%; height: 50vh; position: relative; margin-top: 100px;}
 .card {position: absolute; width: 630px; padding: 50px 50px 20px; background-color: #fff; border: 2px solid #000; box-shadow: -7px 7px 0px rgba(0, 0, 0, 0.5);;}
-.card-txt {line-height: 24px; color: #000000;}
+.card-txt {line-height: 24px; font-weight: 600; color: #222;}
 .card-title {display: flex; align-items: center; padding-top: 40px; font-size: 20px; font-weight: 900; color: #000000;}
 .card-title::before {content: ""; display: flex; width: 15px; height: 15px; margin-right: 10px; background: url("../../img/icon/check-icon.png") no-repeat center / cover;}
 .card2, .card4 {text-align: right;}

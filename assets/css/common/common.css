@@ -1,5 +1,7 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 
+body {font-family: 'Freesentation-4Regular', sans-serif !important;}
+
 .header {background-color: #fefff0; border-bottom: 3px solid #222222;}
 .header .header-wrap {display: block; padding: 0 140px;}
 .header-inner {display: flex; justify-content: space-between; padding: 10px 0;}
