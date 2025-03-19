@@ -5,8 +5,9 @@ $(document).ready(function () {
         grabcursor: true,
         loop: false,
         breakpoints: {
-            640: {
-                slidesPerView: 2
+            
+            320: {
+                slidesPerView: 1
             },
             768: {
                 slidesPerView: 1
