@@ -1,4 +1,4 @@
-* {margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden;}
+* {margin: 0; padding: 0; box-sizing: border-box;}
 
 body {font-family: 'Freesentation-4Regular', sans-serif !important;}
 
@@ -30,7 +30,7 @@ body {font-family: 'Freesentation-4Regular', sans-serif !important;}
 .mo-hamburger-menu .btn-menu .line {display: block; width: 20px; height: 2px; background-color: #000;}
 .mo-hamburger-menu .btn-menu .top-line {position: absolute; top: 5px; left: 3px;}
 .mo-hamburger-menu .btn-menu .bottom-line {position: absolute; bottom: 5px; left: 3px;}
-.clock-panel {position: fixed; inset: 0; display: none; align-items: center; justify-content: center; max-width: 100vw; max-height: 100vh; background-color: #ffdc58; z-index: 2; box-sizing: border-box; overflow: hidden;}
+.clock-panel {display: none; align-items: center; justify-content: center; background-color: #ffdc58; z-index: 2; box-sizing: border-box; overflow: hidden;}
 .clock-panel .clock-wrap {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;}
 .clock-panel .clock-wrap .clock-inner .time-ko {display: flex; flex-direction: column; align-items: center; justify-content: center;}
 
@@ -45,6 +45,9 @@ body {font-family: 'Freesentation-4Regular', sans-serif !important;}
 }
 @media (max-width: 768px) {
     .header .header-wrap {padding: 0 50px;}
+}
+@media (max-width: 480px) {
+    .header-mo-inner .mo-inner {padding: 10px 20px;}
 }
 
 
