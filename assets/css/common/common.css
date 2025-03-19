@@ -48,6 +48,7 @@ body {font-family: 'Freesentation-4Regular', sans-serif !important;}
 }
 @media (max-width: 480px) {
     .header-mo-inner .mo-inner {padding: 10px 20px;}
+    .header .header-wrap {padding: 0 20px;}
 }
 
 
