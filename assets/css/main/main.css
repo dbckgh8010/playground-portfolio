@@ -1,5 +1,4 @@
 * {padding: 0; margin: 0; box-sizing: border-box;}
-body { overflow-x: hidden;}
 .main {background-color: #fefff0;}
 
 .first-wrap {padding: 200px 0 220px;}
@@ -22,6 +21,9 @@ body { overflow-x: hidden;}
 @media (max-width: 940px) {
     .first-inner {flex-direction: column;}
     .sc-first .sc-inner-right {padding-left: 0; padding-top: 40px;}
+}
+@media (max-width: 480px) {
+    .sc-first .sc-inner-right .inner-wrap .inner-bg .inner-img img {width: 200px; height: 400px;}
 }
 
 

@@ -1,4 +1,4 @@
-* {margin: 0; padding: 0; box-sizing: border-box;}
+* {margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden;}
 
 body {font-family: 'Freesentation-4Regular', sans-serif !important;}
 
@@ -37,13 +37,14 @@ body {font-family: 'Freesentation-4Regular', sans-serif !important;}
 
 
 
-@media (max-width: 1440px) {
-    .header .header-wrap {padding: 0 100px;}
-}
+
 @media (max-width: 1024px) {
     .header-inner .inner {display: none;}
     .header-mo-inner {display: flex;}
     .header-mo-inner .mo-inner {padding: 10px 50px;}
+}
+@media (max-width: 768px) {
+    .header .header-wrap {padding: 0 50px;}
 }
 
 
@@ -52,10 +53,24 @@ body {font-family: 'Freesentation-4Regular', sans-serif !important;}
 .footer {border-top: 4px solid #222222; background-color: #fefff0;}
 .footer-wrap {max-height: 1920px; padding: 0 140px; margin: 0 auto;}
 .footer-inner {position: relative; display: flex; align-items: center; justify-content: space-between; padding: 20px 0 50px;}
-.footer-logo {padding-right: 200px;}
+.footer-logo {padding-right: 50px;}
 .footer-copyright {position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);}
 .sns-link .e-mail {font-size: 24px; font-weight: 900;}
 .sns-link .kakao {padding-left: 20px;}
 .sns-link .kakao img {width: 100px; height: 100px;}
 .sns-link .github {padding-left: 20px;}
 .sns-link .github img {width: 100px; height: 100px;}
+
+
+
+@media (max-width: 1024px) {
+    .footer-wrap {padding: 0 50px;}
+    .footer-logo {padding-right: 0;}
+}
+@media (max-width: 768px) {
+    .footer-inner {flex-direction: column;}
+    .footer-logo {padding-bottom: 20px;}
+    .footer-copyright {display: flex; justify-content: center; width: 100%;}
+    .sns-link {display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;}
+    .sns-link span {padding-bottom: 10px;}
+}
