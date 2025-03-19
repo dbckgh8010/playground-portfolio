@@ -6,7 +6,7 @@ $(document).ready(function () {
         loop: false,
         breakpoints: {
             
-            320: {
+            0: {
                 slidesPerView: 1
             },
             768: {
