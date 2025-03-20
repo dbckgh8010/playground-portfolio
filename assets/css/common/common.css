@@ -26,7 +26,7 @@ body {font-family: 'Freesentation-4Regular', sans-serif !important;}
 .mo-logo {display: flex; align-items: center; justify-content: space-between; width: 100%;}
 .mo-logo .logo-img {display: flex; align-items: center;}
 .mo-logo .logo-img img {width: 25px; height: 25px; margin-right: 10px;}
-.time-ko {display: none; flex-direction: column; align-items: center;}
+.time-ko {display: none; flex-direction: column; align-items: center; justify-content: center;}
 .time-ko .day {font-size: 14px;}
 .time-ko .time {font-size: 18px; font-weight: 900;}
 
@@ -40,7 +40,7 @@ body {font-family: 'Freesentation-4Regular', sans-serif !important;}
     .time-ko {display: flex;}
 }
 @media (max-width: 768px) {
-    .header .header-wrap {padding: 0 50px;}
+    .header .header-wrap {padding: 0 20px;}
 }
 @media (max-width: 480px) {
     .header-mo-inner .mo-inner {padding: 10px 20px;}
