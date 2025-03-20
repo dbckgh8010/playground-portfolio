@@ -26,14 +26,9 @@ body {font-family: 'Freesentation-4Regular', sans-serif !important;}
 .mo-logo {display: flex; align-items: center; justify-content: space-between; width: 100%;}
 .mo-logo .logo-img {display: flex; align-items: center;}
 .mo-logo .logo-img img {width: 25px; height: 25px; margin-right: 10px;}
-.mo-hamburger-menu .btn-menu {position: relative; width: 30px; height: 20px; background-color: transparent; border: none;}
-.mo-hamburger-menu .btn-menu .line {display: block; width: 20px; height: 2px; background-color: #000;}
-.mo-hamburger-menu .btn-menu .top-line {position: absolute; top: 5px; left: 3px;}
-.mo-hamburger-menu .btn-menu .bottom-line {position: absolute; bottom: 5px; left: 3px;}
-.clock-panel {display: none; align-items: center; justify-content: center; background-color: #ffdc58; z-index: 2; box-sizing: border-box; overflow: hidden;}
-.clock-panel .clock-wrap {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;}
-.clock-panel .clock-wrap .clock-inner .time-ko {display: flex; flex-direction: column; align-items: center; justify-content: center;}
-
+.time-ko {display: none; flex-direction: column; align-items: center;}
+.time-ko .day {font-size: 14px;}
+.time-ko .time {font-size: 18px; font-weight: 900;}
 
 
 
@@ -42,6 +37,7 @@ body {font-family: 'Freesentation-4Regular', sans-serif !important;}
     .header-inner .inner {display: none;}
     .header-mo-inner {display: flex;}
     .header-mo-inner .mo-inner {padding: 10px 50px;}
+    .time-ko {display: flex;}
 }
 @media (max-width: 768px) {
     .header .header-wrap {padding: 0 50px;}
