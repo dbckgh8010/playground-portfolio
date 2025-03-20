@@ -99,19 +99,23 @@
 .slide--5 {width: 100%; background: url("../../img/main/genesis.png") no-repeat center top / 100% auto;}
 .slide--6 {width: 100%; background: url("../../img/main/porfolio-1.png") no-repeat center top / 100% auto;}
 .slide--7 {width: 100%; background: url("../../img/main/portfolio-2.png") no-repeat center top / 100% auto;}
-.swiper-control {position: relative; top: 20px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; width: 300px; padding: 0 50px;}
-.swiper-control .swiper-pagination {position: relative; bottom: 0; display: flex; align-items: center; width: 300px; height: 50px;}
+.swiper-control {position: relative; top: 20px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; width: 240px; padding: 0 50px;}
+.swiper-control .swiper-pagination {position: relative; bottom: 0; display: flex; align-items: center; width: 200px; height: 50px;}
 .swiper-control .swiper-pagination .swiper-pagination-bullet { background-color: #000; margin: 0 10px; padding: 2px;}
 .swiper-control .swiper-prev {position: absolute; left: 0; width: 30px; height: 30px; background: url("../../img/icon/arrow-icon.png") no-repeat center / cover; transform: rotate(-120deg);}
 .swiper-control .swiper-next {position: absolute; right: 0;width: 30px; height: 30px; background: url("../../img/icon/arrow-icon.png") no-repeat center / cover; transform: rotate(50deg);}
 @media (max-width: 1024px) {
     .project-inner {padding: 0 50px;}
+    .swiper-control {width: 300px;}
+}
+@media (max-width: 768px) {
+    .swiper-control {width: 300px; padding: 0 50px;}
 }
 @media (max-width: 480px) {
     .project-inner-title .title-deco {padding-left: 10px;}
     .project-inner {padding: 0 20px;}
     .project-inner .project-title {font-size: 36px; line-height: 45px;}
-    .swiper-control {position: relative; top: 20px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; width: 250px; padding: 0 40px;}
+    .swiper-control {position: relative; top: 20px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; width: 200px; padding: 0 40px;}
     .swiper-control .swiper-pagination .swiper-pagination-bullet { background-color: #000; margin: 0 5px; padding: 2px;}
 }
 
@@ -171,9 +175,9 @@
     .last-inner-title .last-title-name {font-size: 38px; line-height: 45px;}
     .card {width: 240px; padding: 5px;}
     .card1 {top: 50px; left: 5%;}
-    .card2 {top: 320px; right: 5%;}
+    .card2 {top: 300px; right: 5%;}
     .card3 {top: 600px; left: 5%;}
-    .card4 {top: 920px; right: 5%;}
+    .card4 {top: 900px; right: 5%;}
     .card2, .card4 {text-align: left;}
     .card-title::before {margin-right: 2px;}
 }

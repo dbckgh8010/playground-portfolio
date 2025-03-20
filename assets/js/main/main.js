@@ -35,20 +35,7 @@ $(document).ready(function () {
     let pinStart = 80;
     let gap = 30;
     
-    $(".card1, .card3").each(function() {
-        gsap.from($(this), {
-            scrollTrigger: {
-                trigger: this,
-                start: "top bottom",
-                end: "top 50%",
-                scrub: 2,
-            },
-            opacity: 0,
-            x: -200,
-            duration: 1
-        })
-    })
-    $(".card2, .card4").each(function() {
+    $(".card1, .card2, .card3, .card4").each(function() {
         gsap.from($(this), {
             scrollTrigger: {
                 trigger: this,
@@ -57,7 +44,7 @@ $(document).ready(function () {
                 scrub: 2,
             },
             opacity: 0,
-            x: 200,
+            y: 100,
             duration: 1
         })
     })
