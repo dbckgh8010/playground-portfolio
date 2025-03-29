@@ -32,6 +32,15 @@ $(document).ready(function () {
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(ScrollToPlugin);
     
+    gsap.fromTo(".sc-inner-left", 
+        {opacity: 0},
+        {opacity: 1, duration: 1, delay: 0.5}
+    );
+    gsap.fromTo(".sc-inner-right", 
+        {opacity: 0},
+        {opacity: 1, duration: 1, delay: 1}
+    );
+
     let pinStart = 80;
     let gap = 30;
     

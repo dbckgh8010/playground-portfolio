@@ -65,5 +65,5 @@ body {font-family: 'Freesentation-4Regular', sans-serif !important;}
     .footer-logo {padding-bottom: 20px;}
     .footer-copyright {display: flex; justify-content: center; width: 100%;}
     .sns-link {display: flex; flex-direction: column; align-items: center; padding-bottom: 20px;}
-    .sns-link span {padding-bottom: 10px;}
+    .sns-link span {padding-bottom: 10px; order:inherit;}
 }
