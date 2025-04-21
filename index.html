@@ -53,13 +53,13 @@
                                 <div class="day">날짜</div>
                                 <div class="time">시간</div>
                             </div>
-                            <div class="weather">
+                            <div class="weather-tab">
                                 <button type="button" class="weather-btn">날씨 검색</button>
                             </div>
                         </div>
                         <div class="header-mo-inner">
                             <div class="mo-inner">
-                                <div class="weather">
+                                <div class="weather-tab">
                                     <button type="button" class="weather-btn">날씨 검색</button>
                                 </div>
                                 <div class="mo-time">
@@ -389,6 +389,10 @@
     </div>
     <div class="weather-pop">
         <div class="weather-inner">
+            <button class="close-weather">
+                <span class="close-line close__1"></span>
+                <span class="close-line close__2"></span>
+            </button>
             <div class="weather-search">
                 <input type="text" placeholder="시·구·동을 입력해주세요!" spellcheck="false">
                 <button><img src="assets/img/icon/ico_searchOpen_bk.png" alt="검색 아이콘"></button>
@@ -404,16 +408,14 @@
                 <div class="details">
                     <div class="col">
                         <img src="assets/img/common/humidity.png" alt="습도 이미지">
-                        <div class="weaher-text_1">
+                        <div class="weaher-text">
                             <p class="humidity"></p>
-                            <p>습도</p>
                         </div>
                     </div>
                     <div class="col">
                         <img src="assets/img/common/wind.png" alt="풍속 이미지">
-                        <div class="weaher-text_2">
+                        <div class="weaher-text">
                             <p class="wind"></p>
-                            <p>풍속</p>
                         </div>
                     </div>
                 </div>

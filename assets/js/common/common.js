@@ -28,4 +28,57 @@ $(function() {
     });
 
     /*날씨 부분 수정중 */
+    const apiKey = "9e53e7c5a722510c71657586b087812d";
+    const geoUrl = "https://api.openweathermap.org/geo/1.0/direct?q=";
+    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
+
+    const weatherIconMapping = {Clouds: "clouds", Clear: "clear", Rain: "rain", Drizzle: "drizzle", Mist: "mist", Snow: "snow", Wind: "wind"};
+    $(".weather-btn").on('click', function() {
+        $(".weather-pop").fadeIn();
+    });
+    $(".close-weather").on('click', function() {
+        $(".weather-pop").fadeOut();
+    });
+
+    function getWeather(city) {
+        $.ajax({
+            url: apiUrl + encodeURIComponent(city) + `&appid=${apiKey}&lang=kr`,
+            method: "GET",
+            success: function (data) {
+                $(".weather-error").hide();
+                $(".weather").show();
+                
+                $(".city").text(data.name);
+                
+                const tempCelsius = Math.round(data.main.temp - 273.15);
+                $(".temp").text(tempCelsius + "°C");
+                $(".humidity").text(`습도 ${data.main.humidity}%`);
+                $(".wind").text(`풍속 ${data.wind.speed} m/s`);
+                
+                const mainWeather = data.weather[0].main;
+                const iconName = weatherIconMapping[mainWeather] || "default";
+                $(".weather-icon").attr("src", `assets/img/common/${iconName}.png`);
+                $(".status").text(data.weather[0].description);
+            },
+            error: function () {
+                $(".weather-error").show();
+                $(".weather").hide();
+                $(".weather-btn").show(); 
+            }
+        });
+    };
+    $(".weather-search button").on("click", function () {
+        const city = $(".weather-search input").val();
+        if (city !== "") {
+            getWeather(city);
+        }
+    });
+    $(".weather-search input").on("keypress", function (e) {
+        if (e.key === "Enter") {
+            const city = $(this).val();
+            if (city !== "") {
+                getWeather(city);
+            }
+        }
+    });
 })
