@@ -28,7 +28,7 @@ html, body {font-family: 'Freesentation-4Regular', sans-serif !important;}
 @media (max-width: 900px) {
     .container {flex-direction: column;}
     .right-container {width: 100%;}
-    .header-wrap {top: 0; left: 0; width: 100%; height: 90px; padding: 5px 10px; background-color: #fefff0;}
+    .header-wrap {top: 0; left: 0; width: 100%; height: 70px; padding: 5px 10px; background-color: #fefff0;}
     .header-inner .inner {display: none;}
     .header-inner {width: 100%;}
     .nav {display: none;}
@@ -46,6 +46,7 @@ html, body {font-family: 'Freesentation-4Regular', sans-serif !important;}
     .weather-btn::after {width: 12px; height: 12px;}
 }
 @media (max-width: 480px) {
+    .header-wrap {height: 90px;}
     .header-mo-inner {height: 70px; padding: 10px 0;}
     .header-mo-inner .mo-inner {padding: 10px 20px;}
     .header .header-wrap {padding: 0 20px;}
