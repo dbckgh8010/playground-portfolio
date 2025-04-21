@@ -18,338 +18,407 @@
     <script src="assets/js/main/main.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="header-wrap">
-            <div class="header-inner">
-                <div class="header-inner-left inner">
-                    <div class="header-logo">
-                        <a href="javascript:void(0)">YCH - Portfolio</a>
-                    </div>
-                    <nav class="navbar">
-                        <ul class="nav-list">
-                            <li class="list-item">
-                                <button type="button" class="item-btn" data-target="#section-about">PROFILE</button>
-                            </li>
-                            <li class="list-item">
-                                <button type="button" class="item-btn project" data-target="#section-project">PROJECT</button>
-                            </li>
-                            <li class="list-item">
-                                <button type="button" class="item-btn" data-target="#section-takeaway">Takeaway</button>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header-inner-right inner">
-                    <div class="time-ko">
-                        <div class="day">날짜</div>
-                        <div class="time">시간</div>
-                    </div>
-                </div>
-                <div class="header-mo-inner">
-                    <div class="mo-inner">
-                        <div class="mo-logo">
-                            <a href="javascript:void(0)" class="logo-img">
-                                <img src="assets/img/common/Vector.png">
-                                YCH - Portfolio
-                            </a>
-                            <div class="mo-time">
-                                <div class="time-ko">
-                                    <div class="day">날짜</div>
-                                    <div class="time">시간</div>
+    <div class="container">
+        <div class="left-container">
+            <header class="header">
+                <div class="header-wrap">
+                    <div class="header-inner">
+                        <nav class="nav">
+                            <ul class="nav-wrap">
+                                <li class="nav-list">
+                                    <a href="#section-first" class="tab-btn">
+                                        <img src="assets/img/icon/home-icon.png" alt="홈 바로가기 버튼 이미지">
+                                    </a>
+                                </li>
+                                <li class="nav-list">
+                                    <a href="#section-about" class="tab-btn">
+                                        <img src="assets/img/icon/portfolio-icon.png" alt="자기소개 바로가기 버튼 이미지">
+                                    </a>
+                                </li>
+                                <li class="nav-list">
+                                    <a href="#section-project" class="tab-btn">
+                                        <img src="assets/img/icon/project-icon.png" alt="프로젝트 바로가기 버튼 이미지">
+                                    </a>
+                                </li>
+                                <li class="nav-list">
+                                    <a href="#section-takeaway" class="tab-btn">
+                                        <img src="assets/img/icon/takeaways-icon.png" alt="느낀점 바로가기 버튼 이미지">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header-info inner">
+                            <div class="time-ko">
+                                <div class="year">년</div>
+                                <div class="day">날짜</div>
+                                <div class="time">시간</div>
+                            </div>
+                            <div class="weather">
+                                <button type="button" class="weather-btn">날씨 검색</button>
+                            </div>
+                        </div>
+                        <div class="header-mo-inner">
+                            <div class="mo-inner">
+                                <div class="weather">
+                                    <button type="button" class="weather-btn">날씨 검색</button>
+                                </div>
+                                <div class="mo-time">
+                                    <div class="time-ko">
+                                        <div class="year">년</div>
+                                        <div class="day">날짜</div>
+                                        <div class="time">시간</div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="right-container">
+            <main class="main">
+                <section id="section-first" class="sc-first">
+                    <div class="first-wrap">
+                        <div class="first-inner">
+                            <div class="sc-inner-left">
+                                <div class="deco-img">
+                                    <img src="assets/img/icon/good-sticker.png" alt="">
+                                </div>
+                                <div class="inner-txt">
+                                    <p>
+                                        Hellow ! 🙋‍♂️
+                                        <br>
+                                        <span class="underline">My PlayGround</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="sc-inner-right">
+                                <div class="inner-wrap">
+                                    <div class="inner-bg">
+                                        <div class="inner-img">
+                                            <img src="assets/img/main/my-photo.jpg" alt="윤창호 포트폴리오의 첫번째 메인 프로필 이미지">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section-about" class="sc-about">
+                    <div class="about-wrap">
+                        <div class="about-inner-wrap">
+                            <div class="about-title">
+                                <h2 class="title-name">PROFILE</h2>
+                                <span class="title-deco">
+                                    <img src="assets/img/main/Frame 95481.png" alt="웃는 이모티콘 이미지">
+                                </span>
+                            </div>
+                            <div class="about-inner">
+                                <div class="inner-left">
+                                    <div class="inner-left-img">
+                                        <img src="assets/img/main/my-photo2.jpg"  alt="윤창호 포트폴리오의 두번째 메인 프로필 이미지">
+                                    </div>
+                                    <div class="about-info">
+                                        <span class="info-name">윤창호</span>
+                                        <span class="info-year">96.05.24</span>
+                                        <span class="info-mbti">ENTP</span>
+                                    </div>
+                                </div>
+                                <div class="inner-right">
+                                    <div class="inner-right-title">
+                                        <h3 class="inner-title">ABOUT ME</h3>
+                                    </div>
+                                    <div class="inner-right-info">
+                                        <div class="info-txt">
+                                            <h4 class="title-txt"># Who I Am</h4>
+                                            <p class="info-sub-txt">
+                                                1. 안녕하세요 저는 윤창호라고 합니다.
+                                                <br>
+                                                2. 새로운 것을 배우는 데 흥미를 느낍니다.
+                                                <br>
+                                                3. 도전하는 걸 좋아하며, 더 좋은 결과물을 만들기 위해 노력합니다.
+                                            </p>
+                                        </div>
+                                        <div class="info-txt">
+                                            <h4 class="title-txt"># What I Do</h4>
+                                            <p class="info-sub-txt">
+                                                1. 저는 HTML, CSS, JavaScript, jQuery를 활용해 인터랙티브한 재미있는 웹사이트를 제작합니다.
+                                                <br>
+                                                2. 애니메이션을 좋아하여 GSAP, Swiper, AOS를 활용해 사이트를 만드는 것을 좋아합니다.
+                                                <br>
+                                                3. 웹 퍼블리싱을 하나의 놀이처럼 즐기며, 끊임없이 배우는 것을 좋아 합니다.
+                                            </p>
+                                        </div>
+                                        <div class="info-txt">
+                                            <h4 class="title-txt"># What I Aim For</h4>
+                                            <p class="info-sub-txt">
+                                                1. JavaScript 실력을 키워 더 인터랙티브한 웹 제작
+                                                <br>
+                                                2. 더욱 신기한 UI/UX를 개발할수 있는 퍼블리싱 능력 향상
+                                                <br>
+                                                3. 퍼블리싱을 넘어서 프론트 개발자까지 성장
+                                            </p>
+                                        </div>
+                                        <div class="info-txt">
+                                            <h4 class="title-txt"># My Playground</h4>
+                                            <p class="info-sub-txt">
+                                                코딩을 놀이처럼 즐기면서 공부하자는 마인드
+                                                <br>
+                                                폴더 구조를 깔끔하게 정리하는 습관
+                                            </p>
+                                        </div>
+                                        <div class="info-txt">
+                                            <h4 class="title-txt"># SKILL</h4>
+                                            <div class="skill-list">
+                                                <ul class="skill-wrap">
+                                                    <li class="skill-item">
+                                                        <span class="skill-item">
+                                                            <img src="assets/img/icon/html5-symbol.png" alt="html5 마크 이미지">
+                                                            HTML
+                                                        </span>
+                                                    </li>
+                                                    <li class="skill-item">
+                                                        <span class="skill-item">
+                                                            <img src="assets/img/icon/css-symbol.png" alt="CSS3 마크 이미지">
+                                                            CSS
+                                                        </span>
+                                                    </li>
+                                                    <li class="skill-item">
+                                                        <span class="skill-item">
+                                                            <img src="assets/img/icon/javascript-icon.png" alt="자바스크립트 마크 이미지">
+                                                            JS
+                                                        </span>
+                                                    </li>
+                                                    <li class="skill-item">
+                                                        <span class="skill-item">
+                                                            <img src="assets/img/icon/jquery-symbol.png" alt="제이쿼리 마크 이미지">
+                                                            jQuery
+                                                        </span>
+                                                    </li>
+                                                    <li class="skill-item">
+                                                        <span class="skill-item">
+                                                            <img src="assets/img/icon/vscode-symbol.png" alt="VSCODE 마크 이미지">
+                                                            VS Code
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section-project" class="sc-project">
+                    <div class="project-wrap">
+                        <div class="project-inner">
+                            <div class="project-inner-title">
+                                <h2 class="project-title">MY PROJECT</h2>
+                                <span class="title-deco">
+                                    <img src="assets/img/main/smile-emticon.png">
+                                </span>
+                            </div>
+                            <div class="project-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide--1">
+                                        <div class="swiper-inner">
+                                            <div class="slide-item-info">
+                                                <h4 class="item-name">신세계L&B</h4>
+                                                <p class="contribution">기여도: 100%</p>
+                                                <p class="item-skill">#js #jQuery #Slick</p>
+                                                <p class="item-info-txt">클론 코딩으로 제작하였습니다.</p>
+                                                <a href="https://dbckgh8010.github.io/shinsegae-lnb/" class="link" target="_blank">Go Site</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide--2">
+                                        <div class="swiper-inner">
+                                            <div class="slide-item-info">
+                                                <h4 class="item-name">한솔PNS</h4>
+                                                <p class="contribution">기여도: 100%</p>
+                                                <p class="item-skill">#jQuery #Slick #반응형</p>
+                                                <p class="item-info-txt">반응형으로 제작하였습니다.</p>
+                                                <a href="https://dbckgh8010.github.io/hansolpns/" class="link" target="_blank">Go Site</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide--3">
+                                        <div class="swiper-inner">
+                                            <div class="slide-item-info">
+                                                <h4 class="item-name">LESPACE</h4>
+                                                <p class="contribution">기여도: 100%</p>
+                                                <p class="item-skill">#jQuery #Swiper #GSAP</p>
+                                                <p class="item-info-txt">GSAP를 이용하여 클론 코딩 하였습니다.</p>
+                                                <a href="https://dbckgh8010.github.io/Lespace/" class="link" target="_blank">Go Site</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide--4">
+                                        <div class="swiper-inner">
+                                            <div class="slide-item-info">
+                                                <h4 class="item-name">기아</h4>
+                                                <p class="contribution">기여도: 100%</p>
+                                                <p class="item-skill">#jQuery #Swiper #AOS</p>
+                                                <p class="item-info-txt">AOS를 이용하여 클론 코딩 하였습니다.</p>
+                                                <a href="https://dbckgh8010.github.io/KIA/" class="link" target="_blank">Go Site</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide--5">
+                                        <div class="swiper-inner">
+                                            <div class="slide-item-info">
+                                                <h4 class="item-name">제네시스</h4>
+                                                <p class="contribution">기여도: 100%</p>
+                                                <p class="item-skill">#jQuery #Swiper</p>
+                                                <p class="item-info-txt">클론 코딩으로 제작하였습니다.</p>
+                                                <a href="https://dbckgh8010.github.io/genesis/" class="link" target="_blank">Go Site</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide--6">
+                                        <div class="swiper-inner">
+                                            <div class="slide-item-info">
+                                                <h4 class="item-name">포트폴리오</h4>
+                                                <p class="contribution">기여도: 100%</p>
+                                                <p class="item-skill">#jQuery #Swiper</p>
+                                                <p class="item-info-txt">처음으로 포트폴리오를 제작했습니다.</p>
+                                                <a href="https://dbckgh8010.github.io/portfolio/" class="link" target="_blank">Go Site</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide--7">
+                                        <div class="swiper-inner">
+                                            <div class="slide-item-info">
+                                                <h4 class="item-name">포트폴리오</h4>
+                                                <p class="contribution">기여도: 100%</p>
+                                                <p class="item-skill">#jQuery #Swiper #GSAP</p>
+                                                <p class="item-info-txt">반응형으로 제작하고 다양한 라이브러리를 이용했습니다.</p>
+                                                <a href="https://dbckgh8010.github.io/playground/" class="link" target="_blank">Go Site</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-control">
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-prev"></div>
+                                    <div class="swiper-next"></div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section-takeaway" class="sc-last">
+                    <div class="sc-last-wrap">
+                        <div class="last-inner">
+                            <div class="last-inner-title">
+                                <h2 class="last-title-name">TAKEAWAYS</h2>
+                                <span class="title-deco">
+                                    <img src="assets/img/main/smile-icon.png" alt="">
+                                </span>
+                            </div>
+                            <div class="inner-cards">
+                                <ul class="card-list">
+                                    <li class="card card1">
+                                        <p class="card-txt">
+                                            "처음에는 디자인을 보면 막막했지만, HTML, CSS, JavaScript를 활용해 점점 완성되는 걸 보면 성취감을 크게 느꼈습니다. 특히 애니메이션을 추가하면 사이트가 생동감 있는 게 재밌었습니다."
+                                        </p>
+                                        <p class="card-title">웹사이트를 제작해보면서 느낀점</p>
+                                    </li>
+                                    <li class="card card2">
+                                        <p class="card-txt">
+                                            "처음에는 무조건 동작하면 된다고 생각했지만, 유지보수와 가독성을 고려한 코드 작성이 중요하다는 걸 알게 되었습니다. 특히, 클래스 네이밍과 CSS 구조를 체계적으로 잡는 게 나중에 큰 도움이 되는걸 느꼈습니다."
+                                        </p>
+                                        <p class="card-title">네이밍 및 구조를 만들다가 느낀점</p>
+                                    </li>
+                                    <li class="card card3">
+                                        <p class="card-txt">
+                                            "처음에는 파일을 아무렇게나 정리했지만, 프로젝트가 커질수록 폴더 구조가 중요하다는 걸 깨달았습니다. 이미지, CSS, JS 파일을 역할별로 정리하면 유지보수가 쉬워지고, 협업할 때도 혼선을 줄일 수 있습니다. 특히, 공통 요소와 개별 페이지 파일을 구분하는 게 작업 속도를 높이는 데 큰 도움이 되었습니다."
+                                        </p>
+                                        <p class="card-title">파일구조를 보고 느낀점</p>
+                                    </li>
+                                    <li class="card card4">
+                                        <p class="card-txt">
+                                            "웹 기술은 빠르게 변화하기 때문에 새로운 트렌드와 라이브러리를 계속 공부해야 한다. Swiper, GSAP, AOS 같은 라이브러리를 활용하면서 퍼블리싱의 가능성이 무궁무진하다는 걸 느꼈다."
+                                        </p>
+                                        <p class="card-title">라이브러리를 찾아보다가 느낀점</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="sc-message">
+                    <div class="message-wrap">
+                        <div class="message-inner">
+                            <div class="inner-txt">
+                                <p class="txt">
+                                    이곳이 즐거운 놀이터였길 바랍니다. 다음에 또 놀러 오세요!😊
+                                    <br>
+                                    This place was meant to be a fun playground. Hope to see you again!😊
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer-wrap">
+                    <div class="footer-inner">
+                        <div class="footer-logo">
+                            <h2 class="logo">YCH - Portfolio</h2>
+                        </div>
+                        <div class="footer-copyright">
+                            <p class="copyright">© 2025 Yun-Changho All Rights Reserved</p>
+                        </div>
+                        <div class="sns-link">
+                            <span class="e-mail">dbckgh8010@naver.com</span>
+                            <div class="sns-img">
+                                <span class="kakao">
+                                    <img src="assets/img/common/kakao_open_talk.png">
+                                </span>
+                                <a href="https://github.com/dbckgh8010" class="github" target="_blank">
+                                    <img src="assets/img/common/github.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="weather-pop">
+        <div class="weather-inner">
+            <div class="weather-search">
+                <input type="text" placeholder="시·구·동을 입력해주세요!" spellcheck="false">
+                <button><img src="assets/img/icon/ico_searchOpen_bk.png" alt="검색 아이콘"></button>
+            </div>
+            <div class="weather-error">
+                <p>유효하지 않습니다! 다시 한 번 확인해주세요.</p>
+            </div>
+            <div class="weather">
+                <img src="" class="weather-icon">
+                <h1 class="temp"></h1>
+                <p class="status"></h2>
+                <h2 class="city"></h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="assets/img/common/humidity.png" alt="습도 이미지">
+                        <div class="weaher-text_1">
+                            <p class="humidity"></p>
+                            <p>습도</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/common/wind.png" alt="풍속 이미지">
+                        <div class="weaher-text_2">
+                            <p class="wind"></p>
+                            <p>풍속</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <main class="main">
-        <section class="sc-first">
-            <div class="first-wrap">
-                <div class="first-inner">
-                    <div class="sc-inner-left">
-                        <div class="deco-img">
-                            <img src="assets/img/icon/good-sticker.png">
-                        </div>
-                        <div class="inner-txt">
-                            <p>
-                                Hellow ! 🙋‍♂️
-                                <br>
-                                <span class="underline">My PlayGround</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="sc-inner-right">
-                        <div class="inner-wrap">
-                            <div class="inner-bg">
-                                <div class="inner-img">
-                                    <img src="assets/img/main/my-photo.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="section-about" class="sc-about">
-            <div class="about-wrap">
-                <div class="about-inner-wrap">
-                    <div class="about-title">
-                        <h2 class="title-name">PROFILE</h2>
-                        <span class="title-deco">
-                            <img src="assets/img/main/Frame 95481.png">
-                        </span>
-                    </div>
-                    <div class="about-inner">
-                        <div class="inner-left">
-                            <div class="inner-left-img">
-                                <img src="assets/img/main/my-photo2.jpg">
-                            </div>
-                            <div class="about-info">
-                                <span class="info-name">윤창호</span>
-                                <span class="info-year">96.05.24</span>
-                                <span class="info-mbti">ENTP</span>
-                            </div>
-                        </div>
-                        <div class="inner-right">
-                            <div class="inner-right-title">
-                                <h3 class="inner-title">ABOUT ME</h3>
-                            </div>
-                            <div class="inner-right-info">
-                                <div class="info-txt">
-                                    <h4 class="title-txt"># Who I Am</h4>
-                                    <p class="info-sub-txt">
-                                        1. 안녕하세요 저는 윤창호라고 합니다.
-                                        <br>
-                                        2. 새로운 것을 배우는 데 흥미를 느낍니다.
-                                        <br>
-                                        3. 도전하는 걸 좋아하며, 더 좋은 결과물을 만들기 위해 노력합니다.
-                                    </p>
-                                </div>
-                                <div class="info-txt">
-                                    <h4 class="title-txt"># What I Do</h4>
-                                    <p class="info-sub-txt">
-                                        1. 저는 HTML, CSS, JavaScript, jQuery를 활용해 인터랙티브한 재미있는 웹사이트를 제작합니다.
-                                        <br>
-                                        2. 애니메이션을 좋아하여 GSAP, Swiper, AOS를 활용해 사이트를 만드는 것을 좋아합니다.
-                                        <br>
-                                        3. 웹 퍼블리싱을 하나의 놀이처럼 즐기며, 끊임없이 배우는 것을 좋아 합니다.
-                                    </p>
-                                </div>
-                                <div class="info-txt">
-                                    <h4 class="title-txt"># What I Aim For</h4>
-                                    <p class="info-sub-txt">
-                                        1. JavaScript 실력을 키워 더 인터랙티브한 웹 제작
-                                        <br>
-                                        2. 더욱 신기한 UI/UX를 개발할수 있는 퍼블리싱 능력 향상
-                                        <br>
-                                        3. 퍼블리싱을 넘어서 프론트 개발자까지 성장
-                                    </p>
-                                </div>
-                                <div class="info-txt">
-                                    <h4 class="title-txt"># My Playground</h4>
-                                    <p class="info-sub-txt">
-                                        코딩을 놀이처럼 즐기면서 공부하자는 마인드
-                                        <br>
-                                        폴더 구조를 깔끔하게 정리하는 습관
-                                    </p>
-                                </div>
-                                <div class="info-txt">
-                                    <h4 class="title-txt"># SKILL</h4>
-                                    <div class="skill-list">
-                                        <span class="skill-item">
-                                            <img src="assets/img/icon/html-icon.png">
-                                            HTML
-                                        </span>
-                                        <span class="skill-item">
-                                            <img src="assets/img/icon/css-icon.png">
-                                            CSS
-                                        </span>
-                                        <span class="skill-item">
-                                            <img src="assets/img/icon/js-icon.png">
-                                            JS
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="section-project" class="sc-project">
-            <div class="project-wrap">
-                <div class="project-inner">
-                    <div class="project-inner-title">
-                        <h2 class="project-title">MY PROJECT</h2>
-                        <span class="title-deco">
-                            <img src="assets/img/main/smile-emticon.png">
-                        </span>
-                    </div>
-                    <div class="project-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide slide--1">
-                                <div class="swiper-inner">
-                                    <div class="slide-item-info">
-                                        <h4 class="item-name">신세계L&B</h4>
-                                        <p class="contribution">기여도: 100%</p>
-                                        <p class="item-skill">#js #jQuery #Slick</p>
-                                        <p class="item-info-txt">클론 코딩으로 제작하였습니다.</p>
-                                        <a href="https://dbckgh8010.github.io/shinsegae-lnb/" class="link" target="_blank">Go Site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide--2">
-                                <div class="swiper-inner">
-                                    <div class="slide-item-info">
-                                        <h4 class="item-name">한솔PNS</h4>
-                                        <p class="contribution">기여도: 100%</p>
-                                        <p class="item-skill">#jQuery #Slick #반응형</p>
-                                        <p class="item-info-txt">반응형으로 제작하였습니다.</p>
-                                        <a href="https://dbckgh8010.github.io/hansolpns/" class="link" target="_blank">Go Site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide--3">
-                                <div class="swiper-inner">
-                                    <div class="slide-item-info">
-                                        <h4 class="item-name">LESPACE</h4>
-                                        <p class="contribution">기여도: 100%</p>
-                                        <p class="item-skill">#jQuery #Swiper #GSAP</p>
-                                        <p class="item-info-txt">GSAP를 이용하여 클론 코딩 하였습니다.</p>
-                                        <a href="https://dbckgh8010.github.io/Lespace/" class="link" target="_blank">Go Site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide--4">
-                                <div class="swiper-inner">
-                                    <div class="slide-item-info">
-                                        <h4 class="item-name">기아</h4>
-                                        <p class="contribution">기여도: 100%</p>
-                                        <p class="item-skill">#jQuery #Swiper #AOS</p>
-                                        <p class="item-info-txt">AOS를 이용하여 클론 코딩 하였습니다.</p>
-                                        <a href="https://dbckgh8010.github.io/KIA/" class="link" target="_blank">Go Site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide--5">
-                                <div class="swiper-inner">
-                                    <div class="slide-item-info">
-                                        <h4 class="item-name">제네시스</h4>
-                                        <p class="contribution">기여도: 100%</p>
-                                        <p class="item-skill">#jQuery #Swiper</p>
-                                        <p class="item-info-txt">클론 코딩으로 제작하였습니다.</p>
-                                        <a href="https://dbckgh8010.github.io/genesis/" class="link" target="_blank">Go Site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide--6">
-                                <div class="swiper-inner">
-                                    <div class="slide-item-info">
-                                        <h4 class="item-name">포트폴리오</h4>
-                                        <p class="contribution">기여도: 100%</p>
-                                        <p class="item-skill">#jQuery #Swiper</p>
-                                        <p class="item-info-txt">처음으로 포트폴리오를 제작했습니다.</p>
-                                        <a href="https://dbckgh8010.github.io/portfolio/" class="link" target="_blank">Go Site</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide--7">
-                                <div class="swiper-inner">
-                                    <div class="slide-item-info">
-                                        <h4 class="item-name">포트폴리오</h4>
-                                        <p class="contribution">기여도: 100%</p>
-                                        <p class="item-skill">#jQuery #Swiper #GSAP</p>
-                                        <p class="item-info-txt">반응형으로 제작하고 다양한 라이브러리를 이용했습니다.</p>
-                                        <a href="https://dbckgh8010.github.io/playground/" class="link" target="_blank">Go Site</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-control">
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-prev"></div>
-                            <div class="swiper-next"></div>
-                        </div>  
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="section-takeaway" class="sc-last">
-            <div class="sc-last-wrap">
-                <div class="last-inner">
-                    <div class="last-inner-title">
-                        <h2 class="last-title-name">TAKEAWAYS</h2>
-                        <span class="title-deco">
-                            <img src="assets/img/main/smile-icon.png">
-                        </span>
-                    </div>
-                    <div class="inner-cards">
-                        <ul class="card-list">
-                            <li class="card card1">
-                                <p class="card-txt">
-                                    "처음에는 디자인을 보면 막막했지만, HTML, CSS, JavaScript를 활용해 점점 완성되는 걸 보면 성취감을 크게 느꼈습니다. 특히 애니메이션을 추가하면 사이트가 생동감 있는 게 재밌었습니다."
-                                </p>
-                                <p class="card-title">웹사이트를 제작해보면서 느낀점</p>
-                            </li>
-                            <li class="card card2">
-                                <p class="card-txt">
-                                    "처음에는 무조건 동작하면 된다고 생각했지만, 유지보수와 가독성을 고려한 코드 작성이 중요하다는 걸 알게 되었습니다. 특히, 클래스 네이밍과 CSS 구조를 체계적으로 잡는 게 나중에 큰 도움이 되는걸 느꼈습니다."
-                                </p>
-                                <p class="card-title">네이밍 및 구조를 만들다가 느낀점</p>
-                            </li>
-                            <li class="card card3">
-                                <p class="card-txt">
-                                    "처음에는 파일을 아무렇게나 정리했지만, 프로젝트가 커질수록 폴더 구조가 중요하다는 걸 깨달았습니다. 이미지, CSS, JS 파일을 역할별로 정리하면 유지보수가 쉬워지고, 협업할 때도 혼선을 줄일 수 있습니다. 특히, 공통 요소와 개별 페이지 파일을 구분하는 게 작업 속도를 높이는 데 큰 도움이 되었습니다."
-                                </p>
-                                <p class="card-title">파일구조를 보고 느낀점</p>
-                            </li>
-                            <li class="card card4">
-                                <p class="card-txt">
-                                    "웹 기술은 빠르게 변화하기 때문에 새로운 트렌드와 라이브러리를 계속 공부해야 한다. Swiper, GSAP, AOS 같은 라이브러리를 활용하면서 퍼블리싱의 가능성이 무궁무진하다는 걸 느꼈다."
-                                </p>
-                                <p class="card-title">라이브러리를 찾아보다가 느낀점</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="sc-message">
-            <div class="message-wrap">
-                <div class="message-inner">
-                    <div class="inner-txt">
-                        <p class="txt">
-                            이곳이 즐거운 놀이터였길 바랍니다. 다음에 또 놀러 오세요!😊
-                            <br>
-                            This place was meant to be a fun playground. Hope to see you again!😊
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-wrap">
-            <div class="footer-inner">
-                <div class="footer-logo">
-                    <h2 class="logo">YCH - Portfolio</h2>
-                </div>
-                <div class="footer-copyright">
-                    <p class="copyright">© 2025 Yun-Changho All Rights Reserved</p>
-                </div>
-                <div class="sns-link">
-                    <span class="e-mail">dbckgh8010@naver.com</span>
-                    <span class="kakao">
-                        <img src="assets/img/common/kakao_open_talk.png">
-                    </span>
-                    <a href="https://github.com/dbckgh8010" class="github" target="_blank">
-                        <img src="assets/img/common/github.png">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
