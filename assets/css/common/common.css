@@ -97,3 +97,8 @@ html, body {font-family: 'Freesentation-4Regular', sans-serif !important;}
 .weather-text {padding-left: 10px;}
 .col {display: flex; align-items: center; justify-content: center; width: 100%; height: 20px;}
 .col img {width: 30px; height: 30px;}
+
+@media (max-width: 480px) {
+    .weather-search input {min-width: 0; height: 40px; font-size: 14px;}
+    .weather-search button {width: auto; height: 40px; padding: 0 10px;}
+}
