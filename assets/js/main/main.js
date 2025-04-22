@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    AOS.init({duration: 1200})
+
     const projectSwiper = new Swiper(".project-swiper", {
         slidesPerView: 3,
         spaceBetween: 30,
