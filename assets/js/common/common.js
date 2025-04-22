@@ -1,9 +1,9 @@
 $(function() {
     setInterval(function() {
         var dateInfo = new Date();
-        var hour = String(dateInfo.getHours()).padStart(2, '0');  // 2자리로 맞추기
-        var min = String(dateInfo.getMinutes()).padStart(2, '0'); // 2자리로 맞추기
-        var sec = String(dateInfo.getSeconds()).padStart(2, '0'); // 2자리로 맞추기
+        var hour = String(dateInfo.getHours()).padStart(2, '0');
+        var min = String(dateInfo.getMinutes()).padStart(2, '0');
+        var sec = String(dateInfo.getSeconds()).padStart(2, '0');
         var year = dateInfo.getFullYear();
         var month = dateInfo.getMonth() + 1;
         var date = dateInfo.getDate();
@@ -27,7 +27,7 @@ $(function() {
         });
     });
 
-    /*날씨 부분 수정중 */
+    /*날씨 부분*/
     const kakaoApiKey = "13e85bf832ed4eaa6f79add6d19b1393";
     const openWeatherApiKey = "9e53e7c5a722510c71657586b087812d";
     const geoUrl = "https://api.openweathermap.org/geo/1.0/direct?q=";
