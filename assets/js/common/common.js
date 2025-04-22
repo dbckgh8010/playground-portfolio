@@ -45,7 +45,7 @@ $(function() {
         $.ajax({
             url:`https://dapi.kakao.com/v2/local/search/address.json?query=${encodeURIComponent(cityName)}`,
             method: "GET",
-            headers: {"X-Kakao-API-Key": kakaoApiKey},
+            headers: {"Authorization": `KakaoAK ${kakaoApiKey}`}
             success: function (res) {
                 console.log(res);
                 if (res.documents && res.documents.length > 0) {
