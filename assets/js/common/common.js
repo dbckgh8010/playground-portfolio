@@ -28,7 +28,7 @@ $(function() {
     });
 
     /*날씨 부분 수정중 */
-    const kakaoApiKey = "13e85bf832ed4eaa6f79add6d19b1393";
+    const kakaoApiKey = "c48998aa6157c0aae1b40995a1ba4af5";
     const openWeatherApiKey = "9e53e7c5a722510c71657586b087812d";
     const geoUrl = "https://api.openweathermap.org/geo/1.0/direct?q=";
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
