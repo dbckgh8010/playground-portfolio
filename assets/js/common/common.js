@@ -28,7 +28,8 @@ $(function() {
     });
 
     /*날씨 부분 수정중 */
-    const apiKey = "9e53e7c5a722510c71657586b087812d";
+    const kakaoApiKey = "13e85bf832ed4eaa6f79add6d19b1393";
+    const openWeatherApiKey = "9e53e7c5a722510c71657586b087812d";
     const geoUrl = "https://api.openweathermap.org/geo/1.0/direct?q=";
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
 
@@ -39,10 +40,33 @@ $(function() {
     $(".close-weather").on('click', function() {
         $(".weather-pop").fadeOut();
     });
-
-    function getWeather(city) {
+    function getWeatherByCityName(cityName) {
+        const encodedCityName = encodeURIComponent(cityName);
         $.ajax({
-            url: apiUrl + encodeURIComponent(city) + `&appid=${apiKey}&lang=kr`,
+            url:`https://dapi.kakao.com/v2/local/search/address.json?query=${encodeURIComponent(cityName)}`,
+            method: "GET",
+            headers: {
+                Authorization: `KakaoAK ${kakaoApiKey}`
+            },
+            success: function (res) {
+                console.log(res);
+                if (res.documents && res.documents.length > 0) {
+                    showError("지역을 찾을 수 없습니다.");
+                    return;
+                }
+                const lat = res.documents[0].y;
+                const lon = res.documents[0].x;
+                getWeatherByCoords(lat, lon);
+            },
+            error: function () {
+                showError("주소 검색 실패");
+            }
+        })
+    }
+
+    function getWeatherByCoords(lat, lon) {
+        $.ajax({
+            url: `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${openWeatherApiKey}&units=metric&lang=kr`,
             method: "GET",
             success: function (data) {
                 $(".weather-error").hide();
@@ -67,17 +91,23 @@ $(function() {
             }
         });
     };
+    function showError(msg) {
+        $(".weather-error").text(msg).show();
+        $(".weather").hide();
+        $(".weather-btn").show(); 
+    }
+
     $(".weather-search button").on("click", function () {
         const city = $(".weather-search input").val();
         if (city !== "") {
-            getWeather(city);
+            getWeatherByCityName(city);
         }
     });
     $(".weather-search input").on("keypress", function (e) {
         if (e.key === "Enter") {
             const city = $(this).val();
             if (city !== "") {
-                getWeather(city);
+                getWeatherByCityName(city);
             }
         }
     });
