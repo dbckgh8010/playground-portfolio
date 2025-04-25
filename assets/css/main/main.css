@@ -43,10 +43,19 @@
 .about-title .title-deco img {width: 50px; height: 50px;}
 .about-inner {display: flex; justify-content: center; padding: 30px; margin-top: 50px; border-radius: 25px; background-color: #fefff0; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);}
 .about-inner .inner-left {padding: 50px 120px 0 0;}
-.about-inner .inner-left .about-info {display: flex; justify-content: center; height: 23px; color: #fff; background-color: rgba(0, 0, 0, 0.7);}
-.about-inner .inner-left .about-info span {padding-left: 50px; font-size: 18px; font-weight: 900;}
-.about-inner .inner-left .about-info span:first-child {padding-left: 0;}
-.about-inner .inner-left .inner-left-img {padding: 20px 20px 0; background-color: #fff; border: .5px solid #000;}
+
+.info-item {display: flex; margin-top: 40px;}
+.about-info .info-title {display: flex; flex-direction: column; align-items: center;}
+.about-info .info-title:first-child {width: 140px;}
+.about-info .info-title:last-child {display: flex; flex-direction: column; justify-content: center;}
+.about-info .kor-label {padding-bottom: 5px; margin-bottom: 5px; font-size: 24px; font-weight: 800; border-bottom: 1px solid rgba(0, 0, 0, 0.3);}
+.about-info .eng-label {font-size: 14px;}
+.about-info .kor-value {padding-bottom: 10px; font-size: 24px; font-weight: 800; letter-spacing: 4px;}
+.about-info .eng-value {font-size: 12px; color: #222;}
+.about-info .birth-value {color: #222;}
+.about-info .email-value {color: #222;}
+
+.about-inner .inner-left .inner-left-img {padding: 20px 20px; background-color: #fff; border: .5px solid #000;}
 .about-inner .inner-left .inner-left-img img {width: 400px; height:550px;}
 .about-inner .inner-right {padding-left: 100px;}
 .about-inner .inner-right .inner-right-title {padding-bottom: 30px;}
@@ -77,8 +86,15 @@
 }
 @media (max-width: 480px) {
     .about-inner-wrap {padding: 0 20px 50px;}
+    .about-inner .inner-left {display: flex; flex-direction: column; align-items: center;}
+    .about-info .kor-label {font-size: 18px;}
+    .about-info .eng-label {font-size: 12px;}
+    .about-info .kor-value {font-size: 18px;}
+    .about-info .eng-value {font-size: 10px;}
+    .about-info .birth-value {font-size: 14px;}
+    .about-info .email-value {font-size: 14px;}
+    .about-info .info-title:first-child {width: 100px;}
     .about-inner .inner-left .inner-left-img {display: flex; justify-content: center; width: 200px;}
-    .about-inner .inner-left .about-info span {padding-left: 20px;}
     .about-inner .inner-left .inner-left-img img {width: 180px; height: auto;}
     .about-title .title-name {font-size: 36px; line-height: 45px;}
 }
