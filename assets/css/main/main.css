@@ -141,15 +141,20 @@
 .tool-icon img {width:40px;}
 .tool-icon img:hover {transition: all 0.3s; transform: scale(1.1);}
 .icon-name {margin-top: 5px;}
-
 .info-bottom {padding-top: 20px;}
 .info-bottom .site-link {display: flex; flex-direction: column; align-items: center; padding: 10px; color: #fff; background-color: #333;  border: 1px solid #333; border-radius: 50px;}
-
 .item2-container {display: flex; justify-content: space-between;}
 .item2-container .mokup-wrap {position: relative;}
 .item2-container .page-tablet {z-index: 2;}
 .item2-container .page-mobile {z-index: 3;}
-.item2-container .page-info {width: 384px; overflow: hidden;}
+.page-info {width: 384px; overflow: hidden;}
+
+.desktop-container {display: flex; justify-content: space-between;}
+.page-info {width: 384px; overflow: hidden;}
+
+
+
+
 /*mokup-page*/
 .page-pc {position: relative; top: 0; left: 100px; width: 700px; height: 600px; background: url("../../img/main/monitor.png") no-repeat center / cover; overflow: hidden;}
 .page-pc .pc-inner {position: relative; top: 38px; left: 22px; width: 656px; height: 369px; overflow-y: scroll;}
@@ -170,6 +175,9 @@
 .mobile-inner::-webkit-scrollbar-track {background-color: #fff; border-radius: 10px;}
 .mobile-inner::-webkit-scrollbar-thumb {background-color: #d0e35f; border: 1px solid #d0e35f; border-radius: 10px;}
 
+
+
+
 @media (max-width: 1660px) {
     .project-inner {padding: 0 70px;}
     .page-pc {width: 500px; background-size: contain; order: 1;}
@@ -178,7 +186,7 @@
     .page-tablet {width: 250px;  background-size: contain;}
     .page-tablet .tablet-inner {left: 20px; top: 110px; width: 210px; height: 280px;}
     .page-tablet .tablet-inner img {width: 203px;}
-    .page-mobile {bottom: 0; left: 200px; width: 100px; height: 200px; background: url("../../img/main/mobile-mokup.png") no-repeat center / cover; overflow: hidden;}
+    .page-mobile {bottom: 0; left: 200px; width: 100px; height: 200px; background-size: contain;}
     .page-mobile .mobile-inner {position: absolute; left: 5px; top: 9px; width: 89px; height: 182px; overflow-y: scroll;}
     .page-mobile .mobile-inner img {display: block; width: 86px;}
     .page-info {order: 2;}
@@ -195,6 +203,7 @@
     .category-item {padding: 7px 12px;}
     .category-link .link-kr {font-size: 12px;}
     .category-link .link-eng {font-size: 12px;}
+    .desktop-container {flex-direction: column; align-items: center;}
 }
 
 @media (max-width: 1024px) {
@@ -206,6 +215,19 @@
 @media (max-width: 768px) {
     .swiper-control {width: 300px; padding: 0 50px;}
     .project-inner {padding: 0 20px;}
+}
+@media (max-width: 590px) {
+    .page-item {padding: 0;}
+    .page-info {width: 280px; padding: 20px 10px;}
+    .page-pc {width: 300px;}
+    .page-pc .pc-inner {top: 190px; left: 12px; height: 160px;}
+    .page-pc .pc-inner img {width: 276px; object-fit: cover;}
+    .page-tablet {width: 150px;}
+    .page-tablet .tablet-inner {left: 12px; top: 165px; height: 170px;}
+    .page-tablet .tablet-inner img {width: 127px;}
+    .page-mobile {bottom: 110px; left: 95px; width: 70px; height: 100px;}
+    .page-mobile .mobile-inner {left: 14px; top: 7px; width: 89px; height: 86px; overflow-y: scroll;}
+    .page-mobile .mobile-inner img {width: 42px;}
 }
 @media (max-width: 480px) {
     .project-inner-title .title-deco {padding-left: 10px;}

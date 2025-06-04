@@ -36,27 +36,44 @@ $(document).ready(function () {
         loop: false,
         autoHeight: true,
         allowTouchMove: false,
-    })
+    });
     const tabletSwiper = new Swiper(".tablet-swiper", {
         autoHeight: true,
         loop: false,
         slidesPerView: 1,
         allowTouchMove: false,
-    })
+    });
     const mobileSwiper = new Swiper(".mobile-swiper", {
         autoHeight: true,
         loop: false,
         slidesPerView: 1,
         allowTouchMove: false,
-    })
+    });
     const infoSwiper = new Swiper(".info-swiper", {
         autoHeight: true,
         loop: false,
         slidesPerView: 1,
         spaceBetween: 40,
         speed: 0,
-    })
+    });
     infoSwiper.controller.control = [pcSwiper, tabletSwiper, mobileSwiper];
+    
+    const desktopSwiper = new Swiper(".desktop-swiper", {
+        slidesPerView: 1,
+        loop: false,
+        autoHeight: true,
+        allowTouchMove: false,
+    });
+    const pageInfoSwiper = new Swiper(".page-info-swiper", {
+        autoHeight: true,
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 40,
+        speed: 0,
+    });
+    pageInfoSwiper.on("slideChange", () => {
+        desktopSwiper.slideTo(pageInfoSwiper.activeIndex);
+    });
 
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(ScrollToPlugin);
