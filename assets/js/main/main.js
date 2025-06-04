@@ -31,6 +31,33 @@ $(document).ready(function () {
         }
     });
 
+    const pcSwiper = new Swiper(".pc-swiper", {
+        slidesPerView: 1,
+        loop: false,
+        autoHeight: true,
+        allowTouchMove: false,
+    })
+    const tabletSwiper = new Swiper(".tablet-swiper", {
+        autoHeight: true,
+        loop: false,
+        slidesPerView: 1,
+        allowTouchMove: false,
+    })
+    const mobileSwiper = new Swiper(".mobile-swiper", {
+        autoHeight: true,
+        loop: false,
+        slidesPerView: 1,
+        allowTouchMove: false,
+    })
+    const infoSwiper = new Swiper(".info-swiper", {
+        autoHeight: true,
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 40,
+        speed: 0,
+    })
+    infoSwiper.controller.control = [pcSwiper, tabletSwiper, mobileSwiper];
+
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(ScrollToPlugin);
     
