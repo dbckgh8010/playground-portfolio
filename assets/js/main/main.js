@@ -55,6 +55,9 @@ $(document).ready(function () {
         slidesPerView: 1,
         spaceBetween: 40,
         speed: 0,
+        pagination: {
+            el: ".swiper-pagination",
+        },
     });
     infoSwiper.controller.control = [pcSwiper, tabletSwiper, mobileSwiper];
     
@@ -70,6 +73,9 @@ $(document).ready(function () {
         slidesPerView: 1,
         spaceBetween: 40,
         speed: 0,
+        pagination: {
+            el: ".swiper-pagination",
+        },
     });
     pageInfoSwiper.on("slideChange", () => {
         desktopSwiper.slideTo(pageInfoSwiper.activeIndex);
