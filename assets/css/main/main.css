@@ -220,6 +220,7 @@
     .project__2 .page-mockup .page-mobile {top: 190px; left: 155px;}
 }
 @media (max-width: 480px) {
+    .project-wrap {padding: 0;}
     .project-inner {padding: 0 20px;}
     .category-list {display: none;}
     .project-inner-title .project-title {font-size: 36px;}
