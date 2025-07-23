@@ -109,4 +109,19 @@ $(document).ready(function () {
             duration: 1
         })
     })
+
+    $(".category-item").click(function () {
+        $(".category-item").removeClass('active');
+        $(this).addClass('active');
+        
+        const tabName = $(this).data('tab');
+        $(".page-item").hide();
+
+        if (tabName === 'all') {
+            $(".page-item").show();
+        } else {
+            $(`.page-item[data-tab="${tabName}"]`).show();
+        }
+    });
+    $('.category-item[data-tab="all"]').click();
 });
