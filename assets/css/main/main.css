@@ -156,6 +156,8 @@
 .project-page .mockup__1 .page-mobile {position: absolute; top: 100px; left: 250px;}
 .page-mobile {width: 100px; height: 300px; background: url("../../img/main/mobile-mokup.png") no-repeat center / contain; overflow: hidden;}
 .mobile-inner {position: relative; top: 60px; left: 6px; width: 88px; height: 181px; overflow-y: scroll;}
+.category-list .category-item.active {background-color: #fff;}
+.category-list .category-item.active .category-link {color: #222;}
 
 /*프로젝트 이미지*/
 .page-pc .pc-inner img {width: 435px; height: auto;}

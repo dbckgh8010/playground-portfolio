@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function() {
     AOS.init({duration: 1200})
 
     const projectSwiper = new Swiper(".project-swiper", {
@@ -30,7 +30,8 @@ $(document).ready(function () {
             prevEl: ".swiper-prev"
         }
     });
-
+})
+$(function() {
     const pcSwiper = new Swiper(".pc-swiper", {
         slidesPerView: 1,
         loop: false,
@@ -60,7 +61,7 @@ $(document).ready(function () {
         },
     });
     infoSwiper.controller.control = [pcSwiper, tabletSwiper, mobileSwiper];
-    
+
     const desktopSwiper = new Swiper(".desktop-swiper", {
         slidesPerView: 1,
         loop: false,
@@ -80,7 +81,25 @@ $(document).ready(function () {
     pageInfoSwiper.on("slideChange", () => {
         desktopSwiper.slideTo(pageInfoSwiper.activeIndex);
     });
+})
+$(function() {
+    $(".category-item").click(function () {
+        $(".category-item").removeClass('active');
+        $(this).addClass('active');
+        
+        const tabName = $(this).data('tab');
+        $(".page-item").hide();
 
+        if (tabName === 'all') {
+            $(".page-item").show();
+        } else {
+            $(`.page-item[data-tab="${tabName}"]`).show();
+        }
+        ScrollTrigger.refresh();
+    });
+    $('.category-item[data-tab="all"]').click();
+})
+$(function() {
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(ScrollToPlugin);
     
@@ -95,7 +114,8 @@ $(document).ready(function () {
 
     let pinStart = 80;
     let gap = 30;
-    
+})
+$(function() {    
     $(".card1, .card2, .card3, .card4").each(function() {
         gsap.from($(this), {
             scrollTrigger: {
@@ -109,19 +129,4 @@ $(document).ready(function () {
             duration: 1
         })
     })
-
-    $(".category-item").click(function () {
-        $(".category-item").removeClass('active');
-        $(this).addClass('active');
-        
-        const tabName = $(this).data('tab');
-        $(".page-item").hide();
-
-        if (tabName === 'all') {
-            $(".page-item").show();
-        } else {
-            $(`.page-item[data-tab="${tabName}"]`).show();
-        }
-    });
-    $('.category-item[data-tab="all"]').click();
-});
+})
