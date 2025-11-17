@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-About</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/common/common.css">
+    <link rel="stylesheet" href="assets/css/about/about.css">
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathPlugin.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/common/weatherMapping.js"></script>
+    <script src="assets/js/common/widgets.js"></script>
+    <script src="assets/js/common/common.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <div class="sidebar close">
+            <div class="sidebar-wrap">
+                <div class="sidebar-inner">
+                    <div class="logo">
+                        <a href="https://dbckgh8010.github.io/playground-portfolio/" class="logo-img">
+                            <h1 class="my-name">
+                                <img src="assets/img/main/myphoto-circle.png" alt="윤창호 이미지">
+                                <p href="javascript:void(0)" class="eng-name">YUN CHANG HO</p>
+                            </h1>
+                        </a>
+                    </div>
+                    <nav class="nav" aria-label="주 메뉴">
+                        <ul class="nav-wrap">
+                            <li class="nav-list">
+                                <a href="#section-first" class="tab-btn active">
+                                    <img src="assets/img/icon/home_icon.png" alt="홈 바로가기 버튼 이미지">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#section-about" class="tab-btn">
+                                    <img src="assets/img/icon/user_icon.png" alt="자기소개 바로가기 버튼 이미지">
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#section-project" class="tab-btn">
+                                    <img src="assets/img/icon/file-text_icon.png" alt="프로젝트 바로가기 버튼 이미지">
+                                    <span>Projects</span>
+                                </a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#section-takeaway" class="tab-btn">
+                                    <img src="assets/img/icon/Star-circle_icon.png" alt="느낀점 바로가기 버튼 이미지">
+                                    <span>Stack</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="nav-btn">
+                        <div class="nav-toggle">
+                            <button class="menu-btn">
+                                <img src="assets/img/icon/Menu(b)_icon.png" alt="평상시 메뉴 이미지" class="img-default">
+                                <img src="assets/img/icon/Menu-circle-btn(b)_icon.png" alt="호버 메뉴 이미지" class="img-hover">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sidebar-widgets">
+                        <div class="sidebar-info inner">
+                            <div class="time-ko">
+                                <div class="year">년</div>
+                                <div class="day">날짜</div>
+                                <div class="weekday"></div>
+                                <div class="time">시간</div>
+                            </div>
+                            <div class="weather-tab">
+                                <button type="button" class="weather-btn">날씨 검색</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <section class="profile-section">
+                <div class="page">
+                    <div class="page-tag">
+                        <a href="javascript:void(0)" class="page-home">HOME</a>
+                        <span class="arrow">
+                            <img src="assets/img/icon/right-arrow(b).png" alt="home에서 about을 가르키는 화살표">
+                        </span>
+                        <a href="javascript:void(0)" class="page-about">ABOUT</a>
+                    </div>
+                </div>
+                <div class="about">
+                    <div class="about-wrap">
+                        <div class="about-playground">
+                            <div class="playground-inner">
+                                <h2 class="playground-title">PLAYGROUND란?</h2>
+                                <div class="playground-desc">
+                                    <p class="desc-kr">웹을 하나의 놀이터처럼 누구나 자유롭고 편하게 즐길 수 있는 공간으로 만들고 싶어'Playground'라는 이름을 선택했습니다.</p>
+                                    <p class="desc-eng">“I chose the name ‘Playground’ because I wanted to create a website that everyone can enjoy freely and comfortably, just like a playground.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-profile">
+                            <div class="profile-wrap">
+                                <div class="profile-inner">
+                                    <div class="profile-img">
+                                        <img src="assets/img/main/yunchangho_photo.jpg" alt="자기소개 윤창호 증명사진">
+                                    </div>
+                                    <div class="profile-info">
+                                        <ul class="info-wrap">
+                                            <li class="info-item name">
+                                                <div class="info-title">
+                                                    <span class="kor-label">이 름</span>
+                                                    <span class="eng-label">NAME</span>
+                                                </div>
+                                                <div class="info-title">
+                                                    <span class="kor-value">윤창호</span>
+                                                    <span class="eng-value">YUN CHAN HO</span>
+                                                </div>
+                                            </li>
+                                            <li class="info-item birth">
+                                                <div class="info-title">
+                                                    <span class="kor-label">생년월일</span>
+                                                    <span class="eng-label">Date of Birth</span>
+                                                </div>
+                                                <div class="info-title">
+                                                    <span class="kor-value">1996년 05월 24일</span>
+                                                    <span class="eng-value">May 24, 1996</span>
+                                                </div>
+                                            </li>
+                                            <li class="info-item gender">
+                                                <div class="info-title">
+                                                    <span class="kor-label">성 별</span>
+                                                    <span class="eng-label">Gender</span>
+                                                </div>
+                                                <div class="info-title">
+                                                    <span class="kor-value">남성</span>
+                                                    <span class="eng-value">Male</span>
+                                                </div>
+                                            </li>
+                                            <li class="info-item nationality">
+                                                <div class="info-title">
+                                                    <span class="kor-label">국 적</span>
+                                                    <span class="eng-label">Nationality</span>
+                                                </div>
+                                                <div class="info-title">
+                                                    <span class="kor-value">대한민국</span>
+                                                    <span class="eng-value">KOREA</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-me">
+                            <div class="desc">
+                                <h3 class="about-title">Who Am I</h3>
+                                <p class="about-desc">저는 생동감 있는 페이지를 만드는 ‘퍼블리셔’ 입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack"></div>
+            </section>
+            <footer class="footer">
+                <div class="footer-wrap">
+                    <div class="footer-inner">
+                        <div class="footer-logo">
+                            <h2 class="footer-title">YCH - Portfolio</h2>
+                        </div>
+                        <div class="contact-area">
+                            <div class="email">
+                                <p class="email-name">E-mail: dbckgh8010@naver.com</p>
+                            </div>
+                            <div class="social-link">
+                                <span class="open-kakao">
+                                    <img src="assets/img/common/kakao_open_talk.png" alt="오픈 카카오톡 QR코드">
+                                </span>
+                                <a href="javascript:void(0)" class="github">
+                                    <img src="assets/img/common/github.png" alt="깃허브 링크 이미지">
+                                </a>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <p class="copyright">© 2025 Yun-ChangHo All Rights Reserved</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

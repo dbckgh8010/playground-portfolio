@@ -13,114 +13,177 @@
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/gsap.min.js"></script>
-    <script src="assets/js/ScrollToPlugin.min.js"></script>
     <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathPlugin.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/common/weatherMapping.js"></script>
+    <script src="assets/js/common/widgets.js"></script>
     <script src="assets/js/common/common.js"></script>
     <script src="assets/js/main/main.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="left-container">
-            <header class="header">
-                <div class="header-wrap">
-                    <div class="header-inner">
-                        <nav class="nav">
-                            <ul class="nav-wrap">
-                                <li class="nav-list">
-                                    <a href="#section-first" class="tab-btn">
-                                        <img src="assets/img/icon/home-icon.png" alt="홈 바로가기 버튼 이미지">
-                                    </a>
-                                </li>
-                                <li class="nav-list">
-                                    <a href="#section-about" class="tab-btn">
-                                        <img src="assets/img/icon/portfolio-icon.png" alt="자기소개 바로가기 버튼 이미지">
-                                    </a>
-                                </li>
-                                <li class="nav-list">
-                                    <a href="#section-project" class="tab-btn">
-                                        <img src="assets/img/icon/project-icon.png" alt="프로젝트 바로가기 버튼 이미지">
-                                    </a>
-                                </li>
-                                <li class="nav-list">
-                                    <a href="#section-takeaway" class="tab-btn">
-                                        <img src="assets/img/icon/takeaways-icon.png" alt="느낀점 바로가기 버튼 이미지">
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="header-info inner">
+    <div class="layout">
+        <div class="sidebar close">
+            <div class="sidebar-wrap">
+                <div class="sidebar-inner">
+                    <div class="logo">
+                        <a href="https://dbckgh8010.github.io/playground-portfolio/" class="logo-img">
+                            <h1 class="my-name">
+                                <img src="assets/img/main/myphoto-circle.png" alt="윤창호 이미지">
+                                <p href="javascript:void(0)" class="eng-name">YUN CHANG HO</p>
+                            </h1>
+                        </a>
+                    </div>
+                    <nav class="nav" aria-label="주 메뉴">
+                        <ul class="nav-wrap">
+                            <li class="nav-list">
+                                <a href="#section-first" class="tab-btn active">
+                                    <img src="assets/img/icon/home_icon.png" alt="홈 바로가기 버튼 이미지">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#section-about" class="tab-btn">
+                                    <img src="assets/img/icon/user_icon.png" alt="자기소개 바로가기 버튼 이미지">
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#section-project" class="tab-btn">
+                                    <img src="assets/img/icon/file-text_icon.png" alt="프로젝트 바로가기 버튼 이미지">
+                                    <span>Projects</span>
+                                </a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#section-takeaway" class="tab-btn">
+                                    <img src="assets/img/icon/Star-circle_icon.png" alt="느낀점 바로가기 버튼 이미지">
+                                    <span>Stack</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="nav-btn">
+                        <div class="nav-toggle">
+                            <button class="menu-btn">
+                                <img src="assets/img/icon/Menu(b)_icon.png" alt="평상시 메뉴 이미지" class="img-default">
+                                <img src="assets/img/icon/Menu-circle-btn(b)_icon.png" alt="호버 메뉴 이미지" class="img-hover">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sidebar-widgets">
+                        <div class="sidebar-info inner">
                             <div class="time-ko">
                                 <div class="year">년</div>
                                 <div class="day">날짜</div>
+                                <div class="weekday"></div>
                                 <div class="time">시간</div>
                             </div>
                             <div class="weather-tab">
                                 <button type="button" class="weather-btn">날씨 검색</button>
                             </div>
                         </div>
-                        <div class="header-mo-inner">
-                            <div class="mo-inner">
-                                <div class="weather-tab">
-                                    <button type="button" class="weather-btn">날씨 검색</button>
-                                </div>
-                                <div class="mo-time">
-                                    <div class="time-ko">
-                                        <div class="year">년</div>
-                                        <div class="day">날짜</div>
-                                        <div class="time">시간</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </header>
+            </div>
         </div>
-        <div class="right-container">
+        <div class="content">
             <main class="main">
-                <section id="section-first" class="sc-first">
-                    <div class="first-wrap">
-                        <div class="first-inner">
-                            <div class="sc-inner-left">
-                                <div class="deco-img">
-                                    <img src="assets/img/icon/good-sticker.png" alt="">
-                                </div>
-                                <div class="inner-txt">
-                                    <p>
-                                        Hellow ! 🙋‍♂️
-                                        <br>
-                                        <span class="underline">My PlayGround</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="sc-inner-right">
-                                <div class="inner-wrap">
-                                    <div class="inner-bg">
-                                        <div class="inner-img">
-                                            <img src="assets/img/main/my-photo.jpg" alt="윤창호 포트폴리오의 첫번째 메인 프로필 이미지">
+                <div class="motion-section">
+                    <div class="moving-img">
+                        <img src="assets/img/main/yunchangho_photo.jpg" alt="윤창호 사진">
+                    </div>
+                    <section id="section-first" class="sc-first">
+                        <div class="first-wrap">
+                            <div class="first-inner">
+                                <div class="sc-inner">
+                                    <div class="inner-txt">
+                                        <p class="txt-top">Welcome to</p>
+                                        <h2 class="title">
+                                            YUN CHANG HO'S<br>
+                                            <span class="site-name">PLAYGROUND</span>
+                                        </h2>
+                                        <p class="txt-bottom">Where ideas come to play.</p>
+                                        <div class="scroll">
+                                            <p class="scroll-txt">Scroll to Explore</p>
+                                            <div class="scroll-icon">
+                                                <img src="assets/img/icon/arrow-bottom(b).png" alt="아래 방향 화살표">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section id="section-about" class="sc-about">
-                    <div class="about-wrap">
-                        <div class="about-inner-wrap">
-                            <div class="about-title" data-aos="fade-right">
-                                <h2 class="title-name">PROFILE</h2>
-                                <span class="title-deco">
-                                    <img src="assets/img/main/Frame 95481.png" alt="웃는 이모티콘 이미지">
-                                </span>
-                            </div>
-                            <div class="about-inner">
-                                <div class="inner-left">
-                                    <div class="inner-left-img" data-aos="zoom-in">
-                                        <img src="assets/img/main/my-photo2.jpg"  alt="윤창호 포트폴리오의 두번째 메인 프로필 이미지">
+                    </section>
+                    <section id="section-stack" class="sc-stack">
+                        <div class="stack-wrap">
+                            <h2 class="title-name">Stack</h2>
+                            <ul class="stack-list">
+                                <li class="stack-item">
+                                    <div class="stack-label">HTML5</div>
+                                    <div class="symbol">
+                                        <img src="assets/img/icon/html5-symbol.png" alt="css3 아이콘">
                                     </div>
+                                    <div class="percent">80%</div>
+                                </li>
+                                <li class="stack-item">
+                                    <div class="stack-label">CSS3</div>
+                                    <div class="symbol">
+                                        <img src="assets/img/icon/css-symbol.png" alt="css3 아이콘">
+                                    </div>
+                                    <div class="percent">70%</div>
+                                </li>
+                                <li class="stack-item">
+                                    <div class="stack-label">Javascript</div>
+                                    <div class="symbol">
+                                        <img src="assets/img/icon/javascript-symbol.png" alt="Javascript 아이콘">
+                                    </div>
+                                    <div class="percent">40%</div>
+                                </li>
+                                <li class="stack-item">
+                                    <div class="stack-label">Jquery</div>
+                                    <div class="symbol">
+                                        <img src="assets/img/icon/jquery-symbol.png" alt="Jquery 아이콘">
+                                    </div>
+                                    <div class="percent">50%</div>
+                                </li>
+                                <li class="stack-item">
+                                    <div class="stack-label">GitHub</div>
+                                    <div class="symbol">
+                                        <img src="assets/img/icon/github.png" alt="GitHub 아이콘">
+                                    </div>
+                                    <div class="percent">40%</div>
+                                </li>
+                                <li class="stack-item">
+                                    <div class="stack-label">Figma</div>
+                                    <div class="symbol">
+                                        <img src="assets/img/icon/figma-symbol.png" alt="Figma 아이콘">
+                                    </div>
+                                    <div class="percent">30%</div>
+                                </li>
+                                <li class="stack-item">
+                                    <div class="stack-label">VScode</div>
+                                    <div class="symbol">
+                                        <img src="assets/img/icon/vscode-symbol.png" alt="VScode 아이콘">
+                                    </div>
+                                    <div class="percent">80%</div>
+                                </li>
+                            </ul>
+                            <div class="more-link">
+                                <a href="javascript:void(0)" class="more-btn">View All Stack</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="section-about" class="sc-about">
+                        <div class="about-wrap">
+                            <div class="about-inner-wrap">
+                                <div class="about-title" data-aos="fade-right">
+                                    <h2 class="title-name">About</h2>
+                                    <span class="title-deco">
+                                        <img src="assets/img/main/Frame 95481.png" alt="웃는 이모티콘 이미지">
+                                    </span>
+                                </div>
+                                <div class="about-inner">
                                     <div class="about-info">
                                         <ul class="about-info-list">
                                             <li class="info-item name">
@@ -151,814 +214,89 @@
                                                     <span class="email-value">dbckgh8010@naver.com</span>
                                                 </div>
                                             </li>
+                                            <li class="info-item email">
+                                                <div class="info-title">
+                                                    <span class="kor-label">Open-kakao</span>
+                                                </div>
+                                                <div class="info-title">
+                                                    <img src="assets/img/common/kakao_open_talk.png" alt="open-kakao qr코드">
+                                                </div>
+                                            </li>
+                                            <li class="info-item email">
+                                                <div class="info-title">
+                                                    <span class="kor-label">Git Hub</span>
+                                                </div>
+                                                <div class="info-title">
+                                                    <a href="https://github.com/dbckgh8010" class="github" target="_blank" aria-label="깃허브 바로가기 아이콘">
+                                                        <img src="assets/img/common/github.png" alt="깃허브 링크 이미지">
+                                                    </a>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="inner-right">
-                                    <div class="inner-right-title">
-                                        <h3 class="inner-title">ABOUT ME</h3>
-                                    </div>
-                                    <div class="inner-right-info">
-                                        <div class="info-txt" data-aos="fade-up">
-                                            <h4 class="title-txt"># Who I Am</h4>
-                                            <p class="info-sub-txt">
-                                                1. 새로운 것을 배우는 데 흥미를 느낍니다.
-                                                <br>
-                                                2. 도전하는 걸 좋아하며, 더 좋은 결과물을 만들기 위해 노력합니다.
-                                            </p>
-                                        </div>
-                                        <div class="info-txt" data-aos="fade-up">
-                                            <h4 class="title-txt"># What I Do</h4>
-                                            <p class="info-sub-txt">
-                                                1. 저는 HTML, CSS, JavaScript, jQuery를 활용해 인터랙티브한 재미있는 웹사이트를 제작합니다.
-                                                <br>
-                                                2. 애니메이션을 좋아하여 GSAP, Swiper, AOS를 활용해 사이트를 만드는 것을 좋아합니다.
-                                                <br>
-                                                3. 웹 퍼블리싱을 하나의 놀이처럼 즐기며, 끊임없이 배우는 것을 좋아 합니다.
-                                            </p>
-                                        </div>
-                                        <div class="info-txt" data-aos="fade-up">
-                                            <h4 class="title-txt"># What I Aim For</h4>
-                                            <p class="info-sub-txt">
-                                                1. JavaScript 실력을 키워 더 인터랙티브한 웹 제작을 하려고 합니다.
-                                                <br>
-                                                2. 더욱 신기한 UI/UX를 개발할수 있는 퍼블리싱 능력 향상을 하려고 합니다.
-                                                <br>
-                                                3. 퍼블리싱을 넘어서 프론트 개발자까지 성장을 하려고 합니다.
-                                            </p>
-                                        </div>
-                                        <div class="info-txt" data-aos="fade-up">
-                                            <h4 class="title-txt"># My Playground</h4>
-                                            <p class="info-sub-txt">
-                                                코딩을 놀이처럼 즐기면서 공부하려고 합니다.
-                                                <br>
-                                                폴더 구조를 깔끔하게 정리하는 습관을 가지려고 합니다.
-                                            </p>
-                                        </div>
-                                        <div class="info-txt" data-aos="fade-up">
-                                            <h4 class="title-txt"># SKILL</h4>
-                                            <div class="skill-list">
-                                                <ul class="skill-wrap">
-                                                    <li class="skill-item">
-                                                        <span class="skill-item">
-                                                            <img src="assets/img/icon/html5-symbol.png" alt="html5 마크 이미지">
-                                                            HTML
-                                                        </span>
-                                                    </li>
-                                                    <li class="skill-item">
-                                                        <span class="skill-item">
-                                                            <img src="assets/img/icon/css-symbol.png" alt="CSS3 마크 이미지">
-                                                            CSS
-                                                        </span>
-                                                    </li>
-                                                    <li class="skill-item">
-                                                        <span class="skill-item">
-                                                            <img src="assets/img/icon/javascript-icon.png" alt="자바스크립트 마크 이미지">
-                                                            JS
-                                                        </span>
-                                                    </li>
-                                                    <li class="skill-item">
-                                                        <span class="skill-item">
-                                                            <img src="assets/img/icon/jquery-symbol.png" alt="제이쿼리 마크 이미지">
-                                                            jQuery
-                                                        </span>
-                                                    </li>
-                                                    <li class="skill-item">
-                                                        <span class="skill-item">
-                                                            <img src="assets/img/icon/vscode-symbol.png" alt="VSCODE 마크 이미지">
-                                                            VS Code
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="more-link">
+                                    <a href="javascript:void(0)" class="more-btn">View All About</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
                 <section id="section-project" class="sc-project">
                     <div class="project-wrap">
                         <div class="project-inner">
                             <div class="project-inner-title" data-aos="fade-right">
-                                <h2 class="project-title">MY PROJECT</h2>
-                                <span class="title-deco">
-                                    <img src="assets/img/main/smile-emticon.png">
-                                </span>
+                                <h2 class="title-name">MY PROJECT</h2>
                             </div>
                             <div class="project-container">
-                                <div class="project-category">
-                                    <ul class="category-list">
-                                        <li class="category-item" data-tab="all">
-                                            <a href="javascript:void(0)" class="category-link">ALL</a>
-                                        </li>
-                                        <li class="category-item" data-tab="bf-af">
-                                            <a href="javascript:void(0)" class="category-link">
-                                                <span class="link-kr">비포 &amp; 애프터</span>
-                                                <span class="link-eng">Before &amp; After</span>
-                                            </a>
-                                        </li>
-                                        <li class="category-item" data-tab="res">
-                                            <a href="javascript:void(0)" class="category-link">
-                                                <span class="link-kr">반응형</span>
-                                                <span class="link-eng">Responsive</span>
-                                            </a>
-                                        </li>
-                                        <li class="category-item" data-tab="desk">
-                                            <a href="javascript:void(0)" class="category-link">
-                                                <span class="link-kr">PC형</span>
-                                                <span class="link-eng">Desktop Version</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
                                 <div class="project">
-                                    <ul class="page-list" data-tab="all">
-                                        <li class="page-item" data-tab="bf-af">
-                                            <h4 class="page-title">
-                                                <span class="title-kr">비포 &amp; 애프터</span>
-                                                <span class="title-eng">Before &amp; After</span>
-                                            </h4>
-                                            <div class="project-item project__1">
-                                                <div class="project-page">
-                                                    <div class="page-info">
-                                                        <div class="info-top">
-                                                            <h5 class="info-title">
-                                                                <span class="title-kr">신세계L&B 메인페이지</span>
-                                                                <span class="title-eng">Shinsegae L&B Main Page</span>
-                                                            </h5>
-                                                        </div>
-                                                        <div class="info-center">
-                                                            <img src="assets/img/main/shinsegae-logo.png" class="logo-img" alt="신세계L&B 로고 이미지">
-                                                            <div class="info-text">
-                                                                <h5 class="info-desc__kr">설명</h5>
-                                                                <span class="info-desc__eng">Explanation</span>
-                                                                <p class="info-desc-text">처음으로 페이지를 만들고 공부하기 위해 클론코딩으로 작업 하였습니다.</p>
-                                                            </div>
-                                                            <div class="info-text">
-                                                                <h5 class="info-desc__kr">제작기간</h5>
-                                                                <span class="info-desc__eng">Production period</span>
-                                                                <p class="info-desc-text">15일</p>
-                                                            </div>
-                                                            <div class="info-text">
-                                                                <h5 class="info-desc__kr">개인작업</h5>
-                                                                <span class="info-desc__eng">Personal work</span>
-                                                                <p class="info-desc-text"><span class="strong">100%</span> 개인작업 입니다.</p>
-                                                            </div>
-                                                            <div class="info-text">
-                                                                <h5 class="info-desc__kr">사용한 툴</h5>
-                                                                <span class="info-desc__eng">Use Tool</span>
-                                                            </div>
-                                                            <ul class="tool-wrap">
-                                                                <li class="tool-icon">
-                                                                    <img src="assets/img/icon/html5-symbol.png" alt="html5 마크 이미지">
-                                                                    <p class="icon-name">
-                                                                        HTML5
-                                                                    </p>
-                                                                </li>
-                                                                <li class="tool-icon">
-                                                                    <img src="assets/img/icon/css-symbol.png" alt="css3 마크 이미지">
-                                                                    <p class="icon-name">
-                                                                        CSS3
-                                                                    </p>
-                                                                </li>
-                                                                <li class="tool-icon">
-                                                                    <img src="assets/img/icon/javascript-icon.png" alt="자바스크립트 마크 이미지">
-                                                                    <p class="icon-name">
-                                                                        Javascript
-                                                                    </p>
-                                                                </li>
-                                                                <li class="tool-icon">
-                                                                    <img src="assets/img/icon/jquery-symbol.png" alt="제이쿼리 마크 이미지">
-                                                                    <p class="icon-name">
-                                                                        jQuery
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="info-bottom">
-                                                            <a href="https://dbckgh8010.github.io/shinsegae-lnb/" class="site-link">
-                                                                <span class="site-link-kr">사이트 이동</span>
-                                                                <span class="site-link-eng">Go Site</span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="page-mockup mockup__1">
-                                                        <div class="page-pc pc-right">
-                                                            <div class="pc-inner">
-                                                                <img src="assets/img/main/shinsegae-lnb_1-full.png" alt="신세계L&B PC 메인 풀 페이지 이미지">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="project-page">
-                                                    <div class="page-mockup mockup__1">
-                                                        <div class="page-pc pc-left">
-                                                            <div class="pc-inner">
-                                                                <img src="assets/img/main/shinsegae-lnb_2-full.png" alt="신세계L&B PC 메인 풀 페이지 이미지">
-                                                            </div>
-                                                        </div>
-                                                        <div class="page-tablet">
-                                                            <div class="tablet-inner">
-                                                                <img src="assets/img/main/shinsegae-lnb_2-tablet.png" alt="신세계L&B 태블릿 메인 풀 페이지 이미지">
-                                                            </div>
-                                                        </div>
-                                                        <div class="page-mobile">
-                                                            <div class="mobile-inner">
-                                                                <img src="assets/img/main/shinsegae-lnb_2-mobile.png" alt="신세계L&B 모바일 메인 풀 페이지 이미지">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="page-info">
-                                                        <div class="info-top">
-                                                            <h5 class="info-title">
-                                                                <span class="title-kr">신세계L&B 메인페이지</span>
-                                                                <span class="title-eng">Shinsegae L&B Main Page</span>
-                                                            </h5>
-                                                        </div>
-                                                        <div class="info-center">
-                                                            <img src="assets/img/main/shinsegae-logo.png" class="logo-img" alt="신세계L&B 로고 이미지">
-                                                            <div class="info-text">
-                                                                <h5 class="info-desc__kr">설명</h5>
-                                                                <span class="info-desc__eng">EXPLANATION</span>
-                                                                <p class="info-desc-text">
-                                                                    첫 클론코딩 이후 다시 처음부터 작업했으며,<br>반응형으로 제작 했습니다.
-                                                                </p>
-                                                            </div>
-                                                            <div class="info-text">
-                                                                <h5 class="info-desc__kr">제작기간</h5>
-                                                                <span class="info-desc__eng">PRODUCTION PERIOD</span>
-                                                                <p class="info-desc-text">3일</p>
-                                                            </div>
-                                                            <div class="info-text">
-                                                                <h5 class="info-desc__kr">개인작업</h5>
-                                                                <span class="info-desc__eng">PERSONAL WORK</span>
-                                                                <p class="info-desc-text"><span class="strong">100%</span> 개인작업 입니다.</p>
-                                                            </div>
-                                                            <div class="info-text">
-                                                                <h5 class="info-desc__kr">사용한 툴</h5>
-                                                                <span class="info-desc__eng">USE TOOL</span>
-                                                            </div>
-                                                            <ul class="tool-wrap">
-                                                                <li class="tool-icon">
-                                                                    <img src="assets/img/icon/html5-symbol.png" alt="html5 마크 이미지">
-                                                                    <p class="icon-name">
-                                                                        HTML5
-                                                                    </p>
-                                                                </li>
-                                                                <li class="tool-icon">
-                                                                    <img src="assets/img/icon/css-symbol.png" alt="css3 마크 이미지">
-                                                                    <p class="icon-name">
-                                                                        CSS3
-                                                                    </p>
-                                                                </li>
-                                                                <li class="tool-icon">
-                                                                    <img src="assets/img/icon/jquery-symbol.png" alt="제이쿼리 마크 이미지">
-                                                                    <p class="icon-name">
-                                                                        jQuery
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="info-bottom">
-                                                            <a href="https://dbckgh8010.github.io/shinsegae-lnb_2/" class="site-link">
-                                                                <span class="site-link-kr">사이트 이동</span>
-                                                                <span class="site-link-eng">Go Site</span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                    <ul class="project-list">
+                                        <li class="project-item">
+                                            <div class="project-img item1">
+                                                <img src="assets/img/main/project-shinsegae.png" class="short-img" alt="신세계 프로젝트 이미지">
+                                            </div>
+                                            <div class="project-info">
+                                                <h3 class="project-name">신세계L&B</h3>
+                                                <p class="project-desc">신세계L&B 공식 홈페이지를 클론코딩하여 비주얼 중심의 정적 레이아웃과 UI 인터랙션을 재현했습니다.</p>
+                                                <a href="javascript:void(0)" class="project-link">Go Site</a>
                                             </div>
                                         </li>
-                                        <li class="page-item" data-tab="res">
-                                            <h4 class="page-title">
-                                                <span class="title-kr">반응형</span>
-                                                <span class="title-eng">Responsive</span>
-                                            </h4>
-                                            <div class="project-item project__2">
-                                                <div class="page-mockup">
-                                                    <div class="page-pc">
-                                                        <div class="pc-inner">
-                                                            <div class="swiper pc-swiper">
-                                                                <div class="swiper-wrapper">
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/hansolpns-pc.png" alt="한솔pns pc 메인 풀 페이지 이미지">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/kia.png" alt="kia PC 메인 풀 페이지 이미지">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/shinsegae-lnb_2-full.png" alt="신세계lnb pc 메인 풀 페이지 이미지">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/samsunglions-full.png" alt="삼성라이온즈 리뉴얼 PC 페이지">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="page-tablet">
-                                                        <div class="tablet-inner">
-                                                            <div class="swiper tablet-swiper">
-                                                                <div class="swiper-wrapper">
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/hansolpns-tablet.png" alt="한솔pns 태블릿 메인 풀 페이지 이미지">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/kia-tablet.png" alt="kia 태블릿 메인 풀 페이지 이미지">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/shinsegae-lnb_2-tablet.png" alt="신세계lnb 태블릿 메인 풀 페이지 이미지">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/samsunglions-full.png" alt="삼성라이온즈 리뉴얼 태블릿 페이지">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="page-mobile">
-                                                        <div class="mobile-inner">
-                                                            <div class="swiper mobile-swiper">
-                                                                <div class="swiper-wrapper">
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/hansolpns-mobile.png" alt="한솔pns 모바일 메인 풀 페이지 이미지">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/kia-mobile.png" alt="kia 모바일 메인 풀 페이지 이미지">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/shinsegae-lnb_2-mobile.png" alt="신세계lnb 모바일 메인 풀 페이지 이미지">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/samsunglions-full.png" alt="삼성라이온즈 리뉴얼 모바일 페이지">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="page-info">
-                                                    <div class="swiper info-swiper">
-                                                        <div class="swiper-wrapper">
-                                                            <div class="swiper-slide">
-                                                                <div class="info">
-                                                                    <div class="info-top">
-                                                                        <h5 class="info-title">
-                                                                            <span class="title-kr">한솔PNS 메인페이지</span>
-                                                                            <span class="title-eng">HansolPnS Main Page</span>
-                                                                        </h5>
-                                                                    </div>
-                                                                    <div class="info-center">
-                                                                        <img src="assets/img/main/hansolpns-logo.png" class="logo-img logo__1" alt="한솔pns 로고 이미지">
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">설명</h5>
-                                                                            <span class="info-desc__eng">EXPLANATION</span>
-                                                                            <p class="info-desc-text">
-                                                                                처음으로 반응형까지 구현하기 위해 클론 코딩으로 제작하였습니다.
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">제작기간</h5>
-                                                                            <span class="info-desc__eng">PRODUCTION PERIOD</span>
-                                                                            <p class="info-desc-text">3일</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">개인작업</h5>
-                                                                            <span class="info-desc__eng">PERSONAL WORK</span>
-                                                                            <p class="info-desc-text"><span class="strong">100%</span> 개인작업 입니다.</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">사용한 툴</h5>
-                                                                            <span class="info-desc__eng">USE TOOL</span>
-                                                                        </div>
-                                                                        <ul class="tool-wrap">
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/html5-symbol.png" alt="html5 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    HTML5
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/css-symbol.png" alt="css3 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    CSS3
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/jquery-symbol.png" alt="제이쿼리 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    jQuery
-                                                                                </p>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="info-bottom">
-                                                                        <a href="https://dbckgh8010.github.io/hansolpns/" class="site-link">
-                                                                            <span class="site-link-kr">사이트 이동</span>
-                                                                            <span class="site-link-eng">Go Site</span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="info">
-                                                                    <div class="info-top">
-                                                                        <h5 class="info-title">
-                                                                            <span class="title-kr">KIA 메인페이지</span>
-                                                                            <span class="title-eng">KIA Main Page</span>
-                                                                        </h5>
-                                                                    </div>
-                                                                    <div class="info-center">
-                                                                        <img src="assets/img/main/kia-logo.png" class="logo-img logo__2" alt="기아 로고 이미지">
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">설명</h5>
-                                                                            <span class="info-desc__eng">EXPLANATION</span>
-                                                                            <p class="info-desc-text">
-                                                                                클론코딩으로 기아 홈페이지를 반응형으로 제작 하였습니다.
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">제작기간</h5>
-                                                                            <span class="info-desc__eng">PRODUCTION PERIOD</span>
-                                                                            <p class="info-desc-text">3일</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">개인작업</h5>
-                                                                            <span class="info-desc__eng">PERSONAL WORK</span>
-                                                                            <p class="info-desc-text"><span class="strong">100%</span> 개인작업 입니다.</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">사용한 툴</h5>
-                                                                            <span class="info-desc__eng">USE TOOL</span>
-                                                                        </div>
-                                                                        <ul class="tool-wrap">
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/html5-symbol.png" alt="html5 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    HTML5
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/css-symbol.png" alt="css3 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    CSS3
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/jquery-symbol.png" alt="제이쿼리 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    jQuery
-                                                                                </p>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="info-bottom">
-                                                                        <a href="https://dbckgh8010.github.io/KIA/" class="site-link">
-                                                                            <span class="site-link-kr">사이트 이동</span>
-                                                                            <span class="site-link-eng">Go Site</span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="info">
-                                                                    <div class="info-top">
-                                                                        <h5 class="info-title">
-                                                                            <span class="title-kr">신세계L&B 메인페이지</span>
-                                                                            <span class="title-eng">Shinsegae L&B Main Page</span>
-                                                                        </h5>
-                                                                    </div>
-                                                                    <div class="info-center">
-                                                                        <img src="assets/img/main/shinsegae-logo.png" class="logo-img logo__3" alt="신세계L&B 로고 이미지">
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">설명</h5>
-                                                                            <span class="info-desc__eng">EXPLANATION</span>
-                                                                            <p class="info-desc-text">
-                                                                                첫 클론코딩 이후 다시 처음부터 작업했으며,<br>반응형으로 제작 했습니다.
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">제작기간</h5>
-                                                                            <span class="info-desc__eng">PRODUCTION PERIOD</span>
-                                                                            <p class="info-desc-text">3일</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">개인작업</h5>
-                                                                            <span class="info-desc__eng">PERSONAL WORK</span>
-                                                                            <p class="info-desc-text"><span class="strong">100%</span> 개인작업 입니다.</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">사용한 툴</h5>
-                                                                            <span class="info-desc__eng">USE TOOL</span>
-                                                                        </div>
-                                                                        <ul class="tool-wrap">
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/html5-symbol.png" alt="html5 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    HTML5
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/css-symbol.png" alt="css3 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    CSS3
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/jquery-symbol.png" alt="제이쿼리 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    jQuery
-                                                                                </p>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="info-bottom">
-                                                                        <a href="https://dbckgh8010.github.io/shinsegae-lnb_2/" class="site-link">
-                                                                            <span class="site-link-kr">사이트 이동</span>
-                                                                            <span class="site-link-eng">Go Site</span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="info">
-                                                                    <div class="info-top">
-                                                                        <h5 class="info-title">
-                                                                            <span class="title-kr">삼성라이온즈<br>리뉴얼 페이지</span>
-                                                                            <span class="title-eng">SamsungLions Renewal Page</span>
-                                                                        </h5>
-                                                                    </div>
-                                                                    <div class="info-center">
-                                                                        <img src="assets/img/main/logo-blue.png" class="logo-img logo__3" alt="삼성라이온즈즈 로고 이미지">
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">설명</h5>
-                                                                            <span class="info-desc__eng">EXPLANATION</span>
-                                                                            <p class="info-desc-text">
-                                                                                삼성라이온즈의 페이지를<br>리뉴얼 하여 작업 하였습니다.
-                                                                            </p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">제작기간</h5>
-                                                                            <span class="info-desc__eng">PRODUCTION PERIOD</span>
-                                                                            <p class="info-desc-text">3일</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">개인작업</h5>
-                                                                            <span class="info-desc__eng">PERSONAL WORK</span>
-                                                                            <p class="info-desc-text"><span class="strong">100%</span> 개인작업 입니다.</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">사용한 툴</h5>
-                                                                            <span class="info-desc__eng">USE TOOL</span>
-                                                                        </div>
-                                                                        <ul class="tool-wrap">
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/html5-symbol.png" alt="html5 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    HTML5
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/css-symbol.png" alt="css3 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    CSS3
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/jquery-symbol.png" alt="제이쿼리 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    jQuery
-                                                                                </p>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="info-bottom">
-                                                                        <a href="https://dbckgh8010.github.io/samsunglions/" class="site-link">
-                                                                            <span class="site-link-kr">사이트 이동</span>
-                                                                            <span class="site-link-eng">Go Site</span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
+                                        <li class="project-item">
+                                            <div class="project-img item2">
+                                                <img src="assets/img/main/project-genesis.jpg" class="long-img" alt="제네시스 프로젝트 이미지">
+                                            </div>
+                                            <div class="project-info">
+                                                <h3 class="project-name">GENESIS</h3>
+                                                <p class="project-desc">제네시스 공식 웹사이트를 클론코딩하여 고급 브랜드 감성과 대형 비주얼 중심의 UX를 구현했습니다.</p>
+                                                <a href="javascript:void(0)" class="project-link">Go Site</a>
                                             </div>
                                         </li>
-                                        <li class="page-item" data-tab="desk">
-                                            <h4 class="page-title">
-                                                <span class="title-kr">PC형</span>
-                                                <span class="title-eng">Desktop Version</span>
-                                            </h4>
-                                            <div class="project-item project__2">
-                                                <div class="page-mockup">
-                                                    <div class="page-pc">
-                                                        <div class="pc-inner">
-                                                            <div class="swiper desktop-swiper">
-                                                                <div class="swiper-wrapper">
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/Lespace-pc.png" alt="르스페이스 PC 메인 풀 페이지 이미지">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/genesis-pc.png" alt="제네시스 PC 메인 풀 페이지 이미지">
-                                                                    </div>
-                                                                    <div class="swiper-slide">
-                                                                        <img src="assets/img/main/shinsegae-lnb_1-full.png" alt="신세계L&B PC 메인 풀 페이지 이미지">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="page-info">
-                                                    <div class="swiper page-info-swiper">
-                                                        <div class="swiper-wrapper">
-                                                            <div class="swiper-slide">
-                                                                <div class="info">
-                                                                    <div class="info-top">
-                                                                        <h5 class="info-title">
-                                                                            <span class="title-kr">르스페이스 메인페이지</span>
-                                                                            <span class="title-eng">Lespace Main Page</span>
-                                                                        </h5>
-                                                                    </div>
-                                                                    <div class="info-center">
-                                                                        <img src="assets/img/main/lespace-logo.png" class="logo-img" alt="르스페이스 로고 이미지">
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">설명</h5>
-                                                                            <span class="info-desc__eng">EXPLANATION</span>
-                                                                            <p class="info-desc-text">GSAP를 공부할 겸 직접 피그마를 통해 클론 코딩으로 제작하였습니다.</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">제작기간</h5>
-                                                                            <span class="info-desc__eng">PRODUCTION PERIOD</span>
-                                                                            <p class="info-desc-text">3일</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">개인작업</h5>
-                                                                            <span class="info-desc__eng">PERSONAL WORK</span>
-                                                                            <p class="info-desc-text"><span class="strong">100%</span> 개인작업 입니다.</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">사용한 툴</h5>
-                                                                            <span class="info-desc__eng">USE TOOL</span>
-                                                                        </div>
-                                                                        <ul class="tool-wrap">
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/html5-symbol.png" alt="html5 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    HTML5
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/css-symbol.png" alt="css3 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    CSS3
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/jquery-symbol.png" alt="제이쿼리 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    jQuery
-                                                                                </p>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="info-bottom">
-                                                                        <a href="https://dbckgh8010.github.io/Lespace/" class="site-link">
-                                                                            <span class="site-link-kr">사이트 이동</span>
-                                                                            <span class="site-link-eng">Go Site</span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="info">
-                                                                    <div class="info-top">
-                                                                        <h5 class="info-title">
-                                                                            <span class="title-kr">제네시스 메인페이지</span>
-                                                                            <span class="title-eng">Genesis Main Page</span>
-                                                                        </h5>
-                                                                    </div>
-                                                                    <div class="info-center">
-                                                                        <img src="assets/img/main/logo.png" class="logo-img" alt="제네시스스 로고 이미지">
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">설명</h5>
-                                                                            <span class="info-desc__eng">EXPLANATION</span>
-                                                                            <p class="info-desc-text">펼쳐지는 메뉴 속에 탭 기능들을 공부할 겸 클론코딩으로 제작하였습니다.</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">제작기간</h5>
-                                                                            <span class="info-desc__eng">PRODUCTION PERIOD</span>
-                                                                            <p class="info-desc-text">3일</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">개인작업</h5>
-                                                                            <span class="info-desc__eng">PERSONAL WORK</span>
-                                                                            <p class="info-desc-text"><span class="strong">100%</span> 개인작업 입니다.</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">사용한 툴</h5>
-                                                                            <span class="info-desc__eng">USE TOOL</span>
-                                                                        </div>
-                                                                        <ul class="tool-wrap">
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/html5-symbol.png" alt="html5 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    HTML5
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/css-symbol.png" alt="css3 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    CSS3
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/jquery-symbol.png" alt="제이쿼리 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    jQuery
-                                                                                </p>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="info-bottom">
-                                                                        <a href="https://dbckgh8010.github.io/genesis/" class="site-link">
-                                                                            <span class="site-link-kr">사이트 이동</span>
-                                                                            <span class="site-link-eng">Go Site</span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="info">
-                                                                    <div class="info-top">
-                                                                        <h5 class="info-title">
-                                                                            <span class="title-kr">신세계L&B 메인페이지</span>
-                                                                            <span class="title-eng">Shinsegae L&B Main Page</span>
-                                                                        </h5>
-                                                                    </div>
-                                                                    <div class="info-center">
-                                                                        <img src="assets/img/main/shinsegae-logo.png" class="logo-img" alt="신세계 로고 이미지">
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">설명</h5>
-                                                                            <span class="info-desc__eng">EXPLANATION</span>
-                                                                            <p class="info-desc-text">처음에는 반응형없이 작업 하였다가, 다시 처음부터 작업하여 반응형으로 제작하였습니다.</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">제작기간</h5>
-                                                                            <span class="info-desc__eng">PRODUCTION PERIOD</span>
-                                                                            <p class="info-desc-text">3일</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">개인작업</h5>
-                                                                            <span class="info-desc__eng">PERSONAL WORK</span>
-                                                                            <p class="info-desc-text"><span class="strong">100%</span> 개인작업 입니다.</p>
-                                                                        </div>
-                                                                        <div class="info-text">
-                                                                            <h5 class="info-desc__kr">사용한 툴</h5>
-                                                                            <span class="info-desc__eng">USE TOOL</span>
-                                                                        </div>
-                                                                        <ul class="tool-wrap">
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/html5-symbol.png" alt="html5 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    HTML5
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/css-symbol.png" alt="css3 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    CSS3
-                                                                                </p>
-                                                                            </li>
-                                                                            <li class="tool-icon">
-                                                                                <img src="assets/img/icon/jquery-symbol.png" alt="제이쿼리 마크 이미지">
-                                                                                <p class="icon-name">
-                                                                                    jQuery
-                                                                                </p>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="info-bottom">
-                                                                        <a href="https://dbckgh8010.github.io/shinsegae-lnb/" class="site-link">
-                                                                            <span class="site-link-kr">사이트 이동</span>
-                                                                            <span class="site-link-eng">Go Site</span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
+                                        <li class="project-item">
+                                            <div class="project-img item3">
+                                                <img src="assets/img/main/project-kia.jpg" class="long-img" alt="기아 프로젝트 이미지">
+                                            </div>
+                                            <div class="project-info">
+                                                <h3 class="project-name">KIA</h3>
+                                                <p class="project-desc">Kia 공식 홈페이지를 클론코딩하여 브랜드 슬로건 ‘Movement that inspires’와 다이내믹한 탐색 구조를 레이아웃과 인터랙션으로 구현했습니다.</p>
+                                                <a href="javascript:void(0)" class="project-link">Go Site</a>
+                                            </div>
+                                        </li>
+                                        <li class="project-item">
+                                            <div class="project-img item4">
+                                                <img src="assets/img/main/project-NumberGame.png" class="short-img" alt="숫자야구 프로젝트 이미지">
+                                            </div>
+                                            <div class="project-info">
+                                                <h3 class="project-name">숫자야구</h3>
+                                                <p class="project-desc">JavaScript로 제작한 숫자 추리 게임으로, 난이도별 랜덤 숫자 생성과 타이머·결과판 기능을 구현했습니다.</p>
+                                                <a href="javascript:void(0)" class="project-link">Go Site</a>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
+                            <div class="more-link">
+                                    <a href="javascript:void(0)" class="more-btn">View All Project</a>
+                                </div>
                         </div>
                     </div>
                 </section>
@@ -966,38 +304,59 @@
                     <div class="sc-last-wrap">
                         <div class="last-inner">
                             <div class="last-inner-title" data-aos="fade-right">
-                                <h2 class="last-title-name">TAKEAWAYS</h2>
-                                <span class="title-deco">
-                                    <img src="assets/img/main/smile-icon.png" alt="">
-                                </span>
+                                <h2 class="title-name">TAKEAWAYS</h2>
                             </div>
-                            <div class="inner-cards">
-                                <ul class="card-list">
-                                    <li class="card card1">
+                            <div class="swiper inner-cards">
+                                <div class="swiper-wrapper card-list">
+                                    <div class="swiper-slide card">
+                                        <p class="card-txt">
+                                            "처음에는 HTML/CSS만 알면 되는 줄 알았지만, 사이트 하나를 만들기 위해 얼마나 많은 요소가 필요한지 깨달았다."
+                                        </p>
+                                        <p class="card-title">퍼블리싱을 공부하면서 느낀점</p>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <p class="card-txt">
+                                            "공간 배치, 여백, 정렬 같은 기본적인 UI 규칙이 사이트 완성도를 좌우한다는 걸 배웠다."
+                                        </p>
+                                        <p class="card-title">UI를 만들어 보면서 느낀점</p>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <p class="card-txt">
+                                            "퍼블리싱은 정답이 없는 분야라서 더 매력적이라는 걸 느꼈다."
+                                        </p>
+                                        <p class="card-title">페이지를 제작해보면서 느낀점</p>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <p class="card-txt">
+                                            "스스로 만든 결과물이 하나씩 쌓일 때마다 자신감도 함께 쌓여갔다."
+                                        </p>
+                                        <p class="card-title">여러가지를 만들어 보면서 느낀점</p>
+                                    </div>
+                                    <div class="swiper-slide card">
                                         <p class="card-txt">
                                             "처음에는 디자인을 보면 막막했지만, HTML, CSS, JavaScript를 활용해 점점 완성되는 걸 보면 성취감을 크게 느꼈습니다. 특히 애니메이션을 추가하면 사이트가 생동감 있는 게 재밌었습니다."
                                         </p>
                                         <p class="card-title">웹사이트를 제작해보면서 느낀점</p>
-                                    </li>
-                                    <li class="card card2">
-                                        <p class="card-txt">
-                                            "처음에는 무조건 동작하면 된다고 생각했지만, 유지보수와 가독성을 고려한 코드 작성이 중요하다는 걸 알게 되었습니다. 특히, 클래스 네이밍과 CSS 구조를 체계적으로 잡는 게 나중에 큰 도움이 되는걸 느꼈습니다."
-                                        </p>
-                                        <p class="card-title">네이밍 및 구조를 만들다가 느낀점</p>
-                                    </li>
-                                    <li class="card card3">
-                                        <p class="card-txt">
-                                            "처음에는 파일을 아무렇게나 정리했지만, 프로젝트가 커질수록 폴더 구조가 중요하다는 걸 깨달았습니다. 이미지, CSS, JS 파일을 역할별로 정리하면 유지보수가 쉬워지고, 협업할 때도 혼선을 줄일 수 있습니다. 특히, 공통 요소와 개별 페이지 파일을 구분하는 게 작업 속도를 높이는 데 큰 도움이 되었습니다."
-                                        </p>
-                                        <p class="card-title">파일구조를 보고 느낀점</p>
-                                    </li>
-                                    <li class="card card4">
+                                    </div>
+                                    <div class="swiper-slide card">
                                         <p class="card-txt">
                                             "웹 기술은 빠르게 변화하기 때문에 새로운 트렌드와 라이브러리를 계속 공부해야 한다. Swiper, GSAP, AOS 같은 라이브러리를 활용하면서 퍼블리싱의 가능성이 무궁무진하다는 걸 느꼈다."
                                         </p>
                                         <p class="card-title">라이브러리를 찾아보다가 느낀점</p>
-                                    </li>
-                                </ul>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <p class="card-txt">
+                                            "처음에는 무조건 동작하면 된다고 생각했지만, 유지보수와 가독성을 고려한 코드 작성이 중요하다는 걸 알게 되었습니다. 특히, 클래스 네이밍과 CSS 구조를 체계적으로 잡는 게 나중에 큰 도움이 되는걸 느꼈습니다."
+                                        </p>
+                                        <p class="card-title">네이밍 및 구조를 만들다가 느낀점</p>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <p class="card-txt">
+                                            "처음에는 파일을 아무렇게나 정리했지만, 프로젝트가 커질수록 폴더 구조가 중요하다는 걸 깨달았습니다. 이미지, CSS, JS 파일을 역할별로 정리하면 유지보수가 쉬워지고, 협업할 때도 혼선을 줄일 수 있습니다. 특히, 공통 요소와 개별 페이지 파일을 구분하는 게 작업 속도를 높이는 데 큰 도움이 되었습니다."
+                                        </p>
+                                        <p class="card-title">파일구조를 보고 느낀점</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1020,22 +379,24 @@
                 <div class="footer-wrap">
                     <div class="footer-inner">
                         <div class="footer-logo">
-                            <h2 class="logo">YCH - Portfolio</h2>
+                            <h2 class="footer-title">YCH - Portfolio</h2>
                         </div>
-                        <div class="footer-copyright">
-                            <p class="copyright">© 2025 Yun-Changho All Rights Reserved</p>
-                        </div>
-                        <div class="sns-link">
-                            <span class="e-mail">dbckgh8010@naver.com</span>
-                            <div class="sns-img">
-                                <span class="kakao">
-                                    <img src="assets/img/common/kakao_open_talk.png" alt="카카오QR 이미지">
+                        <div class="contact-area">
+                            <div class="email">
+                                <p class="email-name">E-mail: dbckgh8010@naver.com</p>
+                            </div>
+                            <div class="social-link">
+                                <span class="open-kakao">
+                                    <img src="assets/img/common/kakao_open_talk.png" alt="오픈 카카오톡 QR코드">
                                 </span>
-                                <a href="https://github.com/dbckgh8010" class="github" target="_blank">
+                                <a href="javascript:void(0)" class="github">
                                     <img src="assets/img/common/github.png" alt="깃허브 링크 이미지">
-                                </a>
+                                </a>                            
                             </div>
                         </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <p class="copyright">© 2025 Yun-ChangHo All Rights Reserved</p>
                     </div>
                 </div>
             </footer>

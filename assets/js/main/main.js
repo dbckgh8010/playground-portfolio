@@ -1,86 +1,82 @@
 $(function() {
-    AOS.init({duration: 1200})
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, MotionPathPlugin);
 
-    const projectSwiper = new Swiper(".project-swiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        grabcursor: true,
-        loop: false,
-        breakpoints: {
-            
-            0: {
-                slidesPerView: 1
+    const $imgBox = $(".moving-img");
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width: 1521px)", () => {
+        gsap.to(".moving-img", {
+            scrollTrigger: {
+                trigger: ".motion-section",
+                start: "top top",
+                end: "70% center",
+                scrub: 0.5,
             },
-            768: {
-                slidesPerView: 1
+            motionPath: {
+                path: [
+                    { x: 0, y: 0 },
+                    { x: 300, y: 300},
+                    { x: 400, y: 500},
+                    { x: 270, y: 2100} 
+                ],
+                curviness: 1.25,
+                autoRotate: false,
             },
-            1024: {
-                slidesPerView: 2,
-            },
-            1560: {
-                slidesPerView: 3
-            }
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-next",
-            prevEl: ".swiper-prev"
-        }
+            rotateY: 360,
+            rotation: 6,
+            ease: "none",
+        });
     });
-})
+    mm.add("(min-width: 1201px) and (max-width: 1520px)", () => {
+        gsap.to(".moving-img", {
+            scrollTrigger: {
+                trigger: ".motion-section",
+                start: "top top",
+                end: "70% center",
+                scrub: 0.5,
+            },
+            motionPath: {
+                path: [
+                    { x: 0, y: 0 },
+                    { x: 300, y: 300},
+                    { x: 400, y: 500},
+                    { x: 270, y: 2150} 
+                ],
+                curviness: 1.25,
+                autoRotate: false,
+            },
+            rotateY: 360,
+            rotation: 6,
+            ease: "none",
+        });
+    });
+    mm.add("(min-width: 1101px) and (max-width: 1200px)", () => {
+        gsap.to(".moving-img", {
+            scrollTrigger: {
+                trigger: ".motion-section",
+                start: "top top",
+                end: "78% 70%",
+                scrub: 1,
+            },
+            motionPath: {
+                path: [
+                    { x: 0, y: 0 },
+                    { x: 250, y: 300},
+                    { x: 300, y: 500},
+                    { x: 230, y: 2300} 
+                ],
+                curviness: 1.25,
+                autoRotate: false,
+            },
+            rotateY: 360,
+            rotation: 6,
+            ease: "none",
+        });
+    });
+});
+
 $(function() {
-    const pcSwiper = new Swiper(".pc-swiper", {
-        slidesPerView: 1,
-        loop: false,
-        autoHeight: true,
-        allowTouchMove: false,
-    });
-    const tabletSwiper = new Swiper(".tablet-swiper", {
-        autoHeight: true,
-        loop: false,
-        slidesPerView: 1,
-        allowTouchMove: false,
-    });
-    const mobileSwiper = new Swiper(".mobile-swiper", {
-        autoHeight: true,
-        loop: false,
-        slidesPerView: 1,
-        allowTouchMove: false,
-    });
-    const infoSwiper = new Swiper(".info-swiper", {
-        autoHeight: true,
-        loop: false,
-        slidesPerView: 1,
-        spaceBetween: 40,
-        speed: 0,
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-    infoSwiper.controller.control = [pcSwiper, tabletSwiper, mobileSwiper];
-
-    const desktopSwiper = new Swiper(".desktop-swiper", {
-        slidesPerView: 1,
-        loop: false,
-        autoHeight: true,
-        allowTouchMove: false,
-    });
-    const pageInfoSwiper = new Swiper(".page-info-swiper", {
-        autoHeight: true,
-        loop: false,
-        slidesPerView: 1,
-        spaceBetween: 40,
-        speed: 0,
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-    pageInfoSwiper.on("slideChange", () => {
-        desktopSwiper.slideTo(pageInfoSwiper.activeIndex);
-    });
+    AOS.init({duration: 1200})
 })
 $(function() {
     $(".category-item").click(function () {
@@ -99,34 +95,49 @@ $(function() {
     });
     $('.category-item[data-tab="all"]').click();
 })
-$(function() {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.registerPlugin(ScrollToPlugin);
-    
-    gsap.fromTo(".sc-inner-left", 
-        {opacity: 0},
-        {opacity: 1, duration: 1, delay: 0.5}
-    );
-    gsap.fromTo(".sc-inner-right", 
-        {opacity: 0},
-        {opacity: 1, duration: 1, delay: 1}
-    );
 
-    let pinStart = 80;
-    let gap = 30;
-})
-$(function() {    
-    $(".card1, .card2, .card3, .card4").each(function() {
-        gsap.from($(this), {
-            scrollTrigger: {
-                trigger: this,
-                start: "top bottom",
-                end: "top 80%",
-                scrub: 2,
+$(function() {
+    const cardSwiper = new Swiper(".inner-cards", {
+        slidesPerView: 3,
+        loop: true,
+        spaceBetween: 40,
+        speed: 2000,
+        allowTouchMove: false,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false,
+            waitForTransition: false,
+        },
+        freeMode: true,
+        freeModeMomentum: false,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 20,
             },
-            opacity: 0,
-            y: 100,
-            duration: 1
-        })
-    })
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1000: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1600: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1920: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            }
+        }
+    });
+    $(".inner-cards").on('mouseenter',function() {
+        cardSwiper.autoplay.stop();
+    });
+    $(".inner-cards").on('mouseleave',function() {
+        cardSwiper.autoplay.start();
+    });
 })
