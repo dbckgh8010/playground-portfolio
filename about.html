@@ -20,6 +20,7 @@
     <script src="assets/js/common/weatherMapping.js"></script>
     <script src="assets/js/common/widgets.js"></script>
     <script src="assets/js/common/common.js"></script>
+    <script src="assets/js/about/about.js"></script>
 </head>
 <body>
     <div class="layout">
@@ -37,13 +38,13 @@
                     <nav class="nav" aria-label="주 메뉴">
                         <ul class="nav-wrap">
                             <li class="nav-list">
-                                <a href="#section-first" class="tab-btn active">
+                                <a href="index.html" class="tab-btn">
                                     <img src="assets/img/icon/home_icon.png" alt="홈 바로가기 버튼 이미지">
                                     <span>Home</span>
                                 </a>
                             </li>
                             <li class="nav-list">
-                                <a href="#section-about" class="tab-btn">
+                                <a href="javascript:void(0)" class="tab-btn active">
                                     <img src="assets/img/icon/user_icon.png" alt="자기소개 바로가기 버튼 이미지">
                                     <span>About</span>
                                 </a>
@@ -101,11 +102,16 @@
                     <div class="about-wrap">
                         <div class="about-playground">
                             <div class="playground-inner">
-                                <h2 class="playground-title">PLAYGROUND란?</h2>
+                                <h2 class="playground-title"><span class="ani-underline">PLAYGROUND</span>란?</h2>
                                 <div class="playground-desc">
-                                    <p class="desc-kr">웹을 하나의 놀이터처럼 누구나 자유롭고 편하게 즐길 수 있는 공간으로 만들고 싶어'Playground'라는 이름을 선택했습니다.</p>
-                                    <p class="desc-eng">“I chose the name ‘Playground’ because I wanted to create a website that everyone can enjoy freely and comfortably, just like a playground.”</p>
+                                    <p class="desc-kr">웹을 하나의 놀이터처럼 누구나 자유롭고 편하게 즐길 수 있는 공간으로 만들고 싶어 <span class="ani-underline__2">Playground</span> 라는 이름을 선택했습니다.</p>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="about-me">
+                            <div class="desc">
+                                <h3 class="about-title">Who Am I</h3>
+                                <p class="about-desc">저는 생동감 있는 페이지를 만드는 <span>퍼블리셔</span> 입니다.</p>
                             </div>
                         </div>
                         <div class="about-profile">
@@ -117,43 +123,81 @@
                                     <div class="profile-info">
                                         <ul class="info-wrap">
                                             <li class="info-item name">
-                                                <div class="info-title">
+                                                <div class="info-title label">
                                                     <span class="kor-label">이 름</span>
                                                     <span class="eng-label">NAME</span>
                                                 </div>
-                                                <div class="info-title">
+                                                <div class="info-title value">
                                                     <span class="kor-value">윤창호</span>
                                                     <span class="eng-value">YUN CHAN HO</span>
                                                 </div>
                                             </li>
                                             <li class="info-item birth">
-                                                <div class="info-title">
+                                                <div class="info-title label">
                                                     <span class="kor-label">생년월일</span>
                                                     <span class="eng-label">Date of Birth</span>
                                                 </div>
-                                                <div class="info-title">
+                                                <div class="info-title value">
                                                     <span class="kor-value">1996년 05월 24일</span>
                                                     <span class="eng-value">May 24, 1996</span>
                                                 </div>
                                             </li>
                                             <li class="info-item gender">
-                                                <div class="info-title">
+                                                <div class="info-title label">
                                                     <span class="kor-label">성 별</span>
                                                     <span class="eng-label">Gender</span>
                                                 </div>
-                                                <div class="info-title">
+                                                <div class="info-title value">
                                                     <span class="kor-value">남성</span>
                                                     <span class="eng-value">Male</span>
                                                 </div>
                                             </li>
                                             <li class="info-item nationality">
-                                                <div class="info-title">
+                                                <div class="info-title label">
                                                     <span class="kor-label">국 적</span>
                                                     <span class="eng-label">Nationality</span>
                                                 </div>
-                                                <div class="info-title">
+                                                <div class="info-title value">
                                                     <span class="kor-value">대한민국</span>
                                                     <span class="eng-value">KOREA</span>
+                                                </div>
+                                            </li>
+                                            <li class="info-item nationality">
+                                                <div class="info-title label">
+                                                    <span class="kor-label">거주지</span>
+                                                    <span class="eng-label">Residence</span>
+                                                </div>
+                                                <div class="info-title value">
+                                                    <span class="kor-value">성동구 도선동</span>
+                                                    <span class="eng-value">Doseon-dong Seongdong-gu</span>
+                                                </div>
+                                            </li>
+                                            <li class="info-item nationality">
+                                                <div class="info-title label">
+                                                    <span class="kor-label">병 역</span>
+                                                    <span class="eng-label">Military Service</span>
+                                                </div>
+                                                <div class="info-title value">
+                                                    <span class="kor-value">병장 만기 전역</span>
+                                                    <span class="eng-value">Completed Military Service</span>
+                                                </div>
+                                            </li>
+                                            <li class="info-item nationality">
+                                                <div class="info-title label">
+                                                    <span class="kor-label">취 미</span>
+                                                    <span class="eng-label">Hobby</span>
+                                                </div>
+                                                <div class="info-title value">
+                                                    <span class="kor-value">농구</span>
+                                                    <span class="eng-value">Basketball</span>
+                                                </div>
+                                            </li>
+                                            <li class="info-item nationality">
+                                                <div class="info-title label">
+                                                    <span class="kor-label">MBTI</span>
+                                                </div>
+                                                <div class="info-title value">
+                                                    <span class="kor-value">ENFJ</span>
                                                 </div>
                                             </li>
                                         </ul>
@@ -161,15 +205,107 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="about-me">
-                            <div class="desc">
-                                <h3 class="about-title">Who Am I</h3>
-                                <p class="about-desc">저는 생동감 있는 페이지를 만드는 ‘퍼블리셔’ 입니다.</p>
-                            </div>
+                    </div>
+                </div>
+                <div class="stack">
+                    <div class="stack-wrap">
+                        <h2 class="stack-title">Stack</h2>
+                        <div class="stack-inner">
+                            <ul class="stack-list">
+                                <li class="stack-item">
+                                    <div class="stack-symbol">
+                                        <img src="assets/img/icon/html5-symbol.png" alt="html 심볼 이미지">
+                                    </div>
+                                    <div class="stack-info">
+                                        <h3 class="stack-name">HTML</h3>
+                                        <div class="stack-bar">
+                                            <div class="stack-bar-fill" data-percent="75">75%</div>
+                                        </div>
+                                        <p class="stack-desc">
+                                            시맨틱 마크업과 명확한 구조 설계를 기반으로,<br>
+                                            유지보수성과 확장성이 높은 HTML 코드를 작성할 수 있는 수준의 역량을 갖추고 있습니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="stack-item">
+                                    <div class="stack-symbol">
+                                        <img src="assets/img/icon/css-symbol.png" alt="css 심볼 이미지">
+                                    </div>
+                                    <div class="stack-info">
+                                        <h3 class="stack-name">CSS</h3>
+                                        <div class="stack-bar">
+                                            <div class="stack-bar-fill" data-percent="75">75%</div>
+                                        </div>
+                                        <p class="stack-desc">
+                                            Flex와 반응형 레이아웃을 기반으로 한 구조적인 스타일링에 능숙하며,<br>
+                                            가상요소와 트랜지션을 활용해 시각적인 완성도를 높이는 CSS를 작성합니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="stack-item">
+                                    <div class="stack-symbol">
+                                        <img src="assets/img/icon/javascript-symbol.png" alt="자바스크립트 심볼 이미지">
+                                    </div>
+                                    <div class="stack-info">
+                                        <h3 class="stack-name">JavaScript</h3>
+                                        <div class="stack-bar">
+                                            <div class="stack-bar-fill" data-percent="50">50%</div>
+                                        </div>
+                                        <p class="stack-desc">
+                                            DOM 제어와 이벤트 기반 UI 기능 구현에 능숙하며,<br>
+                                            인터랙션 요소를 직접 설계해 자연스러운 사용자 경험을 만드는 JavaScript 코드를 작성합니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="stack-item">
+                                    <div class="stack-symbol">
+                                        <img src="assets/img/icon/jquery-symbol.png" alt="제이쿼리 심볼 이미지">
+                                    </div>
+                                    <div class="stack-info">
+                                        <h3 class="stack-name">jQuery</h3>
+                                        <div class="stack-bar">
+                                            <div class="stack-bar-fill" data-percent="60">60%</div>
+                                        </div>
+                                        <p class="stack-desc">
+                                            jQuery를 활용해 DOM 제어와 다양한 UI 기능을 구현하며,<br>
+                                            구조적인 인터랙션을 안정적으로 제작할 수 있습니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="stack-item">
+                                    <div class="stack-symbol">
+                                        <img src="assets/img/icon/github.png" alt="깃허브 심볼 이미지">
+                                    </div>
+                                    <div class="stack-info">
+                                        <h3 class="stack-name">Github</h3>
+                                        <div class="stack-bar">
+                                            <div class="stack-bar-fill" data-percent="50">50%</div>
+                                        </div>
+                                        <p class="stack-desc">
+                                            GitHub에서 프로젝트를 관리하고,<br>
+                                            commit·push·pull 및 GitHub Pages 배포를 안정적으로 수행할 수 있는 기본 역량을 갖추고 있습니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="stack-item">
+                                    <div class="stack-symbol">
+                                        <img src="assets/img/icon/figma-symbol.png" alt="피그마 심볼 이미지">
+                                    </div>
+                                    <div class="stack-info">
+                                        <h3 class="stack-name">Figma</h3>
+                                        <div class="stack-bar">
+                                            <div class="stack-bar-fill" data-percent="25">25%</div>
+                                        </div>
+                                        <p class="stack-desc">
+                                            Figma를 통해 화면 요소의 간격과 레이아웃 정보를 확인하며,<br>
+                                            개발에 필요한 디자인 스펙을 파악하는 용도로 활용할 수 있습니다.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="stack"></div>
             </section>
             <footer class="footer">
                 <div class="footer-wrap">
