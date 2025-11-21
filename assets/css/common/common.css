@@ -1,5 +1,5 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
-
+html {scroll-behavior: smooth;}
 html, body {font-family: 'Freesentation-4Regular', sans-serif !important;}
 .layout {display: flex; width: 100%; background-color: #0a0a0a;}
 .sidebar {width: 300px;}

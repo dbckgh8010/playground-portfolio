@@ -36,4 +36,30 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         animateBar();
     });
+
+    const menuAbout = document.querySelector(".menu-about");
+    const menuStack = document.querySelector(".menu-stack");
+
+    const sectionAbout = document.getElementById("section-about");
+    const sectionStack = document.getElementById("section-stack");
+
+    function removeAllActive() {
+        menuAbout.classList.remove("active");
+        menuStack.classList.remove("active");
+    }
+
+    function updateActiveByScroll() {
+        const scrollPos = window.scrollY + window.innerHeight / 2;
+        const aboutTop = sectionAbout.offsetTop;
+        const stackTop = sectionStack.offsetTop;
+        removeAllActive();
+
+        if (scrollPos >= stackTop) {
+            menuStack.classList.add("active");
+        } else {
+            menuAbout.classList.add("active");
+        }
+    }
+    updateActiveByScroll();
+    window.addEventListener("scroll", updateActiveByScroll);
 });
