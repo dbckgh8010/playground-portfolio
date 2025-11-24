@@ -1,0 +1,37 @@
+.main {background-color: #fff; border-radius: 20px;}
+
+
+.swiper-slide {position: relative; display: flex; flex-direction: column; justify-content: space-between; width: 100%; height: 95vh; padding: 50px; border-top-left-radius: 20px; border-top-right-radius: 20px;}
+
+.project-name {font-size: 5rem; color: #c4f000;}
+.project-meta {font-size: 2rem; color: #fff;}
+
+.meta-item {display: flex; padding-top: 20px;}
+.meta-label {width: 100px;}
+.meta-label::after {content: ":"; margin: 0 20px;}
+.type .meta-value {margin-left: 10px;}
+.meta-value {width: 150px;}
+.meta-skill {display: flex; align-items: center;}
+.skill {display: flex;}
+.skill-item img {width: 30px; margin-left: 10px;}
+
+.contribution {position: absolute; bottom: 20px; display: flex; align-items: center;}
+.contribution-title {padding-right: 20px;}
+.contribution-bar {width: 500px; height: 22px; border: 1px solid #222; border-radius: 20px;}
+.contribution-bar-fill {display: flex; align-items: center; justify-content: flex-end; height: 20px; padding-right: 10px; font-size: 18px; font-weight: bold; color: #222; background: #c4f000; border-radius: 20px;}
+
+.project-desc {padding-bottom: 40px;}
+.project-desc p {line-height: 30px; font-size: 18px; color: #fff;}
+.project-link {width: 140px; height: 50px; margin-bottom: 50px; margin-top: 50px; font-weight: bold; border-radius: 20px; background-color: #fff; cursor: pointer;}
+.project-link:hover {background-color: #c4f000;}
+.link {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;}
+
+.swiper-control {position: absolute; bottom: 60px; left: 50%; display: flex; flex-direction: row; width: 200px; transform: translateX(-50%); z-index: 2;}
+.swiper-pagination-bullet {width: 10px; height: 10px; background-color: #222; border: 2px solid #c4f000;}
+.play-btn {width: 15px; height: 15px;}
+.playing {width: 100%; height: 100%; background: url("../../img/icon/icon_pause.png") no-repeat center;}
+.pause {width: 100%; height: 100%; background: url("../../img/icon/icon_play.png") no-repeat center;}
+
+.project__1 {background: url("../../img/project/mockup-shisegae.png") no-repeat center / cover;}
+.project__2 {background: url("../../img/project/mockup-lespace.png") no-repeat center / cover;}
+.project__3 {background: url("../../img/project/mockup-genesis.png") no-repeat center / cover;}
