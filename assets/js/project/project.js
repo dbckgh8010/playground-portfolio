@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     const mySwiper = new Swiper(".swiper", {
-        slidesPerview: 1,
+        slidesPerView: 1,
         effect: "fade",
         loop: true,
         autoplay: {
-            delay: 9000,
+            delay: 8000,
             disableOnInteraction: false,
         },
         pagination: {
@@ -12,14 +12,21 @@ document.addEventListener("DOMContentLoaded", function() {
 			clickable: true,
 		},
     });
-    $(".play-btn").on("click", function () {
-        if ($(this).hasClass("playing")) {
-            mySwiper.autoplay.stop();
-            $(this).removeClass("playing").addClass("paused");
+
+    const controlBtn = document.querySelector(".play-btn");
+    let isPlaying = true;
+    controlBtn.addEventListener("click", () => {
+        const swiper = mySwiper;
+        if (isPlaying) {
+            swiper.autoplay.stop();
+            swiper.slideTo(swiper.activeIndex, 0);
+            controlBtn.classList.add("playing");
         } else {
-            mySwiper.autoplay.start();
-            $(this).removeClass("paused").addClass("playing");
-        }
+            swiper.params.autoplay.enabled = true;
+            swiper.autoplay.start();
+            controlBtn.classList.remove("playing");
+        };
+        isPlaying = !isPlaying;
     });
 
     const bars = document.querySelectorAll(".contribution-bar-fill");
