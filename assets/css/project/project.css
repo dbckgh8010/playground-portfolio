@@ -37,6 +37,8 @@
 .project__2 {background: url("../../img/project/mockup-lespace.png") no-repeat center / cover;}
 .project__3 {background: url("../../img/project/mockup-genesis.png") no-repeat center / cover;}
 
+
+
 @media (max-width: 1001px) {
     .contribution-bar {width: 300px;}
 }
@@ -62,7 +64,6 @@
 .item-info {position: absolute; top: 100%; left: 0; display: flex; flex-direction: column; justify-content: space-between; width: 100%; height: 100%; padding: 50px; color: #fff; background-color: rgb(0, 0, 0, 0.8); border-radius: 20px; transform: translateY(-150px); transition: top 0.4s ease;}
 .item-name {font-size: 2rem; color: #c4f000;}
 .info-top {padding-bottom: 50px;}
-.info-bottom {flex: 1;}
 .skill-name {padding-top: 10px;}
 .type {padding-bottom: 20px;}
 
@@ -70,6 +71,8 @@
 .item__2 {background: url("../../img/project/hansolpns.png") no-repeat center / cover;}
 .item__3 {background: url("../../img/project/kia.png") no-repeat center / cover;}
 .item__4 {background: url("../../img/project/smasunglions.png") no-repeat center / cover;}
+.item__5 {background: url("../../img/project/baseball-game.png") no-repeat center / cover;}
+.item__6 {background: url("../../img/project/card-game.png") no-repeat center / cover;}
 
 @media (max-width: 720px) {
     .responsive-list {grid-template-columns: repeat(1, 1fr);}
@@ -77,4 +80,42 @@
 @media (max-width: 500px) {
     .item-info {padding: 20px; transform: translateY(-100px);}
     .item-name {font-size: 1.5rem;}
+}
+.timeline-wrap {max-width: 1100px; display: flex; flex-direction: column; padding: 50px 100px; margin: 0 auto;}
+.timeline-pc .timeline-item {display: flex;}
+
+.timeline-phase {display: flex;}
+.timeline-phase .phase {font-size: 3rem; color: #c4f000;}
+.timeline-phase .text {display: flex; align-items: flex-start; padding-top: 5px; padding-left: 15px;}
+
+.timeline-right {padding-bottom: 100px;}
+.timeline-right .timeline-desc {padding-bottom: 50px;}
+.portfolio-link {display: flex; justify-content: flex-end; align-items: flex-end; width: 100%;}
+.portfolio-link .portfolio {padding: 10px; border-radius: 20px; background-color: rgb(0, 0, 0, 0.5); color: #fff;}
+.portfolio-link .portfolio:hover {background-color: #c4f000; color: #222;}
+
+.timeline-mo {display: none; flex-direction: column;}
+.timeline-mo .timeline-item {display: flex;}
+.timeline-mo .timeline-phase {margin-bottom: 20px;}
+.timeline-mo .timeline-desc {width: 100%;}
+
+/*타임라인 공통부분*/
+.timeline-axis {display: flex; flex-direction: column; align-items: center;}
+.timeline-axis .dot {display: block;  width: 20px; height: 20px; margin: 5px 50px 0 20px; border-radius: 20px; background-color: #222;}
+.timeline-axis .line {width: 1px; height: 100%; margin: 5px 50px 0 20px; background-color: #222;}
+
+
+@media (max-width: 1200px) {
+    .timeline-wrap {padding: 50px;}
+    .timeline-desc {width: 500px;}
+    .timeline-center .dot, .timeline-center .line {margin: 3px 50px 3px 10px;}
+}
+@media (max-width: 900px) {
+    .timeline-pc {display: none;}
+    .timeline-mo {display: flex;}
+    .timeline-axis .dot, .timeline-axis .line {margin: 15px 50px 5px 0;}
+}
+@media (max-width: 550px) {
+    .timeline-wrap {padding: 50px 20px;}
+    .timeline-axis .dot, .timeline-axis .line {margin: 15px 20px 5px 0;}
 }
