@@ -80,7 +80,7 @@
 .timeline-pc .timeline-item {display: flex;}
 
 .timeline-phase {display: flex;}
-.timeline-phase .phase {font-size: 3rem; color: #c4f000;}
+.timeline-phase .phase {width:80px; font-size: 3rem; color: #c4f000;}
 .timeline-phase .text {display: flex; align-items: flex-start; padding-top: 5px; padding-left: 15px;}
 
 .timeline-right {padding-bottom: 100px;}
