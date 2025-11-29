@@ -14,12 +14,12 @@
 .playground-inner {display: flex; flex-direction: column; gap: 50px;}
 .playground-title {font-size: 2rem;}
 .playground-title .ani-underline {position: relative; display: inline-block; font-size: 4rem; color: #c4f000;}
-.playground-title .ani-underline::after {content: ""; position: absolute; left: 0; bottom: -10px; width: 0; height: 20px; background: url(../../img/about/brush-underline.svg) no-repeat center bottom; background-size: 100% 100%; transition: width 0.5s ease-out;}
+.playground-title .ani-underline::after {content: ""; position: absolute; left: 0; bottom: -10px; width: 0; height: 20px; background: url("../../img/about/brush-underline.svg") no-repeat center bottom; background-size: 100% 100%; transition: width 0.5s ease-out;}
 .playground-title .ani-underline.on::after {width: 100%;}
 .playground-desc {display: flex; font-size: 1.5rem;}
 .playground-desc .desc-kr {line-height: 60px;}
 .playground-desc .ani-underline__2 {position: relative; display: inline-block; font-size: 2rem; color: #c4f000;}
-.playground-desc .ani-underline__2::after {content: ""; position: absolute; left: 0; bottom: -20px; width: 0; height: 20px; background: url(../../img/about/brush-underline.svg) no-repeat center bottom; background-size: 100% 100%; transition: width 0.5s ease-out;}
+.playground-desc .ani-underline__2::after {content: ""; position: absolute; left: 0; bottom: -20px; width: 0; height: 20px; background: url("../../img/about/brush-underline.svg") no-repeat center bottom; background-size: 100% 100%; transition: width 0.5s ease-out;}
 .playground-desc .ani-underline__2.on::after {width: 100%;}
 
 .about-me {display: flex; justify-content: center; max-width: 1200px; padding-top: 50px; margin: 0 auto; text-align: center; padding-bottom: 50px;}
