@@ -62,4 +62,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     updateActiveByScroll();
     window.addEventListener("scroll", updateActiveByScroll);
+
+    document.querySelector('.resume-btn').addEventListener('click', function() {
+        document.querySelector('.resume-popup').style.display = 'block';
+    });
+    document.querySelector('.resume-popup__close').addEventListener('click', function() {
+        document.querySelector('.resume-popup').style.display = 'none';
+    });
+    const resumeBtn = document.querySelector('.resume-btn');
+    const footer = document.querySelector('footer');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                resumeBtn.classList.add('stop');
+            } else {
+                resumeBtn.classList.remove('stop');
+            }
+        });
+    }, {
+        root: null,
+        threshold: 0,
+    });
+
+    observer.observe(footer);
 });
