@@ -2,10 +2,10 @@ $(function() {
     $(".nav-toggle").on('click', function() {
         const $sidebar = $(".sidebar");
 
-        if ($sidebar.hasClass('close')) {
-            $sidebar.removeClass('close').addClass('open');
+        if ($sidebar.hasClass('sidebar--close')) {
+            $sidebar.removeClass('sidebar--close').addClass('sidebar--open');
         } else {
-            $sidebar.removeClass('open').addClass('close');
+            $sidebar.removeClass('sidebar--open').addClass('sidebar--close');
         }
     });
 });

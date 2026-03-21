@@ -9,30 +9,31 @@
 .arrow {margin-right: 20px;}
 .page-about {padding: 10px; border: 2px solid #222; border-radius: 20px;}
 
-.about {max-width: 1200px; padding: 100px 0; margin: 0 auto;}
-.about-playground {display: flex; justify-content: center; padding-bottom: 100px; text-align: center;}
-.playground-inner {display: flex; flex-direction: column; gap: 50px;}
+.about {max-width: 1200px; padding: 50px 0; margin: 0 auto;}
+.playground {display: flex; justify-content: center; text-align: center;}
+.playground-inner {display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; padding-top: 20px;}
 .playground-title {font-size: 2rem;}
-.playground-title .ani-underline {position: relative; display: inline-block; font-size: 4rem; color: #c4f000;}
-.playground-title .ani-underline::after {content: ""; position: absolute; left: 0; bottom: -10px; width: 0; height: 20px; background: url("../../img/about/brush-underline.svg") no-repeat center bottom; background-size: 100% 100%; transition: width 0.5s ease-out;}
-.playground-title .ani-underline.on::after {width: 100%;}
-.playground-desc {display: flex; font-size: 1.5rem;}
-.playground-desc .desc-kr {line-height: 60px;}
-.playground-desc .ani-underline__2 {position: relative; display: inline-block; font-size: 2rem; color: #c4f000;}
-.playground-desc .ani-underline__2::after {content: ""; position: absolute; left: 0; bottom: -20px; width: 0; height: 20px; background: url("../../img/about/brush-underline.svg") no-repeat center bottom; background-size: 100% 100%; transition: width 0.5s ease-out;}
-.playground-desc .ani-underline__2.on::after {width: 100%;}
+.playground-title .ani-underline {position: relative; display: inline-block; font-size: 2rem; color: #fff;}
+.playground-desc {display: flex; font-size: 1.1rem;}
+.playground-desc .desc-kr {line-height: 28px;}
+.playground-desc .ani-underline__2 {position: relative; display: inline-block; font-size: 1.5rem; color: #fff;}
 
 .about-me {display: flex; justify-content: center; max-width: 1200px; padding-top: 50px; margin: 0 auto; text-align: center; padding-bottom: 50px;}
-.about-title {font-size: 3rem; padding-bottom: 20px; color: #c4f000;}
+.about-title {font-size: 5rem; margin-bottom: 20px; color: #c4f000; text-shadow: 1px 1px 0 #aaa, 2px 2px 0 #888, 3px 3px 0 #666, 4px 4px 0 #444;}
 .about-desc {font-size: 1.2rem;}
-.about-desc span {font-size: 2rem; font-weight: bold; color: #c4f000; border-bottom: 1px solid #c4f000;}
+.about-desc span {padding-bottom: 10px; font-size: 2rem; font-weight: bold; color: #c4f000; border-bottom: 2px solid #c4f000; text-shadow: 1px 1px 0 #aaa, 2px 2px 0 #888, 3px 3px 0 #666, 4px 4px 0 #444;}
 
 .profile-wrap {display: flex; align-items: center; justify-content: center; width: 100%;}
-.profile-inner {display: flex; align-items: center; max-width: 1000px; padding: 50px; gap: 50px; border: 1px solid #222; border-radius: 20px;}
-.profile-img img {border-radius: 20px;}
+.profile-inner {display: flex; flex-direction: column; align-items: center; max-width: 1000px; padding: 50px; border: 1px solid #222; border-radius: 20px;}
+.profile__inner-top {display: flex; padding-bottom: 50px; gap: 50px;}
+.profile__inner-bottom {width: 100%;}
+.profile-img img {height: 461px; border-radius: 20px;}
 .info-wrap {display: flex; flex-direction: column; gap: 20px; padding: 20px; border: 1px solid #222; border-radius: 20px;}
 .info-item {display: flex;}
 .info-item:last-child .kor-label {border: none;}
+.info-wrap {padding-left: 40px; list-style-position: outside;}
+.info-desc {list-style-type: decimal;}
+.info-desc .desc-label {font-size: 1rem; font-weight: 400;}
 
 .label {display: flex; flex-direction: column; align-items: center; width: 140px;}
 .value {display: flex; flex-direction: column;}
@@ -56,6 +57,11 @@
     .profile-inner {flex-direction: column;}
     .profile-img img {width: 350px;}
 }
+@media (max-width: 1201px) {
+    .profile-inner {padding: 50px 20px;}
+    .info-title.label {max-width: 120px;}
+    .info-title.value {width: 200px;}
+}
 @media (max-width: 1100px) {
     .stack {padding: 0 50px;}
     .stack-inner {padding: 50px 10px;}
@@ -64,6 +70,11 @@
 @media (max-width: 1000px) {
     .profile-section {padding: 20px 20px;}
     .stack {padding: 20px;}
+    .stack-item {display: flex; justify-content: center;}
+}
+
+@media (max-width: 900px) {
+    .profile__inner-top {display: flex; flex-direction: column;}
 }
 
 @media (max-width: 768px) {
@@ -71,32 +82,46 @@
 }
 
 @media (max-width: 650px) {
-    .info-wrap {padding: 5px;}
+    .info-wrap {padding: 5px 5px 5px 25px;}
     .playground-desc .desc-kr {line-height: 50px;}
     .profile-inner {padding: 20px;}
-    .profile-img img {width: 250px;}
     .kor-label {font-size: 1rem; letter-spacing: -1px;}
     .kor-value {font-size: 1rem; letter-spacing: -1px;}
     .eng-label {font-size: 1rem; letter-spacing: -1px;}
     .eng-value {font-size: 1rem; letter-spacing: -1px;}
+    .profile-img img {width: 100%;}
 }
 
 @media (max-width: 480px) {
     .playground-title {line-height: 50px; font-size: 1.2rem;}
     .playground-title .ani-underline {font-size: 2.5rem;}
+    .profile-inner {width: 350px;}
     .desc-kr {font-size: 1rem;}
     .desc-kr .ani-underline__2 {font-size: 2rem;}
     .page-home {margin-right: 5px;}
     .arrow {margin-right: 5px;}
     .label {width: 120px;}
+    .profile-img {display: flex; justify-content: center;}
+    .profile-img img {width: 250px; height: auto;}
+    .profile-info {width: 300px;}
+    .about-title {font-size: 4rem;}
+    .about-desc {font-size: 1rem;}
 }
 
-.resume-btn {position: fixed; right: 50px; bottom: 100px; width: 50px; height: 50px; border: 2px solid #222; border-radius: 25px; background-color: transparent; cursor: pointer;}
-.resume-popup__close {position: fixed; right: 0; top: 0; width: 25px; height: 25px; background-color: #c4f000; border: none;}
-.resume-popup {display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgb(0, 0, 0, 0.7);}
-.resume-content img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 80vh;}
-.resume-btn.stop {position: absolute; bottom: 300px;}
+@media (max-width: 400px) {
+    .about-title {font-size: 3.5rem;}
+    .profile-inner {width: 300px;}
+    .profile-info {width: 270px;}
+}
 
+.resume {position: fixed; right: 4%; bottom: 10%;}
+.resume-btn {padding: 15px; border: 1px solid #222; border-radius: 50px;}
+.resume-btn img {width: 25px; height: 25px;}
+.resume-btn.hide {display: none;}
+.modal {display: none; align-items: center; justify-content: center; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.6); z-index: 1000;}
+.modal.on {display: flex;}
+.modal-inner {background: #fff;} 
+.modal-inner img {width: 100%; height: 90vh;}
 @media (max-width: 1000px) {
     .resume {display: none;}
 }

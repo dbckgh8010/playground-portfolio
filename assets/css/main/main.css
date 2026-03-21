@@ -155,13 +155,13 @@
 .project-item {position: relative;}
 .project-img img {width: 100%;}
 .project-info {display: none; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 20px;}
-.project-item:hover .project-info {display: flex; flex-direction: column; background: rgba(0, 0, 0, 0.7);}
-.project-item .project-info {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;}
+.project-item:hover .project-info, .project-item:focus-within .project-info {display: flex; flex-direction: column; background: rgba(0, 0, 0, 0.7); pointer-events:none;}
+.project-item .project-info {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; pointer-events:auto;}
 
 .project-name {font-size: 24px;}
 .project-desc {padding: 20px; text-align: center;}
 .project-link {padding: 10px 20px; font-size: 14px; font-weight: 900; border-radius: 20px; background-color: #c4f000;}
-.project-link:hover {color: #fff; background-color: #0a0a0a;}
+.project-link:hover, .project-link:focus-visible {color: #fff; background-color: #0a0a0a;}
 
 /*프로젝트 부분 반응형*/
 @media (max-width: 1200px) {
@@ -205,7 +205,7 @@
 
 .more-link {display: flex; justify-content: center; padding-top: 50px;}
 .more-btn {display: flex; align-items: center; justify-content: center; width: 150px; height: 60px; font-weight: 900; border-radius: 30px; background-color: #c4f000; transition: background-color 0.5s ease;}
-.more-btn:hover {color: #fff; background-color: #0a0a0a;}
+.more-btn:hover, .more-btn:focus-visible {color: #fff; background-color: #0a0a0a;}
 
 .title-name {font-size: 50px; font-weight: 900; line-height: 70px;}
 @media (max-width: 470px) {

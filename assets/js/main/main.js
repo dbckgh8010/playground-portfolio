@@ -60,10 +60,10 @@ $(function() {
             },
             motionPath: {
                 path: [
-                    { x: 0, y: 0 },
-                    { x: 250, y: 300},
-                    { x: 300, y: 500},
-                    { x: 230, y: 2300} 
+                    {x: 0, y: 0},
+                    {x: 250, y: 300},
+                    {x: 300, y: 500},
+                    {x: 230, y: 2300} 
                 ],
                 curviness: 1.25,
                 autoRotate: false,

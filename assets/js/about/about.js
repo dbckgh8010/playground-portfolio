@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function removeAllActive() {
         menuAbout.classList.remove("active");
         menuStack.classList.remove("active");
-    }
+    };
 
     function updateActiveByScroll() {
         const scrollPos = window.scrollY + window.innerHeight / 2;
@@ -59,30 +59,45 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             menuAbout.classList.add("active");
         }
-    }
+    };
     updateActiveByScroll();
     window.addEventListener("scroll", updateActiveByScroll);
 
-    document.querySelector('.resume-btn').addEventListener('click', function() {
-        document.querySelector('.resume-popup').style.display = 'block';
-    });
-    document.querySelector('.resume-popup__close').addEventListener('click', function() {
-        document.querySelector('.resume-popup').style.display = 'none';
-    });
+    const modal = document.querySelector(".modal");
+    const modalInner = document.querySelector(".modal-inner");
     const resumeBtn = document.querySelector('.resume-btn');
     const footer = document.querySelector('footer');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                resumeBtn.classList.add('stop');
-            } else {
-                resumeBtn.classList.remove('stop');
-            }
-        });
-    }, {
-        root: null,
-        threshold: 0,
+    //이력서를 보이도록 하는 이벤트
+    resumeBtn.addEventListener('click', () => {
+        modal.classList.add('on');
+    });
+    //이력서를 끄기 위한 이벤트
+    modal.addEventListener('click', () => {
+        modal.classList.remove('on');
+    });
+    //이력서를 눌렀을때는 꺼지지 않도록 이벤트를 추가
+    modalInner.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+    //esc를 눌러도 꺼지도록 설정
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            modal.classList.remove('on');
+        }
     });
 
-    observer.observe(footer);
+    //이력서 여는 아이콘 버튼이 footer에 들어가기전에 꺼버리기
+    function hideModal() {
+        const scrollBottom = window.scrollY + window.innerHeight;
+        const footerTop = footer.offsetTop;
+
+        if (scrollBottom >= footerTop) {
+            resumeBtn.classList.add('hide');
+        } else {
+            resumeBtn.classList.remove('hide');
+        }
+    };
+
+    window.addEventListener('scroll', hideModal);
+    hideModal();
 });
