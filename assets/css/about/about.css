@@ -93,7 +93,7 @@
     .label {width: 120px;}
     .profile__img {display: flex; justify-content: center;}
     .profile__img img {width: 250px; height: auto;}
-    .profile__info {width: 300px;}
+    .profile__detail {width: 300px;}
     .about__title {font-size: 4rem;}
     .about__desc {font-size: 1rem;}
 }
