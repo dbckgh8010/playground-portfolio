@@ -1,13 +1,13 @@
 $(function() {
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, MotionPathPlugin);
 
-    const $imgBox = $(".moving-img");
+    const $imgBox = $(".moving__img");
     const mm = gsap.matchMedia();
 
     mm.add("(min-width: 1521px)", () => {
-        gsap.to(".moving-img", {
+        gsap.to(".moving__img", {
             scrollTrigger: {
-                trigger: ".motion-section",
+                trigger: ".motion__section",
                 start: "top top",
                 end: "70% center",
                 scrub: 0.5,
@@ -28,9 +28,9 @@ $(function() {
         });
     });
     mm.add("(min-width: 1201px) and (max-width: 1520px)", () => {
-        gsap.to(".moving-img", {
+        gsap.to(".moving__img", {
             scrollTrigger: {
-                trigger: ".motion-section",
+                trigger: ".motion__section",
                 start: "top top",
                 end: "70% center",
                 scrub: 0.5,
@@ -51,9 +51,9 @@ $(function() {
         });
     });
     mm.add("(min-width: 1101px) and (max-width: 1200px)", () => {
-        gsap.to(".moving-img", {
+        gsap.to(".moving__img", {
             scrollTrigger: {
-                trigger: ".motion-section",
+                trigger: ".motion__section",
                 start: "top top",
                 end: "78% 70%",
                 scrub: 1,
@@ -79,25 +79,25 @@ $(function() {
     AOS.init({duration: 1200})
 })
 $(function() {
-    $(".category-item").click(function () {
-        $(".category-item").removeClass('active');
+    $(".category__item").click(function () {
+        $(".category__item").removeClass('active');
         $(this).addClass('active');
         
         const tabName = $(this).data('tab');
-        $(".page-item").hide();
+        $(".page__item").hide();
 
         if (tabName === 'all') {
-            $(".page-item").show();
+            $(".page__item").show();
         } else {
-            $(`.page-item[data-tab="${tabName}"]`).show();
+            $(`.page__item[data-tab="${tabName}"]`).show();
         }
         ScrollTrigger.refresh();
     });
-    $('.category-item[data-tab="all"]').click();
+    $('.category__item[data-tab="all"]').click();
 })
 
 $(function() {
-    const cardSwiper = new Swiper(".inner-cards", {
+    const cardSwiper = new Swiper(".inner__cards", {
         slidesPerView: 3,
         loop: true,
         spaceBetween: 40,
@@ -134,10 +134,10 @@ $(function() {
             }
         }
     });
-    $(".inner-cards").on('mouseenter',function() {
+    $(".inner__cards").on('mouseenter',function() {
         cardSwiper.autoplay.stop();
     });
-    $(".inner-cards").on('mouseleave',function() {
+    $(".inner__cards").on('mouseleave',function() {
         cardSwiper.autoplay.start();
     });
 })

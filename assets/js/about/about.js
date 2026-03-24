@@ -1,12 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector('.ani-underline').classList.add('on');
-    document.querySelector('.ani-underline__2').classList.add('on');
-
-    const bars = document.querySelectorAll(".stack-bar-fill");
+    const bars = document.querySelectorAll(".stack__bar--fill");
 
     bars.forEach(bar => {
         const target = Number(bar.dataset.percent) || 0;
-
+        console.log("현재 타겟 값:", target);
         function animateBar() {
             bar.style.transition = "none";
             bar.style.width = "0%";
@@ -37,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
         animateBar();
     });
 
-    const menuAbout = document.querySelector(".menu-about");
-    const menuStack = document.querySelector(".menu-stack");
+    const menuAbout = document.querySelector(".menu__about");
+    const menuStack = document.querySelector(".menu__stack");
 
     const sectionAbout = document.getElementById("section-about");
     const sectionStack = document.getElementById("section-stack");
@@ -64,8 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", updateActiveByScroll);
 
     const modal = document.querySelector(".modal");
-    const modalInner = document.querySelector(".modal-inner");
-    const resumeBtn = document.querySelector('.resume-btn');
+    const modalInner = document.querySelector(".modal__inner");
+    const resumeBtn = document.querySelector('.resume__btn');
     const footer = document.querySelector('footer');
     //이력서를 보이도록 하는 이벤트
     resumeBtn.addEventListener('click', () => {

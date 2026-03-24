@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         isPlaying = !isPlaying;
     });
 
-    const bars = document.querySelectorAll(".contribution-bar-fill");
+    const bars = document.querySelectorAll(".contribution__bar-fill");
 
     bars.forEach(bar => {
         const target = Number(bar.dataset.percent) || 0;
