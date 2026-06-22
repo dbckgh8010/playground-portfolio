@@ -18,74 +18,60 @@
 </head>
 <body>
     <div class="layout">
-        <div class="sidebar sidebar--close">
-            <div class="sidebar__wrap">
-                <div class="sidebar__inner">
-                    <div class="logo">
-                        <a href="https://dbckgh8010.github.io/playground-portfolio/" class="logo__img">
-                            <img src="assets/img/common/myphoto-circle.png" alt="윤창호 이미지">
-                            <span class="eng-name">YUN CHANG HO</span>
-                        </a>
-                    </div>
-                    <nav class="nav" aria-label="주 메뉴">
-                        <ul class="nav__wrap">
-                            <li class="nav__list">
-                                <a href="index.html" class="tab__btn">
-                                    <img src="assets/img/icon/home_icon.png" alt="홈 바로가기 버튼 이미지">
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li class="nav__list">
-                                <a href="about.html" class="tab__btn menu__about active">
-                                    <img src="assets/img/icon/user_icon.png" alt="자기소개 바로가기 버튼 이미지">
-                                    <span>About</span>
-                                </a>
-                            </li>
-                            <li class="nav__list">
-                                <a href="project.html" class="tab__btn">
-                                    <img src="assets/img/icon/file-text_icon.png" alt="프로젝트 바로가기 버튼 이미지">
-                                    <span>Projects</span>
-                                </a>
-                            </li>
-                            <li class="nav__list">
-                                <a href="about.html#section-stack" class="tab__btn menu__stack">
-                                    <img src="assets/img/icon/Star-circle_icon.png" alt="느낀점 바로가기 버튼 이미지">
-                                    <span>Stack</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="nav__btn">
-                        <div class="nav__toggle">
-                            <button class="menu__btn" type="button">
-                                <img src="assets/img/icon/Menu(b)_icon.png" alt="평상시 메뉴 이미지" class="img--default">
-                                <img src="assets/img/icon/Menu-circle-btn(b)_icon.png" alt="호버 메뉴 이미지" class="img--hover">
-                            </button>
+        <header class="sidebar sidebar--close">
+            <div class="sidebar__inner">
+                <a href="https://dbckgh8010.github.io/playground-portfolio/" class="sidebar__logo">
+                    <img src="assets/img/common/myphoto-circle.png" alt="윤창호 이미지" class="sidebar__logo-img">
+                    <span class="sidebar__logo-text">YUN CHANG HO</span>
+                </a>
+                <nav class="nav" aria-label="주 메뉴">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__item-btn">
+                                <img src="assets/img/icon/home_icon.png" alt="홈 바로가기 버튼 이미지">
+                                <span class="nav__text">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__item-btn active">
+                                <img src="assets/img/icon/user_icon.png" alt="자기소개 바로가기 버튼 이미지">
+                                <span class="nav__text">About</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="project.html" class="nav__item-btn">
+                                <img src="assets/img/icon/file-text_icon.png" alt="프로젝트 바로가기 버튼 이미지">
+                                <span class="nav__text">Projects</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="sidebar__toggle-btn" type="button">
+                    <img src="assets/img/icon/Menu(b)_icon.png" alt="평상시 메뉴 이미지" class="img--default">
+                    <img src="assets/img/icon/Menu-circle-btn(b)_icon.png" alt="호버 메뉴 이미지" class="img--hover">
+                </button>
+                <div class="sidebar-widgets">
+                    <div class="sidebar-info inner">
+                        <div class="time-ko">
+                            <div class="sidebar__year">년</div>
+                            <div class="sidebar__day">날짜</div>
+                            <div class="sidebar__weekday"></div>
+                            <div class="sidebar__time">시간</div>
                         </div>
-                    </div>
-                    <div class="sidebar-widgets">
-                        <div class="sidebar-info inner">
-                            <div class="time-ko">
-                                <div class="year">년</div>
-                                <div class="day">날짜</div>
-                                <div class="weekday"></div>
-                                <div class="time">시간</div>
-                            </div>
-                            <div class="weather-tab">
-                                <button class="weather-btn" type="button">날씨 검색</button>
-                            </div>
+                        <div class="weather-tab">
+                            <button class="weather-btn" type="button">날씨 검색</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
         <div class="content">
             <main class="main">
-                <section id="section-about" class="sc-profile">
+                <section class="sc-profile">
                     <div class="about">
                         <div class="about__wrap">
                             <div class="about__me">
-                                <div class="desc">
+                                <div class="about__desc">
                                     <h3 class="about__title">Who Am I</h3>
                                     <p class="about__desc">저는 생동감 있는 페이지를 만드는 <span>퍼블리셔</span> 입니다.</p>
                                 </div>
@@ -94,97 +80,77 @@
                                 <div class="profile__wrap">
                                     <div class="profile__inner">
                                         <div class="profile__top">
-                                            <div class="profile__img">
+                                            <div class="profile__photo">
                                                 <img src="assets/img/main/yunchangho_photo.jpg" alt="자기소개 윤창호 증명사진">
                                             </div>
-                                            <div class="profile__detail">
-                                                <ul class="info__wrap">
-                                                    <li class="info__item gender">
-                                                        <div class="info__title label">
-                                                            <span class="kor__label">포지션</span>
-                                                            <span class="eng__label">Position</span>
-                                                        </div>
-                                                        <div class="info__title value">
-                                                            <span class="kor__value">웹 퍼블리셔</span>
-                                                            <span class="eng__value">Web-Publisher</span>
-                                                        </div>
+                                            <div class="profile__info">
+                                                <h4 class="profile__name">윤창호</h4>
+                                                <span class="profile__job">Web Publisher</span>
+                                                <ul class="profile__meta">
+                                                    <li class="profile__meta-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-icon lucide-calendar"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+                                                        <span class="profile__meta-value">May 24, 1996</span>
                                                     </li>
-                                                    <li class="info__item name">
-                                                        <div class="info__title label">
-                                                            <span class="kor__label">이 름</span>
-                                                            <span class="eng__label">NAME</span>
-                                                        </div>
-                                                        <div class="info__title value">
-                                                            <span class="kor__value">윤창호</span>
-                                                            <span class="eng__value">YUN CHAN HO</span>
-                                                        </div>
+                                                    <li class="profile__meta-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-icon lucide-map"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg>
+                                                        <span class="profile__meta-value">성동구 도선동</span>
                                                     </li>
-                                                    <li class="info__item birth">
-                                                        <div class="info__title label">
-                                                            <span class="kor__label">생년월일</span>
-                                                            <span class="eng__label">Date of Birth</span>
-                                                        </div>
-                                                        <div class="info__title value">
-                                                            <span class="kor__value">96년 05월 24일</span>
-                                                            <span class="eng__value">May 24, 1996</span>
-                                                        </div>
+                                                    <li class="profile__meta-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap-icon lucide-graduation-cap"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                                                        <span class="profile__meta-value">성동고등학교 졸업</span>
                                                     </li>
-                                                    <li class="info__item nationality">
-                                                        <div class="info__title label">
-                                                            <span class="kor__label">거주지</span>
-                                                            <span class="eng__label">Residence</span>
-                                                        </div>
-                                                        <div class="info__title value">
-                                                            <span class="kor__value">성동구 도선동</span>
-                                                            <span class="eng__value">Doseon-dong</span>
-                                                        </div>
+                                                    <li class="profile__meta-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scroll-text-icon lucide-scroll-text"><path d="M15 12h-5"/><path d="M15 8h-5"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/></svg>
+                                                        <span class="profile__meta-value">운전면허증 1종 · GTQ 1급</span>
                                                     </li>
-                                                    <li class="info__item nationality">
-                                                        <div class="info__title label">
-                                                            <span class="kor__label">취 미</span>
-                                                            <span class="eng__label">Hobby</span>
-                                                        </div>
-                                                        <div class="info__title value">
-                                                            <span class="kor__value">농구</span>
-                                                            <span class="eng__value">Basketball</span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="info__item nationality">
-                                                        <div class="info__title label">
-                                                            <span class="kor__label">자격증</span>
-                                                        </div>
-                                                        <div class="info__title value">
-                                                            <span class="kor__value">GTQ 1급</span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="info__item nationality">
-                                                        <div class="info__title label">
-                                                            <span class="kor__label">MBTI</span>
-                                                        </div>
-                                                        <div class="info__title value">
-                                                            <span class="kor__value">ENFJ</span>
-                                                        </div>
+                                                    <li class="profile__meta-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                                        <span class="profile__meta-value">성실함 · 꼼꼼함 · 책임감</span>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="profile__bottom">
                                             <div class="profile__info">
-                                                <ul class="info__wrap">
-                                                    <li class="info__desc">
-                                                        <p class="desc__label">디자인의 감성을 이해하고 개발의 논리를 존중하며, 그 사이의 간극을 메우는 완성도 높은 코드를 지향합니다.</p>
+                                                <div class="profile__info-header">
+                                                    <h5 class="profile__info-title">MY <span>STRENGTHS</span></h5>
+                                                    <span class="profile__info-header__line"></span>
+                                                </div>
+                                                <ul class="profile__info-wrap">
+                                                    <li class="profile__info-desc">
+                                                        <div class="profile__info-desc__top">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml-icon lucide-code-xml"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+                                                            <span class="profile__desc-title">Design & Development</span>
+                                                        </div>
+                                                        <p class="profile__desc-label">디자인의 감성을 이해하고 개발의 논리를 존중하며, <br>그 사이의 간극을 메우는 완성도 높은 코드를 지향합니다.</p>
                                                     </li>
-                                                    <li class="info__desc">
-                                                        <p class="desc__label">화려한 기능 이전에 사용자의 편리함을 먼저 생각하며, 웹 표준을 기반으로 한 접근성 높은 인터페이스를 구축합니다.</p>
+                                                    <li class="profile__info-desc">
+                                                        <div class="profile__info-desc__top">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor-cloud-icon lucide-monitor-cloud"><path d="M11 13a3 3 0 1 1 2.83-4H14a2 2 0 0 1 0 4z"/><path d="M12 17v4"/><path d="M8 21h8"/><rect x="2" y="3" width="20" height="14" rx="2"/></svg>
+                                                            <span class="profile__desc-title">User Experience</span>
+                                                        </div>
+                                                        <p class="profile__des-label">화려한 기능 이전에 사용자의 편리함을 먼저 생각하며, <br>웹 표준을 기반으로 한 접근성 높은 인터페이스를 구축합니다.</p>
                                                     </li>
-                                                    <li class="info__desc">
-                                                        <p class="desc__label">한 번 쓰고 버려지는 코드가 아닌, 누구나 읽기 쉽고 관리하기 편한 구조적인 마크업을 위해 고민합니다.</p>
+                                                    <li class="profile__info-desc">
+                                                        <div class="profile__info-desc__top">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server-cog-icon lucide-server-cog"><path d="m10.852 14.772-.383.923"/><path d="M13.148 14.772a3 3 0 1 0-2.296-5.544l-.383-.923"/><path d="m13.148 9.228.383-.923"/><path d="m13.53 15.696-.382-.924a3 3 0 1 1-2.296-5.544"/><path d="m14.772 10.852.923-.383"/><path d="m14.772 13.148.923.383"/><path d="M4.5 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-.5"/><path d="M4.5 14H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-.5"/><path d="M6 18h.01"/><path d="M6 6h.01"/><path d="m9.228 10.852-.923-.383"/><path d="m9.228 13.148-.923.383"/></svg>
+                                                            <span class="profile__desc-title">Maintainable Code</span>
+                                                        </div>
+                                                        <p class="profile__des-label">한 번 쓰고 버려지는 코드가 아닌, <br>누구나 읽기 쉽고 관리하기 편한 구조적인 마크업을 위해 고민합니다.</p>
                                                     </li>
-                                                    <li class="info__desc">
-                                                        <p class="desc__label">브라우저 간의 차이를 좁히고 기술적 제약을 창의적으로 해결하며, 동료와 함께 최선의 결과물을 만들어내는 과정에 집중합니다.</p>
+                                                    <li class="profile__info-desc">
+                                                        <div class="profile__info-desc__top">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-boxes-icon lucide-boxes"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/><path d="m7 16.5-4.74-2.85"/><path d="m7 16.5 5-3"/><path d="M7 16.5v5.17"/><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/><path d="m17 16.5-5-3"/><path d="m17 16.5 4.74-2.85"/><path d="M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/><path d="M12 8 7.26 5.15"/><path d="m12 8 4.74-2.85"/><path d="M12 13.5V8"/></svg>
+                                                            <span class="profile__desc-title">Problem Solving</span>
+                                                        </div>
+                                                        <p class="profile__des-label">브라우저 간의 차이를 좁히고 기술적 제약을 창의적으로 해결하며, <br>동료와 함께 최선의 결과물을 만들어내는 과정에 집중합니다.</p>
                                                     </li>
-                                                    <li class="info__desc">
-                                                        <p class="desc__label">빠르게 변하는 웹 환경 속에서도 본질을 놓치지 않으며, 더 효율적인 구현 방법을 찾기 위해 끊임없이 역량을 확장합니다.</p>
+                                                    <li class="profile__info-desc">
+                                                        <div class="profile__info-desc__top">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-line-icon lucide-chart-line"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                                                            <span class="profile__desc-title">Growth</span>
+                                                        </div>
+                                                        <p class="profile__des-label">빠르게 변하는 웹 환경 속에서도 본질을 놓치지 않으며, <br>더 효율적인 구현 방법을 찾기 위해 끊임없이 역량을 확장합니다.</p>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -195,7 +161,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="section-stack" class="sc-stack">
+                <section class="sc-stack">
                     <div class="stack">
                         <div class="stack__wrap">
                             <h2 class="stack__title">Stack</h2>
@@ -297,6 +263,191 @@
                         </div>
                     </div>
                 </section>
+                <section class="project--timeline">
+                    <div class="timeline__wrap">
+                        <h2 class="timeline__title">Timeline</h2>
+                        <!-- 타임라인 PC 버전 -->
+                        <div class="timeline__version">
+                            <div class="timeline--pc">
+                            <div class="timeline__item">
+                                <h4 class="timeline__phase">
+                                    <span class="phase">1차</span>
+                                    <span class="text">PORTFOLIO</span>
+                                </h4>
+                                <div class="timeline__axis">
+                                    <span class="dot"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="timeline__right">
+                                    <p class="timeline__desc">
+                                        신세계 L&B와 한솔PNS를 처음으로 만들며 기본기를 다졌고,<br> 
+                                        그 과정에서 배운 점들을 바탕으로 첫 포트폴리오 사이트를 완성했습니다.<br> 
+                                        혼자 작업하다 보니 디자인보다는 구현에 집중했고, <br>
+                                        ‘포인트 색감만이라도 잘 잡자’는 생각으로 진행한 초기 시도였습니다.
+                                    </p>
+                                    <div class="portfolio__link">
+                                        <a href="https://dbckgh8010.github.io/portfolio/" target="_blank" class="portfolio">바로가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <h4 class="timeline__phase">
+                                    <span class="phase">2차</span>
+                                    <span class="text">PORTFOLIO</span>
+                                </h4>
+                                <div class="timeline__axis">
+                                    <span class="dot"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="timeline__right">
+                                    <p class="timeline__desc">
+                                        르스페이스와 기아 홈페이지를 추가로 클론코딩하며 퍼블리싱 역량을 더욱 확장했고,<br>
+                                        이를 바탕으로 기존과는 다른 방식의 포트폴리오 입장 경험을 만들었습니다.<br>
+                                        인트로 페이지에는 ‘입장’ 패스워드를 입력해야 메인 페이지로 이동할 수 있는 기능을 구현했으며,<br>
+                                        메인에서는 다양한 라이브러리를 활용해 더욱 풍부한 인터랙션을 시도했습니다.<br>
+                                        개발 과정에서도 “조금 더 새로운 느낌은 없을까?”를 고민하며 구성과 연출을 지속적으로 발전시켰습니다.
+                                    </p>
+                                    <div class="portfolio__link">
+                                        <a href="https://dbckgh8010.github.io/intro-playground/" target="_blank" class="portfolio">바로가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <h4 class="timeline__phase">
+                                    <span class="phase">3차</span>
+                                    <span class="text">PORTFOLIO</span>
+                                </h4>
+                                <div class="timeline__axis">
+                                    <span class="dot"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="timeline__right">
+                                    <p class="timeline__desc">
+                                        신세계 L&B를 처음 클론코딩했지만 부족함을 느껴 학습 후 완전히 새로 제작해 완성도를 높였습니다.<br>
+                                        이후 삼성 라이온즈 홈페이지를 리뉴얼하며 구조와 디자인 분석 능력을 키웠고,<br>
+                                        대기업 페이지도 경험해보고 싶어 제네시스 홈페이지를 클론코딩했습니다.<br>
+                                        이번 포트폴리오에서는 새로운 방식을 시도하고자 사이드 네비게이션을 도입하고,<br>
+                                        날씨 API를 활용한 위젯 기능도 직접 구현하며 사용자 경험을 확장했습니다.<br>
+                                        색상도 차분한 색상으로 바꿨습니다.
+                                    </p>
+                                    <div class="portfolio__link">
+                                        <a href="https://dbckgh8010.github.io/portfolio-playground/" target="_blank" class="portfolio">바로가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <h4 class="timeline__phase">
+                                    <span class="phase">4차</span>
+                                    <span class="text">PORTFOLIO</span>
+                                </h4>
+                                <div class="timeline__axis">
+                                    <span class="dot"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="timeline__right">
+                                    <p class="timeline__desc">
+                                        JavaScript 실력이 부족하다고 느껴 간단한 게임들을 직접 만들며 학습을 했습니다.<br>
+                                        카드 게임은 이미지가 섞인 뒤 잠시 공개되었다가 다시 뒤집히는 구조로 구현했고,<br> 
+                                        숫자 야구는 랜덤 정답 생성과 S/B/Out 판정 로직을 직접 작성해 완성했습니다.<br> 
+                                        포트폴리오 사이트 디자인 면에서는 메인 컬러가 배경에 묻히는 문제를 해결하기 위해<br> 
+                                        여러 사이트를 참고했고,<br>
+                                        기본 색상은 흰색·검정, 메인 컬러는 포인트로 사용해 조화를 맞추었습니다.<br>
+                                        또한 기존에 사용하던 사이드 메뉴 구조를 유지하면서 펼쳐지는 네비게이션 UX도 개선했습니다.
+                                    </p>
+                                    <div class="portfolio__link">
+                                        <a href="https://dbckgh8010.github.io/playground-portfolio/" target="_blank" class="portfolio">바로가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 타임라인 모바일 버전 -->
+                        <div class="timeline--mo">
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <h4 class="timeline__phase">
+                                        <span class="phase">1차</span>
+                                        <span class="text">PORTFOLIO</span>
+                                    </h4>
+                                    <div class="timeline__right">
+                                        <p class="timeline__desc">
+                                            신세계 L&B와 한솔PNS를 처음으로 만들며 기본기를 다졌고,<br> 
+                                            그 과정에서 배운 점들을 바탕으로 첫 포트폴리오 사이트를 완성했습니다.<br> 
+                                            혼자 작업하다 보니 디자인보다는 구현에 집중했고, <br>
+                                            ‘포인트 색감만이라도 잘 잡자’는 생각으로 진행한 초기 시도였습니다.
+                                        </p>
+                                        <div class="portfolio__link">
+                                            <a href="https://dbckgh8010.github.io/portfolio/" target="_blank" class="portfolio">바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <h4 class="timeline__phase">
+                                        <span class="phase">2차</span>
+                                        <span class="text">PORTFOLIO</span>
+                                    </h4>
+                                    <div class="timeline__right">
+                                        <p class="timeline__desc">
+                                            르스페이스와 기아 홈페이지를 추가로 클론코딩하며 퍼블리싱 역량을 더욱 확장했고,<br>
+                                            이를 바탕으로 기존과는 다른 방식의 포트폴리오 입장 경험을 만들었습니다.<br>
+                                            인트로 페이지에는 ‘입장’ 패스워드를 입력해야 메인 페이지로 이동할 수 있는 기능을 구현했으며,<br>
+                                            메인에서는 다양한 라이브러리를 활용해 더욱 풍부한 인터랙션을 시도했습니다.<br>
+                                            개발 과정에서도 “조금 더 새로운 느낌은 없을까?”를 고민하며 구성과 연출을 지속적으로 발전시켰습니다.
+                                        </p>
+                                        <div class="portfolio__link">
+                                            <a href="https://dbckgh8010.github.io/intro-playground/" target="_blank" class="portfolio">바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <h4 class="timeline__phase">
+                                        <span class="phase">3차</span>
+                                        <span class="text">PORTFOLIO</span>
+                                    </h4>
+                                    <div class="timeline__right">
+                                        <p class="timeline__desc">
+                                            신세계 L&B를 처음 클론코딩했지만 부족함을 느껴 학습 후 완전히 새로 제작해 완성도를 높였습니다.<br>
+                                            이후 삼성 라이온즈 홈페이지를 리뉴얼하며 구조와 디자인 분석 능력을 키웠고,<br>
+                                            대기업 페이지도 경험해보고 싶어 제네시스 홈페이지를 클론코딩했습니다.<br>
+                                            이번 포트폴리오에서는 새로운 방식을 시도하고자 사이드 네비게이션을 도입하고,<br>
+                                            날씨 API를 활용한 위젯 기능도 직접 구현하며 사용자 경험을 확장했습니다.<br>
+                                            색상도 차분한 색상으로 바꿨습니다.
+                                        </p>
+                                        <div class="portfolio__link">
+                                            <a href="https://dbckgh8010.github.io/portfolio-playground/" target="_blank" class="portfolio">바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <h4 class="timeline__phase">
+                                        <span class="phase">4차</span>
+                                        <span class="text">PORTFOLIO</span>
+                                    </h4>
+                                    <div class="timeline__right">
+                                        <p class="timeline__desc">
+                                            JavaScript 실력이 부족하다고 느껴 간단한 게임들을 직접 만들며 학습을 했습니다.<br>
+                                            카드 게임은 이미지가 섞인 뒤 잠시 공개되었다가 다시 뒤집히는 구조로 구현했고,<br> 
+                                            숫자 야구는 랜덤 정답 생성과 S/B/Out 판정 로직을 직접 작성해 완성했습니다.<br> 
+                                            포트폴리오 사이트 디자인 면에서는 메인 컬러가 배경에 묻히는 문제를 해결하기 위해<br> 
+                                            여러 사이트를 참고했고,<br>
+                                            기본 색상은 흰색·검정, 메인 컬러는 포인트로 사용해 조화를 맞추었습니다.<br>
+                                            또한 기존에 사용하던 사이드 메뉴 구조를 유지하면서 펼쳐지는 네비게이션 UX도 개선했습니다.
+                                        </p>
+                                        <div class="portfolio__link">
+                                            <a href="https://dbckgh8010.github.io/playground-portfolio/" target="_blank" class="portfolio">바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
                 <div class="resume">
                     <button class="resume__btn">
                         <img src="assets/img/icon/icon-file(b).png" alt="이력서 버튼 아이콘">
@@ -309,36 +460,26 @@
                 </div>
             </main>
             <footer class="footer">
-                <div class="footer__wrap">
-                    <div class="footer__inner">
-                        <div class="footer__logo">
-                            <h2 class="footer__title">YCH - Portfolio</h2>
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <h2 class="footer__title">YCH - Portfolio</h2>
+                    </div>
+                    <div class="contact__area">
+                        <div class="email">
+                            <p class="email__name">E-mail: dbckgh8010@naver.com</p>
                         </div>
-                        <div class="playground">
-                            <div class="playground__inner">
-                                <h2 class="playground__title"><span class="ani__underline">PLAYGROUND</span> 란?</h2>
-                                <div class="playground__desc">
-                                    <p class="desc__kr">웹을 하나의 놀이터처럼 누구나 자유롭고 편하게 즐길 수 있는 공간으로 만들고 싶어<br><span class="ani-underline__2">Playground</span> 라는 이름을 선택했습니다.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact-area">
-                            <div class="email">
-                                <p class="email__name">E-mail: dbckgh8010@naver.com</p>
-                            </div>
-                            <div class="social__link">
-                                <span class="open-kakao">
-                                    <img src="assets/img/common/kakao_open_talk.png" alt="오픈 카카오톡 QR코드">
-                                </span>
-                                <a href="javascript:void(0)" class="github">
-                                    <img src="assets/img/common/github.png" alt="깃허브 링크 이미지">
-                                </a>                            
-                            </div>
+                        <div class="social__link">
+                            <span class="open-kakao">
+                                <img src="assets/img/common/kakao_open_talk.png" alt="오픈 카카오톡 QR코드">
+                            </span>
+                            <a href="javascript:void(0)" class="github">
+                                <img src="assets/img/common/github.png" alt="깃허브 링크 이미지">
+                            </a>                            
                         </div>
                     </div>
-                    <div class="footer__copyright">
-                        <p class="copyright">© 2025 Yun-ChangHo All Rights Reserved</p>
-                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p class="copyright">© 2026 Yun-ChangHo All rights reserved.</p>
                 </div>
             </footer>
         </div>

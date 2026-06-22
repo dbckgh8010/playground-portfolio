@@ -1,66 +1,23 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const mySwiper = new Swiper(".swiper", {
-        slidesPerView: 1,
-        effect: "fade",
-        loop: true,
-        autoplay: {
-            delay: 8000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-		},
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    const tabButtons = document.querySelectorAll(".portfolio__tab-btn");
+    const portfolioItems = document.querySelectorAll(".portfolio__item");
 
-    const controlBtn = document.querySelector(".play-btn");
-    let isPlaying = true;
-    controlBtn.addEventListener("click", () => {
-        const swiper = mySwiper;
-        if (isPlaying) {
-            swiper.autoplay.stop();
-            swiper.slideTo(swiper.activeIndex, 0);
-            controlBtn.classList.add("playing");
-        } else {
-            swiper.params.autoplay.enabled = true;
-            swiper.autoplay.start();
-            controlBtn.classList.remove("playing");
-        };
-        isPlaying = !isPlaying;
-    });
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            tabButtons.forEach(btn => btn.classList.remove("is-active"));
+            button.classList.add("is-active");
 
-    const bars = document.querySelectorAll(".contribution__bar-fill");
+            const filterValue = button.getAttribute('data-filter');
 
-    bars.forEach(bar => {
-        const target = Number(bar.dataset.percent) || 0;
+            portfolioItems.forEach(item => {
+                const itemType = item.getAttribute('data-type');
 
-        function animateBar() {
-            bar.style.transition = "none";
-            bar.style.width = "0%";
-            bar.textContent = "0%";
-
-            requestAnimationFrame(() => {
-                requestAnimationFrame(() => {
-                    bar.style.transition = "width 3s ease-out";
-                    bar.style.width = target + "%";
-
-                    let current = 0;
-                    const duration = 3000;
-                    const frame = 16;
-                    const totalFrames = duration / frame;
-                    const increment = target / totalFrames;
-                    const counter = setInterval(() => {
-                        current += increment;
-                        if (current >= target) {
-                            current = target;
-                            clearInterval(counter);
-                        }
-                        bar.textContent = Math.floor(current) + "%";
-                    }, frame);
-                });
+                if (filterValue === 'all' || filterValue === itemType) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
             });
-            setTimeout(animateBar, 8000);
-        }
-        animateBar();
+        });
     });
-})
+});

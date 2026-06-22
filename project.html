@@ -24,523 +24,313 @@
 </head>
 <body>
     <div class="layout">
-        <div class="sidebar sidebar--close">
-            <div class="sidebar__wrap">
-                <div class="sidebar__inner">
-                    <div class="logo">
-                        <a href="https://dbckgh8010.github.io/playground-portfolio/" class="logo-img">
-                            <img src="assets/img/common/myphoto-circle.png" alt="윤창호 이미지">
-                            <span class="eng-name">YUN CHANG HO</span>
-                        </a>
-                    </div>
-                    <nav class="nav" aria-label="주 메뉴">
-                        <ul class="nav__wrap">
-                            <li class="nav__list">
-                                <a href="index.html" class="tab__btn">
-                                    <img src="assets/img/icon/home_icon.png" alt="홈 바로가기 버튼 이미지">
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li class="nav__list">
-                                <a href="about.html" class="tab__btn">
-                                    <img src="assets/img/icon/user_icon.png" alt="자기소개 바로가기 버튼 이미지">
-                                    <span>About</span>
-                                </a>
-                            </li>
-                            <li class="nav__list">
-                                <a href="#section-project" class="tab__btn active">
-                                    <img src="assets/img/icon/file-text_icon.png" alt="프로젝트 바로가기 버튼 이미지">
-                                    <span>Projects</span>
-                                </a>
-                            </li>
-                            <li class="nav__list">
-                                <a href="about.html#section-stack" class="tab__btn">
-                                    <img src="assets/img/icon/Star-circle_icon.png" alt="느낀점 바로가기 버튼 이미지">
-                                    <span>Stack</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="nav__btn">
-                        <div class="nav__toggle">
-                            <button class="menu__btn" type="button">
-                                <img src="assets/img/icon/Menu(b)_icon.png" alt="평상시 메뉴 이미지" class="img--default">
-                                <img src="assets/img/icon/Menu-circle-btn(b)_icon.png" alt="호버 메뉴 이미지" class="img--hover">
-                            </button>
+        <header class="sidebar sidebar--close">
+            <div class="sidebar__inner">
+                <a href="https://dbckgh8010.github.io/playground-portfolio/" class="sidebar__logo">
+                    <img src="assets/img/common/myphoto-circle.png" alt="윤창호 이미지" class="sidebar__logo-img">
+                    <span class="sidebar__logo-text">YUN CHANG HO</span>
+                </a>
+                <nav class="nav" aria-label="주 메뉴">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__item-btn">
+                                <img src="assets/img/icon/home_icon.png" alt="홈 바로가기 버튼 이미지">
+                                <span class="nav__text">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__item-btn">
+                                <img src="assets/img/icon/user_icon.png" alt="자기소개 바로가기 버튼 이미지">
+                                <span class="nav__text">About</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="project.html" class="nav__item-btn active">
+                                <img src="assets/img/icon/file-text_icon.png" alt="프로젝트 바로가기 버튼 이미지">
+                                <span class="nav__text">Projects</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="sidebar__toggle-btn" type="button">
+                    <img src="assets/img/icon/Menu(b)_icon.png" alt="평상시 메뉴 이미지" class="img--default">
+                    <img src="assets/img/icon/Menu-circle-btn(b)_icon.png" alt="호버 메뉴 이미지" class="img--hover">
+                </button>
+                <div class="sidebar-widgets">
+                    <div class="sidebar-info inner">
+                        <div class="time-ko">
+                            <div class="sidebar__year">년</div>
+                            <div class="sidebar__day">날짜</div>
+                            <div class="sidebar__weekday"></div>
+                            <div class="sidebar__time">시간</div>
                         </div>
-                    </div>
-                    <div class="sidebar-widgets">
-                        <div class="sidebar-info inner">
-                            <div class="time-ko">
-                                <div class="year">년</div>
-                                <div class="day">날짜</div>
-                                <div class="weekday"></div>
-                                <div class="time">시간</div>
-                            </div>
-                            <div class="weather-tab">
-                                <button class="weather-btn" type="button">날씨 검색</button>
-                            </div>
+                        <div class="weather-tab">
+                            <button class="weather-btn" type="button">날씨 검색</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
         <div class="content">
             <main class="main">
-                <section class="project--pc">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide project--shinsegae">
-                                <div class="project__wrap">
-                                    <div class="project__inner--top">
-                                        <h3 class="project__name">Shinsegae L&amp;B</h3>
-                                        <ul class="meta__list">
-                                            <li class="meta__item type">
-                                                <span class="meta__label">Type</span>
-                                                <span class="meta__value">PC형</span>
-                                            </li>
-                                            <li class="meta__item skill">
-                                                <span class="meta__label">Skill</span>
-                                                <div class="meta__value">
-                                                    <ul class="skill">
-                                                        <li class="skill__item">
-                                                            <img src="assets/img/icon/html5-symbol.png" alt="HTML5">
-                                                        </li>
-                                                        <li class="skill__item">
-                                                            <img src="assets/img/icon/css-symbol.png" alt="CSS">
-                                                        </li>
-                                                        <li class="skill__item">
-                                                            <img src="assets/img/icon/javascript-symbol.png" alt="Javascript">
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="project__inner--bottom">
-                                        <div class="contribution">
-                                            <span class="contribution__title">기여도</span>
-                                            <div class="contribution__bar">
-                                                <div class="contribution__bar-fill" data-percent="100">100%</div>
-                                            </div>
-                                        </div>
-                                        <div class="project__desc">
-                                            <p>
-                                                신세계 L&B 웹사이트를 구조와 흐름 그대로 클론 코딩했습니다.<br>
-                                                메인 슬라이더, 브랜드 스토리, 상품 분류 등 주요 UI를 구현했습니다.<br>
-                                                HTML/CSS/JS 기반 퍼블리싱 역량을 확실히 끌어올린 프로젝트입니다.
-                                            </p>
-                                        </div>
-                                        <div class="project__link">
-                                            <a href="https://dbckgh8010.github.io/shinsegae-lnb_2/" target="_blank" class="link">View Project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide project--lespace">
-                                <div class="project__wrap">
-                                    <div class="project__inner--top">
-                                        <h3 class="project__name">Lespace</h3>
-                                        <ul class="meta__list">
-                                            <li class="meta__item type">
-                                                <span class="meta__label">Type</span>
-                                                <span class="meta__value">PC형</span>
-                                            </li>
-                                            <li class="meta__item skill">
-                                                <span class="meta__label">Skill</span>
-                                                <div class="meta__value">
-                                                    <ul class="skill">
-                                                        <li class="skill__item">
-                                                            <img src="assets/img/icon/html5-symbol.png" alt="HTML5">
-                                                        </li>
-                                                        <li class="skill__item">
-                                                            <img src="assets/img/icon/css-symbol.png" alt="CSS">
-                                                        </li>
-                                                        <li class="skill__item">
-                                                            <img src="assets/img/icon/javascript-symbol.png" alt="Javascript">
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="project__inner--bottom">
-                                        <div class="contribution">
-                                            <span class="contribution__title">기여도</span>
-                                            <div class="contribution__bar">
-                                                <div class="contribution__bar-fill" data-percent="100">100%</div>
-                                            </div>
-                                        </div>
-                                        <div class="project__desc">
-                                            <p>
-                                                Lespace 사이트를 클론하며 브랜드 특유의 몰입감 있는 인트로를 구현했습니다.<br>
-                                                GSAP 기반 ScrollTrigger로 스크롤 연동 애니메이션을 직접 설계·제어했습니다.<br>
-                                                이를 통해 인트로 연출과 스크롤 애니메이션 제작 능력을 확실히 강화했습니다.<br>
-                                            </p>
-                                        </div>
-                                        <div class="project__link">
-                                            <a href="https://dbckgh8010.github.io/Lespace/" target="_blank" class="link">View Project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide project--genesis">
-                                <div class="project__wrap">
-                                    <div class="project__inner--top">
-                                        <h3 class="project__name">GENESIS</h3>
-                                        <ul class="meta__list">
-                                            <li class="meta__item type">
-                                                <span class="meta__label">Type</span>
-                                                <span class="meta__value">PC형</span>
-                                            </li>
-                                            <li class="meta__item skill">
-                                                <span class="meta__label">Skill</span>
-                                                <div class="meta__value">
-                                                    <ul class="skill">
-                                                        <li class="skill__item">
-                                                            <img src="assets/img/icon/html5-symbol.png" alt="HTML5">
-                                                        </li>
-                                                        <li class="skill__item">
-                                                            <img src="assets/img/icon/css-symbol.png" alt="CSS">
-                                                        </li>
-                                                        <li class="skill__item">
-                                                            <img src="assets/img/icon/javascript-symbol.png" alt="Javascript">
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="project__inner--bottom">
-                                        <div class="contribution">
-                                            <span class="contribution__title">기여도</span>
-                                            <div class="contribution__bar">
-                                                <div class="contribution__bar-fill" data-percent="100">100%</div>
-                                            </div>
-                                        </div>
-                                        <div class="project__desc">
-                                            <p>
-                                                Genesis 웹사이트를 그대로 참고해 처음부터 끝까지 직접 클론 제작했습니다.<br>
-                                                슬라이드 전환과 배경 이미지가 함께 움직이도록 구현하며 UI 타이밍을 익혔습니다.<br>
-                                                탭마다 다른 내용을 보여주는 구조를 만들며 이벤트 처리와 JS 로직을 강화했습니다.
-                                            </p>
-                                        </div>
-                                        <div class="project__link">
-                                            <a href="https://dbckgh8010.github.io/genesis/" target="_blank" class="link">View Project</a>
-                                        </div>
-                                    </div>
-                                </div>
+                <section class="portfolio">
+                    <div class="portfolio__inner">
+                        <div class="portfolio__top">
+                            <h2 class="portfolio__title">WEB PORTFOLIO</h2>
+                            <div class="portfolio__tab-wrapper">
+                                <button type="button" class="portfolio__tab-btn is-active" data-filter="all">전체</button>
+                                <button type="button" class="portfolio__tab-btn" data-filter="adaptive">적응형</button>
+                                <button type="button" class="portfolio__tab-btn" data-filter="responsive">반응형</button>
+                                <button type="button" class="portfolio__tab-btn" data-filter="personal">개인작업</button>
                             </div>
                         </div>
-                        <div class="swiper-control">
-                            <div class="swiper-pagination"></div>
-                            <button class="play-btn" aria-label="자동재생정지"></button>
-                        </div>
-                    </div>  
-                </section>
-                <section class="project__responsive">
-                    <div class="responsive__wrap">
-                        <ul class="responsive__list">
-                            <li class="responsive__item item--hansolpns">
-                                <div class="item__info">
-                                    <div class="info__top">
-                                        <h3 class="item__name">한솔PnS</h3>
-                                        <p class="skill__name">HTML · CSS · JS</p>
+                        <ul class="portfolio__list">
+                            <li class="portfolio__item" data-type="responsive">
+                                <div class="portfolio__img-box">
+                                    <img src="assets/img/project/project-shinsegae-lnb_2.png" alt="신세계L&B 메인페이지 이미지">
+                                </div>
+                                <div class="portfolio__info">
+                                    <div class="portfolio__bage">
+                                        <span class="portfolio__bage-item portfolio__badge--year-2026">2026</span>
+                                        <span class="portfolio__bage-item portfolio__responsive">반응형</span>
                                     </div>
-                                    <div class="info__bottom">
-                                        <p class="type">반응형</p>
-                                        <p class="responsive__desc">클론코딩한 프로젝트로<br> 기존 사이트의 구조와 디자인을<br> 바탕으로 구현했습니다.</p>
-                                    </div>
-                                    <div class="project__link">
-                                        <a href="https://dbckgh8010.github.io/hansolpns/" target="_blank" class="link">VIEW</a>
-                                    </div>
+                                    <h3 class="portfolio__subject">신세계L&B 2차</h3>
+                                </div>
+                                <div class="portfolio__link">
+                                    <a href="https://dbckgh8010.github.io/shinsegae-lnb_2/" target="_blank" class="portfolio__link-btn portfolio__site">Go Site</a>
+                                    <a href="project/shinsegaelnb_2.html" target="_blank" class="portfolio__link-btn portfolio__popup">Read More</a>
+                                    <a href="https://github.com/dbckgh8010/shinsegae-lnb_2" target="_blank" class="portfolio__link-btn portfolio__code">Code</a>
                                 </div>
                             </li>
-                            <li class="responsive__item item--kia">
-                                <div class="item__info">
-                                    <div class="info__top">
-                                        <h3 class="item__name">KIA</h3>
-                                        <p class="skill__name">HTML · CSS · JS</p>
+                            <li class="portfolio__item" data-type="responsive">
+                                <div class="portfolio__img-box">
+                                    <img src="assets/img/project/project-hansolpns.png" alt="한솔PNS 메인페이지 이미지">
+                                </div>
+                                <div class="portfolio__info">
+                                    <div class="portfolio__bage">
+                                        <span class="portfolio__bage-item portfolio__badge--year-2026">2026</span>
+                                        <span class="portfolio__bage-item portfolio__responsive">반응형</span>
                                     </div>
-                                    <div class="info__bottom">
-                                        <p class="type">반응형</p>
-                                        <p class="responsive__desc">AOS를 적용해 슬라이드 전환 시 텍스트에 생동감을 더했습니다.</p>
-                                        <div class="project__link">
-                                            <a href="https://dbckgh8010.github.io/KIA/" target="_blank" class="link">VIEW</a>
-                                        </div>
-                                    </div>
+                                    <h3 class="portfolio__subject">한솔PNS</h3>
+                                </div>
+                                <div class="portfolio__link">
+                                    <a href="https://dbckgh8010.github.io/hansolpns/" target="_blank" class="portfolio__link-btn portfolio__site">Go Site</a>
+                                    <a href="project/hansolpns.html" target="_blank" class="portfolio__link-btn portfolio__popup">Read More</a>
+                                    <a href="https://github.com/dbckgh8010/hansolpns" target="_blank" class="portfolio__link-btn portfolio__code">Code</a>
                                 </div>
                             </li>
-                            <li class="responsive__item item--samsunglions">
-                                <div class="item__info">
-                                    <div class="info__top">
-                                        <h3 class="item__name">SamsungLions</h3>
-                                        <p class="skill__name">HTML · CSS · JS</p>
+                            <li class="portfolio__item" data-type="personal">
+                                <div class="portfolio__img-box">
+                                    <img src="assets/img/project/project-portfolio--4.png" alt="포트폴리오 4차 메인 이미지">
+                                </div>
+                                <div class="portfolio__info">
+                                    <div class="portfolio__bage">
+                                        <span class="portfolio__bage-item portfolio__badge--year-2026">2026</span>
+                                        <span class="portfolio__bage-item portfolio__responsive">반응형</span>
                                     </div>
-                                    <div class="info__bottom">
-                                        <p class="type">반응형</p>
-                                        <p class="responsive__desc">리뉴얼한 페이지이며<br> 인트로 구조를 활용해<br> 메인 페이지로 이동하도록 구현했습니다.</p>
-                                        <div class="project__link">
-                                            <a href="https://dbckgh8010.github.io/samsunglions/" target="_blank" class="link">VIEW</a>
-                                        </div>
-                                    </div>
+                                    <h3 class="portfolio__subject">PORTFOLIO 4차</h3>
+                                </div>
+                                <div class="portfolio__link">
+                                    <a href="https://dbckgh8010.github.io/playground-portfolio/" target="_blank" class="portfolio__link-btn portfolio__site">Go Site</a>
+                                    <a href="project/portfolio_4.html" target="_blank" class="portfolio__link-btn portfolio__popup">Read More</a>
+                                    <a href="https://github.com/dbckgh8010/playground-portfolio" target="_blank" class="portfolio__link-btn portfolio__code">Code</a>
                                 </div>
                             </li>
-                            <li class="responsive__item item--number">
-                                <div class="item__info">
-                                    <div class="info__top">
-                                        <h3 class="item__name">Number Game</h3>
-                                        <p class="skill__name">HTML · CSS · JS</p>
+                            <li class="portfolio__item" data-type="responsive">
+                                <div class="portfolio__img-box">
+                                    <img src="assets/img/project/project-samsunglions.png" alt="삼성라이온즈 메인페이지 이미지">
+                                </div>
+                                <div class="portfolio__info">
+                                    <div class="portfolio__bage">
+                                        <span class="portfolio__bage-item portfolio__badge--year-2026">2026</span>
+                                        <span class="portfolio__bage-item portfolio__responsive">반응형</span>
                                     </div>
-                                    <div class="info__bottom">
-                                        <p class="type">Game</p>
-                                        <p class="responsive__desc">JS를 공부하기 위해<br> 직접 설계한 UI와 JS 로직으로<br> 완성한 인터랙티브 숫자 야구 게임입니다.</p>
-                                        <div class="project__link">
-                                            <a href="https://dbckgh8010.github.io/game-baseball/" target="_blank" class="link">VIEW</a>
-                                        </div>
-                                    </div>
+                                    <h3 class="portfolio__subject">삼성라이온즈</h3>
+                                </div>
+                                <div class="portfolio__link">
+                                    <a href="https://dbckgh8010.github.io/samsunglions/" target="_blank" class="portfolio__link-btn portfolio__site">Go Site</a>
+                                    <a href="project/samsunglions.html" target="_blank" class="portfolio__link-btn portfolio__popup">Read More</a>
+                                    <a href="https://github.com/dbckgh8010/samsunglions" target="_blank" class="portfolio__link-btn portfolio__code">Code</a>
                                 </div>
                             </li>
-                            <li class="responsive__item item--card">
-                                <div class="item__info">
-                                    <div class="info__top">
-                                        <h3 class="item__name">Card Game</h3>
-                                        <p class="skill__name">HTML · CSS · JS</p>
+                            <li class="portfolio__item" data-type="adaptive">
+                                <div class="portfolio__img-box">
+                                    <img src="assets/img/project/project-genesis.png" alt="제네시스 메인페이지 이미지">
+                                </div>
+                                <div class="portfolio__info">
+                                    <div class="portfolio__bage">
+                                        <span class="portfolio__bage-item portfolio__badge--year-2025">2025</span>
+                                        <span class="portfolio__bage-item portfolio__adaptive">적응형</span>
                                     </div>
-                                    <div class="info__bottom">
-                                        <p class="type">Game</p>
-                                        <p class="responsive__desc">JS를 공부하기 위해<br> 카드 비교, 매칭 판정, 재시작 기능을<br> 포함한 카드 뒤집기 게임입니다.</p>
-                                        <div class="project__link">
-                                            <a href="https://dbckgh8010.github.io/game_card/" target="_blank" class="link">VIEW</a>
-                                        </div>
+                                    <h3 class="portfolio__subject">GENESIS</h3>
+                                </div>
+                                <div class="portfolio__link">
+                                    <a href="https://dbckgh8010.github.io/genesis/" target="_blank" class="portfolio__link-btn portfolio__site">Go Site</a>
+                                    <a href="project/genesis.html" target="_blank" class="portfolio__link-btn portfolio__popup">Read More</a>
+                                    <a href="https://github.com/dbckgh8010/genesis" target="_blank" class="portfolio__link-btn portfolio__code">Code</a>
+                                </div>
+                            </li>
+                            <li class="portfolio__item" data-type="responsive">
+                                <div class="portfolio__img-box">
+                                    <img src="assets/img/project/project-KIA.png" alt="기아자동차 메인페이지 이미지">
+                                </div>
+                                <div class="portfolio__info">
+                                    <div class="portfolio__bage">
+                                        <span class="portfolio__bage-item portfolio__badge--year-2025">2025</span>
+                                        <span class="portfolio__bage-item portfolio__responsive">반응형</span>
                                     </div>
+                                    <h3 class="portfolio__subject">KIA</h3>
+                                </div>
+                                <div class="portfolio__link">
+                                    <a href="https://dbckgh8010.github.io/KIA/" target="_blank" class="portfolio__link-btn portfolio__site">Go Site</a>
+                                    <a href="project/kia.html" target="_blank" class="portfolio__link-btn portfolio__popup">Read More</a>
+                                    <a href="https://github.com/dbckgh8010/KIA" target="_blank" class="portfolio__link-btn portfolio__code">Code</a>
+                                </div>
+                            </li>
+                            <li class="portfolio__item" data-type="personal">
+                                <div class="portfolio__img-box">
+                                    <img src="assets/img/project/project-game-baseball.png" alt="숫자야구 메인페이지 이미지">
+                                </div>
+                                <div class="portfolio__info">
+                                    <div class="portfolio__bage">
+                                        <span class="portfolio__bage-item portfolio__badge--year-2025">2025</span>
+                                        <span class="portfolio__bage-item portfolio__adaptive">적응형</span>
+                                    </div>
+                                    <h3 class="portfolio__subject">NUMBER GAME</h3>
+                                </div>
+                                <div class="portfolio__link">
+                                    <a href="https://dbckgh8010.github.io/game-baseball/" target="_blank" class="portfolio__link-btn portfolio__site">Go Site</a>
+                                    <a href="project/numberbaseball.html" target="_blank" class="portfolio__link-btn portfolio__popup">Read More</a>
+                                    <a href="https://github.com/dbckgh8010/game-baseball" target="_blank" class="portfolio__link-btn portfolio__code">Code</a>
+                                </div>
+                            </li>
+                            <li class="portfolio__item" data-type="personal">
+                                <div class="portfolio__img-box">
+                                    <img src="assets/img/project/project-game_card.png" alt="카드맞추기 메인페이지 이미지">
+                                </div>
+                                <div class="portfolio__info">
+                                    <div class="portfolio__bage">
+                                        <span class="portfolio__bage-item portfolio__badge--year-2025">2025</span>
+                                        <span class="portfolio__bage-item portfolio__responsive">반응형</span>
+                                    </div>
+                                    <h3 class="portfolio__subject">CARD GAME</h3>
+                                </div>
+                                <div class="portfolio__link">
+                                    <a href="https://dbckgh8010.github.io/game_card/" target="_blank" class="portfolio__link-btn portfolio__site">Go Site</a>
+                                    <a href="project/cardgame.html" target="_blank" class="portfolio__link-btn portfolio__popup">Read More</a>
+                                    <a href="https://github.com/dbckgh8010/game_card" target="_blank" class="portfolio__link-btn portfolio__code">Code</a>
+                                </div>
+                            </li>
+                            <li class="portfolio__item" data-type="personal">
+                                <div class="portfolio__img-box">
+                                    <img src="assets/img/project/project-portfolio--3.png" alt="포트폴리오 3차 메인페이지 이미지">
+                                </div>
+                                <div class="portfolio__info">
+                                    <div class="portfolio__bage">
+                                        <span class="portfolio__bage-item portfolio__badge--year-2025">2025</span>
+                                        <span class="portfolio__bage-item portfolio__responsive">반응형</span>
+                                    </div>
+                                    <h3 class="portfolio__subject">PORTFOLIO 3차</h3>
+                                </div>
+                                <div class="portfolio__link">
+                                    <a href="https://dbckgh8010.github.io/portfolio-playground/" target="_blank" class="portfolio__link-btn portfolio__site">Go Site</a>
+                                    <a href="project/portfolio_3.html" target="_blank" class="portfolio__link-btn portfolio__popup">Read More</a>
+                                    <a href="https://github.com/dbckgh8010/portfolio-playground" target="_blank" class="portfolio__link-btn portfolio__code">Code</a>
+                                </div>
+                            </li>
+                            <li class="portfolio__item" data-type="personal">
+                                <div class="portfolio__img-box">
+                                    <img src="assets/img/project/project-portfolio--2.png" alt="포트폴리오 2차 메인페이지 이미지">
+                                </div>
+                                <div class="portfolio__info">
+                                    <div class="portfolio__bage">
+                                        <span class="portfolio__bage-item portfolio__badge--year-2025">2025</span>
+                                        <span class="portfolio__bage-item portfolio__responsive">반응형</span>
+                                    </div>
+                                    <h3 class="portfolio__subject">PORTFOLIO 2차</h3>
+                                </div>
+                                <div class="portfolio__link">
+                                    <a href="https://dbckgh8010.github.io/intro-playground/" target="_blank" class="portfolio__link-btn portfolio__site">Go Site</a>
+                                    <a href="project/portfolio_2.html" target="_blank" class="portfolio__link-btn portfolio__popup">Read More</a>
+                                    <a href="https://github.com/dbckgh8010/playground" target="_blank" class="portfolio__link-btn portfolio__code">Code</a>
+                                </div>
+                            </li>
+                            <li class="portfolio__item" data-type="personal">
+                                <div class="portfolio__img-box">
+                                    <img src="assets/img/project/project-portfolio--1.png" alt="포트폴리오 1차 메인페이지 이미지">
+                                </div>
+                                <div class="portfolio__info">
+                                    <div class="portfolio__bage">
+                                        <span class="portfolio__bage-item portfolio__badge--year-2025">2025</span>
+                                        <span class="portfolio__bage-item portfolio__responsive">반응형</span>
+                                    </div>
+                                    <h3 class="portfolio__subject">PORTFOLIO 1차</h3>
+                                </div>
+                                <div class="portfolio__link">
+                                    <a href="https://dbckgh8010.github.io/portfolio/" target="_blank" class="portfolio__link-btn portfolio__site">Go Site</a>
+                                    <a href="project/portfolio_1.html" target="_blank" class="portfolio__link-btn portfolio__popup">Read More</a>
+                                    <a href="https://github.com/dbckgh8010/portfolio" target="_blank" class="portfolio__link-btn portfolio__code">Code</a>
+                                </div>
+                            </li>
+                            <li class="portfolio__item" data-type="adaptive">
+                                <div class="portfolio__img-box">
+                                    <img src="assets/img/project/project-lespace.png" alt="르스페이스 메인페이지 이미지">
+                                </div>
+                                <div class="portfolio__info">
+                                    <div class="portfolio__bage">
+                                        <span class="portfolio__bage-item portfolio__badge--year-2025">2025</span>
+                                        <span class="portfolio__bage-item portfolio__adaptive">적응형</span>
+                                    </div>
+                                    <h3 class="portfolio__subject">르스페이스</h3>
+                                </div>
+                                <div class="portfolio__link">
+                                    <a href="https://dbckgh8010.github.io/Lespace/" target="_blank" class="portfolio__link-btn portfolio__site">Go Site</a>
+                                    <a href="project/lespace.html" target="_blank" class="portfolio__link-btn portfolio__popup">Read More</a>
+                                    <a href="https://github.com/dbckgh8010/Lespace" target="_blank" class="portfolio__link-btn portfolio__code">Code</a>
+                                </div>
+                            </li>
+                            <li class="portfolio__item" data-type="adaptive">
+                                <div class="portfolio__img-box">
+                                    <img src="assets/img/project/project-shinsegae-lnb_1.png" alt="신세계L&B 메인페이지 이미지">
+                                </div>
+                                <div class="portfolio__info">
+                                    <div class="portfolio__bage">
+                                        <span class="portfolio__bage-item portfolio__badge--year-2025">2025</span>
+                                        <span class="portfolio__bage-item portfolio__adaptive">적응형</span>
+                                    </div>
+                                    <h3 class="portfolio__subject">신세계L&B 1차</h3>
+                                </div>
+                                <div class="portfolio__link">
+                                    <a href="https://dbckgh8010.github.io/shinsegae-lnb/" target="_blank" class="portfolio__link-btn portfolio__site">Go Site</a>
+                                    <a href="project/shinsegaelnb_1.html" target="_blank" class="portfolio__link-btn portfolio__popup">Read More</a>
+                                    <a href="https://github.com/dbckgh8010/shinsegae-lnb" target="_blank" class="portfolio__link-btn portfolio__code">Code</a>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </section>
-                <section class="project--timeline">
-                    <div class="timeline__wrap">
-                        <!-- 타임라인 PC 버전 -->
-                        <div class="timeline--pc">
-                            <div class="timeline__item">
-                                <h4 class="timeline__phase">
-                                    <span class="phase">1차</span>
-                                    <span class="text">PORTFOLIO</span>
-                                </h4>
-                                <div class="timeline__axis">
-                                    <span class="dot"></span>
-                                    <span class="line"></span>
-                                </div>
-                                <div class="timeline__right">
-                                    <p class="timeline__desc">
-                                        신세계 L&B와 한솔PNS를 처음으로 만들며 기본기를 다졌고,<br> 
-                                        그 과정에서 배운 점들을 바탕으로 첫 포트폴리오 사이트를 완성했습니다.<br> 
-                                        혼자 작업하다 보니 디자인보다는 구현에 집중했고, <br>
-                                        ‘포인트 색감만이라도 잘 잡자’는 생각으로 진행한 초기 시도였습니다.
-                                    </p>
-                                    <div class="portfolio__link">
-                                        <a href="https://dbckgh8010.github.io/portfolio/" target="_blank" class="portfolio">바로가기</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <h4 class="timeline__phase">
-                                    <span class="phase">2차</span>
-                                    <span class="text">PORTFOLIO</span>
-                                </h4>
-                                <div class="timeline__axis">
-                                    <span class="dot"></span>
-                                    <span class="line"></span>
-                                </div>
-                                <div class="timeline__right">
-                                    <p class="timeline__desc">
-                                        르스페이스와 기아 홈페이지를 추가로 클론코딩하며 퍼블리싱 역량을 더욱 확장했고,<br>
-                                        이를 바탕으로 기존과는 다른 방식의 포트폴리오 입장 경험을 만들었습니다.<br>
-                                        인트로 페이지에는 ‘입장’ 패스워드를 입력해야 메인 페이지로 이동할 수 있는 기능을 구현했으며,<br>
-                                        메인에서는 다양한 라이브러리를 활용해 더욱 풍부한 인터랙션을 시도했습니다.<br>
-                                        개발 과정에서도 “조금 더 새로운 느낌은 없을까?”를 고민하며 구성과 연출을 지속적으로 발전시켰습니다.
-                                    </p>
-                                    <div class="portfolio__link">
-                                        <a href="https://dbckgh8010.github.io/intro-playground/" target="_blank" class="portfolio">바로가기</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <h4 class="timeline__phase">
-                                    <span class="phase">3차</span>
-                                    <span class="text">PORTFOLIO</span>
-                                </h4>
-                                <div class="timeline__axis">
-                                    <span class="dot"></span>
-                                    <span class="line"></span>
-                                </div>
-                                <div class="timeline__right">
-                                    <p class="timeline__desc">
-                                        신세계 L&B를 처음 클론코딩했지만 부족함을 느껴 학습 후 완전히 새로 제작해 완성도를 높였습니다.<br>
-                                        이후 삼성 라이온즈 홈페이지를 리뉴얼하며 구조와 디자인 분석 능력을 키웠고,<br>
-                                        대기업 페이지도 경험해보고 싶어 제네시스 홈페이지를 클론코딩했습니다.<br>
-                                        이번 포트폴리오에서는 새로운 방식을 시도하고자 사이드 네비게이션을 도입하고,<br>
-                                        날씨 API를 활용한 위젯 기능도 직접 구현하며 사용자 경험을 확장했습니다.<br>
-                                        색상도 차분한 색상으로 바꿨습니다.
-                                    </p>
-                                    <div class="portfolio__link">
-                                        <a href="https://dbckgh8010.github.io/portfolio-playground/" target="_blank" class="portfolio">바로가기</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <h4 class="timeline__phase">
-                                    <span class="phase">4차</span>
-                                    <span class="text">PORTFOLIO</span>
-                                </h4>
-                                <div class="timeline__axis">
-                                    <span class="dot"></span>
-                                    <span class="line"></span>
-                                </div>
-                                <div class="timeline__right">
-                                    <p class="timeline__desc">
-                                        JavaScript 실력이 부족하다고 느껴 간단한 게임들을 직접 만들며 학습을 했습니다.<br>
-                                        카드 게임은 이미지가 섞인 뒤 잠시 공개되었다가 다시 뒤집히는 구조로 구현했고,<br> 
-                                        숫자 야구는 랜덤 정답 생성과 S/B/Out 판정 로직을 직접 작성해 완성했습니다.<br> 
-                                        포트폴리오 사이트 디자인 면에서는 메인 컬러가 배경에 묻히는 문제를 해결하기 위해<br> 
-                                        여러 사이트를 참고했고,<br>
-                                        기본 색상은 흰색·검정, 메인 컬러는 포인트로 사용해 조화를 맞추었습니다.<br>
-                                        또한 기존에 사용하던 사이드 메뉴 구조를 유지하면서 펼쳐지는 네비게이션 UX도 개선했습니다.
-                                    </p>
-                                    <div class="portfolio__link">
-                                        <a href="https://dbckgh8010.github.io/playground-portfolio/" target="_blank" class="portfolio">바로가기</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 타임라인 모바일 버전 -->
-                        <div class="timeline--mo">
-                            <div class="timeline__item">
-                                <div class="timeline__axis">
-                                    <span class="dot"></span>
-                                    <span class="line"></span>
-                                </div>
-                                <div class="timeline__content">
-                                    <h4 class="timeline__phase">
-                                        <span class="phase">1차</span>
-                                        <span class="text">PORTFOLIO</span>
-                                    </h4>
-                                    <div class="timeline__right">
-                                        <p class="timeline__desc">
-                                            신세계 L&B와 한솔PNS를 처음으로 만들며 기본기를 다졌고,<br> 
-                                            그 과정에서 배운 점들을 바탕으로 첫 포트폴리오 사이트를 완성했습니다.<br> 
-                                            혼자 작업하다 보니 디자인보다는 구현에 집중했고, <br>
-                                            ‘포인트 색감만이라도 잘 잡자’는 생각으로 진행한 초기 시도였습니다.
-                                        </p>
-                                        <div class="portfolio__link">
-                                            <a href="https://dbckgh8010.github.io/portfolio/" target="_blank" class="portfolio">바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__axis">
-                                    <span class="dot"></span>
-                                    <span class="line"></span>
-                                </div>
-                                <div class="timeline__content">
-                                    <h4 class="timeline__phase">
-                                        <span class="phase">2차</span>
-                                        <span class="text">PORTFOLIO</span>
-                                    </h4>
-                                    <div class="timeline__right">
-                                        <p class="timeline__desc">
-                                            르스페이스와 기아 홈페이지를 추가로 클론코딩하며 퍼블리싱 역량을 더욱 확장했고,<br>
-                                            이를 바탕으로 기존과는 다른 방식의 포트폴리오 입장 경험을 만들었습니다.<br>
-                                            인트로 페이지에는 ‘입장’ 패스워드를 입력해야 메인 페이지로 이동할 수 있는 기능을 구현했으며,<br>
-                                            메인에서는 다양한 라이브러리를 활용해 더욱 풍부한 인터랙션을 시도했습니다.<br>
-                                            개발 과정에서도 “조금 더 새로운 느낌은 없을까?”를 고민하며 구성과 연출을 지속적으로 발전시켰습니다.
-                                        </p>
-                                        <div class="portfolio__link">
-                                            <a href="https://dbckgh8010.github.io/intro-playground/" target="_blank" class="portfolio">바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__axis">
-                                    <span class="dot"></span>
-                                    <span class="line"></span>
-                                </div>
-                                <div class="timeline__content">
-                                    <h4 class="timeline__phase">
-                                        <span class="phase">3차</span>
-                                        <span class="text">PORTFOLIO</span>
-                                    </h4>
-                                    <div class="timeline__right">
-                                        <p class="timeline__desc">
-                                            신세계 L&B를 처음 클론코딩했지만 부족함을 느껴 학습 후 완전히 새로 제작해 완성도를 높였습니다.<br>
-                                            이후 삼성 라이온즈 홈페이지를 리뉴얼하며 구조와 디자인 분석 능력을 키웠고,<br>
-                                            대기업 페이지도 경험해보고 싶어 제네시스 홈페이지를 클론코딩했습니다.<br>
-                                            이번 포트폴리오에서는 새로운 방식을 시도하고자 사이드 네비게이션을 도입하고,<br>
-                                            날씨 API를 활용한 위젯 기능도 직접 구현하며 사용자 경험을 확장했습니다.<br>
-                                            색상도 차분한 색상으로 바꿨습니다.
-                                        </p>
-                                        <div class="portfolio__link">
-                                            <a href="https://dbckgh8010.github.io/portfolio-playground/" target="_blank" class="portfolio">바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__axis">
-                                    <span class="dot"></span>
-                                    <span class="line"></span>
-                                </div>
-                                <div class="timeline__content">
-                                    <h4 class="timeline__phase">
-                                        <span class="phase">4차</span>
-                                        <span class="text">PORTFOLIO</span>
-                                    </h4>
-                                    <div class="timeline__right">
-                                        <p class="timeline__desc">
-                                            JavaScript 실력이 부족하다고 느껴 간단한 게임들을 직접 만들며 학습을 했습니다.<br>
-                                            카드 게임은 이미지가 섞인 뒤 잠시 공개되었다가 다시 뒤집히는 구조로 구현했고,<br> 
-                                            숫자 야구는 랜덤 정답 생성과 S/B/Out 판정 로직을 직접 작성해 완성했습니다.<br> 
-                                            포트폴리오 사이트 디자인 면에서는 메인 컬러가 배경에 묻히는 문제를 해결하기 위해<br> 
-                                            여러 사이트를 참고했고,<br>
-                                            기본 색상은 흰색·검정, 메인 컬러는 포인트로 사용해 조화를 맞추었습니다.<br>
-                                            또한 기존에 사용하던 사이드 메뉴 구조를 유지하면서 펼쳐지는 네비게이션 UX도 개선했습니다.
-                                        </p>
-                                        <div class="portfolio__link">
-                                            <a href="https://dbckgh8010.github.io/playground-portfolio/" target="_blank" class="portfolio">바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </main>
             <footer class="footer">
-                <div class="footer-wrap">
-                    <div class="footer-inner">
-                        <div class="footer-logo">
-                            <h2 class="footer-title">YCH - Portfolio</h2>
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <h2 class="footer__title">YCH - Portfolio</h2>
+                    </div>
+                    <div class="contact__area">
+                        <div class="email">
+                            <p class="email__name">E-mail: dbckgh8010@naver.com</p>
                         </div>
-                        <div class="contact-area">
-                            <div class="email">
-                                <p class="email-name">E-mail: dbckgh8010@naver.com</p>
-                            </div>
-                            <div class="social-link">
-                                <span class="open-kakao">
-                                    <img src="assets/img/common/kakao_open_talk.png" alt="오픈 카카오톡 QR코드">
-                                </span>
-                                <a href="javascript:void(0)" class="github">
-                                    <img src="assets/img/common/github.png" alt="깃허브 링크 이미지">
-                                </a>                            
-                            </div>
+                        <div class="social__link">
+                            <span class="open-kakao">
+                                <img src="assets/img/common/kakao_open_talk.png" alt="오픈 카카오톡 QR코드">
+                            </span>
+                            <a href="javascript:void(0)" class="github">
+                                <img src="assets/img/common/github.png" alt="깃허브 링크 이미지">
+                            </a>                            
                         </div>
                     </div>
-                    <div class="footer-copyright">
-                        <p class="copyright">© 2025 Yun-ChangHo All Rights Reserved</p>
-                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p class="copyright">© 2026 Yun-ChangHo All rights reserved.</p>
                 </div>
             </footer>
         </div>

@@ -17,7 +17,7 @@ $(function() {
                     { x: 0, y: 0 },
                     { x: 300, y: 300},
                     { x: 400, y: 500},
-                    { x: 270, y: 2100} 
+                    { x: 270, y: 2330} 
                 ],
                 curviness: 1.25,
                 autoRotate: false,
@@ -40,7 +40,7 @@ $(function() {
                     { x: 0, y: 0 },
                     { x: 300, y: 300},
                     { x: 400, y: 500},
-                    { x: 270, y: 2150} 
+                    { x: 270, y: 2330} 
                 ],
                 curviness: 1.25,
                 autoRotate: false,
@@ -50,7 +50,7 @@ $(function() {
             ease: "none",
         });
     });
-    mm.add("(min-width: 1101px) and (max-width: 1200px)", () => {
+    mm.add("(min-width: 1025px) and (max-width: 1200px)", () => {
         gsap.to(".moving__img", {
             scrollTrigger: {
                 trigger: ".motion__section",
@@ -63,7 +63,7 @@ $(function() {
                     {x: 0, y: 0},
                     {x: 250, y: 300},
                     {x: 300, y: 500},
-                    {x: 230, y: 2300} 
+                    {x: 210, y: 2330} 
                 ],
                 curviness: 1.25,
                 autoRotate: false,
@@ -76,7 +76,35 @@ $(function() {
 });
 
 $(function() {
-    AOS.init({duration: 1200})
+    function handleAOS() {
+        const windowWidth = $(window).width();
+
+        if(windowWidth <= 768) {
+            AOS.init({
+                offset: 30,
+                duration: 600,
+                anchorPlacement: 'top-bottom',
+                once: false
+            });
+        } else if(windowWidth > 768 && windowWidth <= 1024) {
+            AOS.init({
+                offset: 100,
+                durantion: 800,
+                anchorPlacement: 'top-bottom',
+                once: false
+            });
+        } else {
+            AOS.init({
+                offset: 200,
+                duration: 1000,
+                anchorPlacement: 'top-bottom',
+                once: false
+            });
+        }
+    };
+    $(window).on('load', () => {
+        handleAOS();
+    });
 })
 $(function() {
     $(".category__item").click(function () {
@@ -104,10 +132,8 @@ $(function() {
         speed: 2000,
         allowTouchMove: false,
         autoplay: {
-            delay: 0,
+            delay: 1000,
             disableOnInteraction: false,
-            pauseOnMouseEnter: false,
-            waitForTransition: false,
         },
         freeMode: true,
         freeModeMomentum: false,
@@ -139,5 +165,82 @@ $(function() {
     });
     $(".inner__cards").on('mouseleave',function() {
         cardSwiper.autoplay.start();
+    });
+})
+
+$(function() {
+    const projectData = {
+        shinsegae: {
+            title: "신세계L&B",
+            desc: `
+            <dl class="project-popup__meta-list">
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">기여도</dt>
+                    <dd class="project-popup__meta-desc">100%</dd> 
+                </div>
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">유형</dt>
+                    <dd class="project-popup__meta-desc">반응형 웹 (PC / Mobile)</dd> 
+                </div>
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">작업 범위</dt>
+                    <dd class="project-popup__meta-desc">메인 페이지</dd> 
+                </div>
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">기술 스택</dt>
+                    <dd class="project-popup__meta-desc">HTML5 / CSS3 / JavaScript</dd> 
+                </div>
+            </dl>
+            <p class="project-popup__description">신세계L&B 공식 홈페이지를 클론코딩하여 비주얼 중심의 정적 레이아웃과 UI 인터랙션을 재현했습니다.</p>`,
+            img: `<img src="assets/img/project/shinsegae-fullpage.png" alt="신세계L&B 메인 이미지">`,
+            viewUrl: "https://dbckgh8010.github.io/shinsegae-lnb_2/",
+            detailUrl: "javascript:void(0);"
+        },
+        hansol: {
+            title: "한솔PNS",
+            desc: `
+            <dl class="project-popup__meta-list">
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">기여도</dt>
+                    <dd class="project-popup__meta-desc">100%</dd> 
+                </div>
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">유형</dt>
+                    <dd class="project-popup__meta-desc">반응형 웹 (PC / Mobile)</dd> 
+                </div>
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">작업 범위</dt>
+                    <dd class="project-popup__meta-desc">메인 페이지</dd> 
+                </div>
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">기술 스택</dt>
+                    <dd class="project-popup__meta-desc">HTML5 / CSS3 / JavaScript</dd> 
+                </div>
+            </dl>
+            <p class="project-popup__description">신세계L&B 공식 홈페이지를 클론코딩하여 비주얼 중심의 정적 레이아웃과 UI 인터랙션을 재현했습니다.</p>`,
+            img: `<img src="assets/img/project/hansolpns-fullpage.png" alt="신세계L&B 메인 이미지">`,
+            viewUrl: "https://dbckgh8010.github.io/hansolpns/",
+            detailUrl: "javascript:void(0);",
+        }
+    };
+
+    $(".project__link").on('click', function() {
+        const projectId = $(this).data("id");
+        const data = projectData[projectId];
+
+        if (data) {
+            $(".popup__site-title").text(data.title);
+            $(".project-popup__main-desc").html(data.desc);
+            $(".project-popup__main-img").html(data.img);
+            $(".project-popup__link--view").attr("href", data.viewUrl);
+            $(".project-popup__link--detail").attr("href", data.detailUrl);
+
+            $(".project-popup").addClass("is-open");
+            $("body").addClass("on");
+        }
+    });
+    $(".project-popup__close-btn").on("click", function() {
+        $(".project-popup").removeClass("is-open");
+        $("body").removeClass("on");
     });
 })

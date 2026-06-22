@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
         animateBar();
     });
 
-    const menuAbout = document.querySelector(".menu__about");
-    const menuStack = document.querySelector(".menu__stack");
+    const menuAbout = document.querySelector(".nav__about");
+    const menuStack = document.querySelector(".nav__stack");
 
     const sectionAbout = document.getElementById("section-about");
     const sectionStack = document.getElementById("section-stack");

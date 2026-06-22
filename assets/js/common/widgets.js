@@ -13,10 +13,10 @@ $(function() {
         const daysOfWeek = ["일", "월", "화", "수", "목", "금", "토"];
         const dayOfWeek = daysOfWeek[dateInfo.getDay()];
         
-        $(".year").html(`${year}년`);
-        $(".day").html(`${month}월&nbsp;${date}일`);
-        $(".weekday").html(`${dayOfWeek}요일`);
-        $(".time").html(`${hour}:${min}:${sec}`);
+        $(".sidebar__year").html(`${year}년`);
+        $(".sidebar__day").html(`${month}월&nbsp;${date}일`);
+        $(".sidebar__weekday").html(`${dayOfWeek}요일`);
+        $(".sidebar__time").html(`${hour}:${min}:${sec}`);
     }, 1000);
 
     gsap.registerPlugin(ScrollToPlugin);

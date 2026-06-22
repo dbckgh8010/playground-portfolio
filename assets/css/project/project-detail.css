@@ -1,0 +1,125 @@
+body {background-color: #F0F1F4; word-break: keep-all; font-family: 'Paperozi';}
+/*폰트 부분*/
+
+/*공통적인 요소*/
+.project {display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 50px 10px;}
+.card {padding: 40px 30px; background-color: #ffffff; border-radius: 25px;}
+.section-header {display: flex; align-items: center; margin-bottom: 30px;}
+.section-icon {border-radius: 10px; padding: 5px; margin-right: 10px;}
+.section-title {padding-right: 10px; font-size: 1.4rem; font-weight: 900;}
+.section-line {flex: 1; height: 2px; background-color: #686868;}
+.project__info-icon {display: flex; align-items: center; justify-content: center; padding: 10px; background-color: #F7FFE1; border: 1px solid #c4f000; border-radius: 15px;}
+
+@media (max-width: 1024px) {
+    .project {grid-template-columns: 1fr; padding: 50px 30px;}
+}
+@media (max-width: 768px) {
+    .card {padding: 20px;}
+}
+
+/*각 섹션*/
+.section-info .section-icon {background-color: #686868;}
+.section-key .section-icon {background-color: #7C6BFF;}
+.section-troubleshooting .section-icon {background-color: #FF7D9B;}
+
+
+/*섹션 마다*/
+.project__title {font-size: 4rem; font-weight: bold;}
+
+/*overview box부분 설정*/
+.project__overview {grid-column: span 8; padding: 100px 30px 20px;}
+.project__overview-header {display: flex; align-items: baseline; padding-bottom: 100px;}
+.project__overview-title {padding-right: 20px; font-size: 4rem; font-weight: 900; color: #5289DA;}
+.project__category {display: flex; align-items: flex-end; padding: 10px; font-weight: 900; border-radius: 15px; background-color: #c4f000;}
+.project__desc {max-width: 700px; line-height: 30px; font-size: 1.3rem; font-weight: 500;}
+.project__preview {position: relative; padding-top: 50px;}
+.project__img {max-height: 600px; overflow: hidden;}
+.project__img img {width: 100%; border-radius: 25px;}
+.img__open-btn {position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); z-index: 10; border: none; background-color: transparent; cursor: pointer;}
+.project__img.active {max-height: 9999px; overflow: visible;}
+.img__open-btn.active svg {rotate: 180deg;}
+
+@media (max-width: 1024px) {
+    .project__overview {grid-column: span 12;}
+}
+@media (max-width: 768px) {
+    .project__overview-header {flex-direction: column; padding-bottom: 50px;}
+    .project__overview-title {font-size: 3rem; padding: 0 0 10px;}
+    .project__desc {font-size: 1rem;}
+}
+@media (max-width: 480px) {
+    .project__overview {padding: 40px 20px;}
+    .project__overview-title {font-size: 2rem;}
+}
+/*info box부분 설정*/
+.project__info {grid-column: span 4;}
+.project__info-item {display: grid; grid-template-columns: 48px 1fr; gap: 20px; padding-bottom: 30px;}
+.project__info-label {display: block; margin-bottom: 10px; font-weight: 700;}
+.project__skills {display: flex;}
+.project__skills li {padding: 8px; margin-right: 10px; font-size: .8rem; font-weight: 900; border-radius: 15px;}
+.project__skills li:nth-child(1) {background-color: #ff4c4c;}
+.project__skills li:nth-child(2) {background-color: #1572B6;}
+.project__skills li:nth-child(3) {background-color: #ffc516;}
+.project__site {display: flex; justify-content: center;}
+.project__link--site {margin-right: 20px;}
+.project__link {display: flex; justify-content: center; width: 80px; padding: 20px 10px; font-size: 1rem; font-weight: 900; border-radius: 25px; color: #fff; background-color: #222222;}
+.project__link:hover {color: #222; background-color: #c4f000;}
+
+@media (max-width: 1024px) {
+    .project__info {grid-column: span 12;}
+}
+@media (max-width: 480px) {
+    .project__skills {display: flex; flex-direction: column;}
+    .project__skills li {width: 70px; margin: 0 0 10px;}
+}
+
+/*features box부분 설정*/
+.project__features {grid-column: 1 / -1;}
+.project__features-list {display: flex; width: 100%;}
+.project__features-item {display: flex; flex-direction: column; align-items: center; flex: 1;}
+.project__features-icon {padding: 10px; margin-bottom: 15px; border-radius: 50px;}
+.project__features-item:nth-child(1) .project__features-icon {background-color: #FFEDD5;}
+.project__features-item:nth-child(2) .project__features-icon {background-color: #EDE9FE;}
+.project__features-item:nth-child(3) .project__features-icon {background-color: #FEE2E2;}
+.project__features-item:nth-child(4) .project__features-icon {background-color: #CFFAFE;}
+.project__features-item:nth-child(5) .project__features-icon {background-color: #D1FAE5;}
+.project__features-title {display: block; padding-bottom: 10px;}
+
+@media (max-width: 1024px) {
+    .project__features {grid-column: span 12;}
+}
+@media (max-width: 768px) {
+    .project__features-list {display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;}
+    .project__features-icon svg {width: 30px; height: 30px;}
+    .project__features-title {font-size: 1rem;}
+    .project__features-desc {font-size: .8rem; text-align: center;}
+}
+
+/*troubleshooting box부분 설정*/
+.project__troubleshooting {grid-column: span 6;}
+.troubleshooting {display: flex; flex-direction: column; gap: 20px;}
+.troubleshooting__box {display: flex; align-items: flex-start; gap: 10px; padding: 20px 10px;}
+.troubleshooting__problem {background-color: #FFF7F8;}
+.troubleshooting__solution { background-color: #ebffe2;}
+.troubleshooting__arrow {display: flex; justify-content: center;}
+.problem-icon {margin-right: 20px; padding: 7px; background-color: #fec1c1; border-radius: 25px;}
+.solution-icon {margin-right: 20px; padding: 7px; background-color: #c0f8a6; border-radius: 25px;}
+.troubleshooting__content strong {display: block; padding-bottom: 10px;}
+.troubleshooting__desc {line-height: 24px;} 
+.troubleshooting__problem .troubleshooting__label {color: #ff6b6b;}
+.troubleshooting__solution .troubleshooting__label {color: #38C172;}
+
+@media (max-width: 1024px) {
+    .project__troubleshooting {grid-column: span 12;}
+}
+/*learning box부분 설정*/
+.project__learning {grid-column: span 6;}
+.project__learning .section-title {font-weight: 900; color: #5289DA;}
+.section-learning {padding-bottom: 20px; border-bottom: 2px solid #dedede;}
+.learning-item {display: flex; align-items: center; padding-bottom: 40px;}
+.learning-item svg { background-color: #5289DA; border-radius: 25px;}
+.learning-item__text {padding-left: 20px; font-size: 1.2rem; font-weight: 900;}
+
+@media (max-width: 1024px) {
+    .project__learning {grid-column: span 12;}
+}

@@ -1,5 +1,5 @@
 $(function() {
-    $(".nav__toggle").on('click', function() {
+    $(".sidebar__toggle-btn").on('click', function() {
         const $sidebar = $(".sidebar");
 
         if ($sidebar.hasClass('sidebar--close')) {
