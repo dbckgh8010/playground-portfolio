@@ -191,7 +191,7 @@ $(function() {
                     <dd class="project-popup__meta-desc">HTML5 / CSS3 / JavaScript</dd>
                 </div>
             </dl>
-            <p class="project-popup__description">신세계L&B 공식 홈페이지를 클론코딩하여 비주얼 중심의 정적 레이아웃과 UI 인터랙션을 재현했습니다.</p>`,
+            <p class="project-popup__description">신세계 L&B 홈페이지를 클론코딩하여 미디어 쿼리를 활용한 반응형 레이아웃을 구현했습니다.</p>`,
             img: `<img src="assets/img/project/shinsegae-fullpage.png" alt="신세계L&B 메인 풀 페이지 이미지">`,
             viewUrl: "https://dbckgh8010.github.io/shinsegae-lnb_2/",
             detailUrl: "../playground-portfolio/project/shinsegaelnb_2.html"
@@ -217,7 +217,7 @@ $(function() {
                     <dd class="project-popup__meta-desc">HTML5 / CSS3 / JavaScript</dd>
                 </div>
             </dl>
-            <p class="project-popup__description">신세계L&B 공식 홈페이지를 클론코딩하여 비주얼 중심의 정적 레이아웃과 UI 인터랙션을 재현했습니다.</p>`,
+            <p class="project-popup__description">한솔PNS 홈페이지를 클론코딩하여 시맨틱 태그를 준수한 마크업 구조를 설계했습니다.</p>`,
             img: `<img src="assets/img/project/hansolpns-fullpage.png" alt="신세계L&B 메인 풀 페이지 이미지">`,
             viewUrl: "https://dbckgh8010.github.io/hansolpns/",
             detailUrl: "../playground-portfolio/project/hansolpns.html"
@@ -243,7 +243,7 @@ $(function() {
                     <dd class="project-popup__meta-desc">HTML5 / CSS3 / JavaScript</dd>
                 </div>
             </dl>
-            <p class="project-popup__description">신세계L&B 공식 홈페이지를 클론코딩하여 비주얼 중심의 정적 레이아웃과 UI 인터랙션을 재현했습니다.</p>`,
+            <p class="project-popup__description">기아 공식 홈페이지를 클론코딩하여 크로스 브라우징을 고려한 UI 구조를 구현했습니다.</p>`,
             img: `<img src="assets/img/project/kia-fullpage.png" alt="기아 자동차 메인 풀 페이지 이미지">`,
             viewUrl: "https://dbckgh8010.github.io/KIA/",
             detailUrl: "../playground-portfolio/project/kia.html",
@@ -269,7 +269,7 @@ $(function() {
                     <dd class="project-popup__meta-desc">HTML5 / CSS3 / JavaScript</dd>
                 </div>
             </dl>
-            <p class="project-popup__description">신세계L&B 공식 홈페이지를 클론코딩하여 비주얼 중심의 정적 레이아웃과 UI 인터랙션을 재현했습니다.</p>`,
+            <p class="project-popup__description">제네시스 공식 홈페이지를 클론코딩하여 정적 레이아웃과 슬라이드 UI 인터랙션을 재현했습니다.</p>`,
             img: `<img src="assets/img/project/genesis-fullpage.png" alt="제네시스 메인 풀 페이지 이미지">`,
             viewUrl: "https://dbckgh8010.github.io/genesis/",
             detailUrl: "../playground-portfolio/project/genesis.html",
