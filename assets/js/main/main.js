@@ -176,28 +176,80 @@ $(function() {
             <dl class="project-popup__meta-list">
                 <div class="project-popup__meta-item">
                     <dt class="project-popup__meta-title">기여도</dt>
-                    <dd class="project-popup__meta-desc">100%</dd> 
+                    <dd class="project-popup__meta-desc">100%</dd>
                 </div>
                 <div class="project-popup__meta-item">
                     <dt class="project-popup__meta-title">유형</dt>
-                    <dd class="project-popup__meta-desc">반응형 웹 (PC / Mobile)</dd> 
+                    <dd class="project-popup__meta-desc">반응형 웹 (PC / Mobile)</dd>
                 </div>
                 <div class="project-popup__meta-item">
                     <dt class="project-popup__meta-title">작업 범위</dt>
-                    <dd class="project-popup__meta-desc">메인 페이지</dd> 
+                    <dd class="project-popup__meta-desc">메인 페이지</dd>
                 </div>
                 <div class="project-popup__meta-item">
                     <dt class="project-popup__meta-title">기술 스택</dt>
-                    <dd class="project-popup__meta-desc">HTML5 / CSS3 / JavaScript</dd> 
+                    <dd class="project-popup__meta-desc">HTML5 / CSS3 / JavaScript</dd>
                 </div>
             </dl>
             <p class="project-popup__description">신세계L&B 공식 홈페이지를 클론코딩하여 비주얼 중심의 정적 레이아웃과 UI 인터랙션을 재현했습니다.</p>`,
-            img: `<img src="assets/img/project/shinsegae-fullpage.png" alt="신세계L&B 메인 이미지">`,
+            img: `<img src="assets/img/project/shinsegae-fullpage.png" alt="신세계L&B 메인 풀 페이지 이미지">`,
             viewUrl: "https://dbckgh8010.github.io/shinsegae-lnb_2/",
-            detailUrl: "javascript:void(0);"
+            detailUrl: "../playground-portfolio/project/shinsegaelnb_2.html"
         },
         hansol: {
             title: "한솔PNS",
+            desc: `
+            <dl class="project-popup__meta-list">
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">기여도</dt>
+                    <dd class="project-popup__meta-desc">100%</dd>
+                </div>
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">유형</dt>
+                    <dd class="project-popup__meta-desc">반응형 웹 (PC / Mobile)</dd>
+                </div>
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">작업 범위</dt>
+                    <dd class="project-popup__meta-desc">메인 페이지</dd>
+                </div>
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">기술 스택</dt>
+                    <dd class="project-popup__meta-desc">HTML5 / CSS3 / JavaScript</dd>
+                </div>
+            </dl>
+            <p class="project-popup__description">신세계L&B 공식 홈페이지를 클론코딩하여 비주얼 중심의 정적 레이아웃과 UI 인터랙션을 재현했습니다.</p>`,
+            img: `<img src="assets/img/project/hansolpns-fullpage.png" alt="신세계L&B 메인 풀 페이지 이미지">`,
+            viewUrl: "https://dbckgh8010.github.io/hansolpns/",
+            detailUrl: "../playground-portfolio/project/hansolpns.html"
+        },
+        kia: {
+            title: "KIA",
+            desc: `
+            <dl class="project-popup__meta-list">
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">기여도</dt>
+                    <dd class="project-popup__meta-desc">100%</dd>
+                </div>
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">유형</dt>
+                    <dd class="project-popup__meta-desc">반응형 웹 (PC / Mobile)</dd>
+                </div>
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">작업 범위</dt>
+                    <dd class="project-popup__meta-desc">메인 페이지</dd>
+                </div>
+                <div class="project-popup__meta-item">
+                    <dt class="project-popup__meta-title">기술 스택</dt>
+                    <dd class="project-popup__meta-desc">HTML5 / CSS3 / JavaScript</dd>
+                </div>
+            </dl>
+            <p class="project-popup__description">신세계L&B 공식 홈페이지를 클론코딩하여 비주얼 중심의 정적 레이아웃과 UI 인터랙션을 재현했습니다.</p>`,
+            img: `<img src="assets/img/project/kia-fullpage.png" alt="기아 자동차 메인 풀 페이지 이미지">`,
+            viewUrl: "https://dbckgh8010.github.io/KIA/",
+            detailUrl: "../playground-portfolio/project/kia.html",
+        },
+        genesis: {
+            title: "GENESIS",
             desc: `
             <dl class="project-popup__meta-list">
                 <div class="project-popup__meta-item">
@@ -206,21 +258,21 @@ $(function() {
                 </div>
                 <div class="project-popup__meta-item">
                     <dt class="project-popup__meta-title">유형</dt>
-                    <dd class="project-popup__meta-desc">반응형 웹 (PC / Mobile)</dd> 
+                    <dd class="project-popup__meta-desc">Desktop(only PC)</dd>
                 </div>
                 <div class="project-popup__meta-item">
                     <dt class="project-popup__meta-title">작업 범위</dt>
-                    <dd class="project-popup__meta-desc">메인 페이지</dd> 
+                    <dd class="project-popup__meta-desc">메인 페이지</dd>
                 </div>
                 <div class="project-popup__meta-item">
                     <dt class="project-popup__meta-title">기술 스택</dt>
-                    <dd class="project-popup__meta-desc">HTML5 / CSS3 / JavaScript</dd> 
+                    <dd class="project-popup__meta-desc">HTML5 / CSS3 / JavaScript</dd>
                 </div>
             </dl>
             <p class="project-popup__description">신세계L&B 공식 홈페이지를 클론코딩하여 비주얼 중심의 정적 레이아웃과 UI 인터랙션을 재현했습니다.</p>`,
-            img: `<img src="assets/img/project/hansolpns-fullpage.png" alt="신세계L&B 메인 이미지">`,
-            viewUrl: "https://dbckgh8010.github.io/hansolpns/",
-            detailUrl: "javascript:void(0);",
+            img: `<img src="assets/img/project/genesis-fullpage.png" alt="제네시스 메인 풀 페이지 이미지">`,
+            viewUrl: "https://dbckgh8010.github.io/genesis/",
+            detailUrl: "../playground-portfolio/project/genesis.html",
         }
     };
 
