@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
             portfolioItems.forEach(item => {
                 const itemType = item.getAttribute('data-type');
 
-                if (filterValue === 'all' || filterValue === itemType) {
+                if (filterValue === 'all' || (itemType && itemType.includes(filterValue))) {
                     item.style.display = 'flex';
                 } else {
                     item.style.display = 'none';
