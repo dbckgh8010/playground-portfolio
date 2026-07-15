@@ -54,6 +54,7 @@ body {background-color: #F0F1F4; word-break: keep-all; font-family: 'Paperozi';}
 /*info box부분 설정*/
 .project__info {grid-column: span 4;}
 .project__info-item {display: grid; grid-template-columns: 48px 1fr; gap: 20px; padding-bottom: 30px;}
+.project__info-icon {width: 20px; height: 20px;}
 .project__info-label {display: block; margin-bottom: 10px; font-weight: 700;}
 .project__skills {display: flex;}
 .project__skills li {padding: 8px; margin-right: 10px; font-size: .8rem; font-weight: 900; border-radius: 15px;}
@@ -75,7 +76,7 @@ body {background-color: #F0F1F4; word-break: keep-all; font-family: 'Paperozi';}
 
 /*features box부분 설정*/
 .project__features {grid-column: 1 / -1;}
-.project__features-list {display: flex; width: 100%;}
+.project__features-list {display: flex; gap: 20px; width: 100%;}
 .project__features-item {display: flex; flex-direction: column; align-items: center; flex: 1;}
 .project__features-icon {padding: 10px; margin-bottom: 15px; border-radius: 50px;}
 .project__features-item:nth-child(1) .project__features-icon {background-color: #FFEDD5;}
@@ -84,6 +85,7 @@ body {background-color: #F0F1F4; word-break: keep-all; font-family: 'Paperozi';}
 .project__features-item:nth-child(4) .project__features-icon {background-color: #CFFAFE;}
 .project__features-item:nth-child(5) .project__features-icon {background-color: #D1FAE5;}
 .project__features-title {display: block; padding-bottom: 10px;}
+.project__features-desc {text-align: center;}
 
 @media (max-width: 1024px) {
     .project__features {grid-column: span 12;}
