@@ -3,7 +3,8 @@
 
 * {margin: 0; padding: 0; box-sizing: border-box;}
 html {scroll-behavior: smooth;}
-html, body {font-family: 'Pretendard', sans-serif !important;}
+html, body {font-family: 'Pretendard', sans-serif !important; -ms-overflow-style: none; scrollbar-width: none;}
+html::-webkit-scrollbar, body::-webkit-scrollbar {display: none;}
 h1, h2, h3, h4 {font-family: 'SUIT', sans-serif !important;}
 p {white-space: normal; word-break: keep-all; line-height: 1.6;}
 
